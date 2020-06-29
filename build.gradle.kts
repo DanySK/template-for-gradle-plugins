@@ -66,6 +66,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
     testImplementation("com.uchuhimo:konf-yaml:_")
+    testImplementation("io.github.classgraph:classgraph:_")
     testImplementation("io.kotest:kotest-runner-junit5:_")
     testImplementation("io.kotest:kotest-assertions-core-jvm:_")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
