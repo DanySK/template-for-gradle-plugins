@@ -33,7 +33,7 @@ stages:
   - base
   - test
   - name: deploy
-    if: type != pull_request AND repo = DanySK/Template-for-Kotlin-JVM-Projects
+    if: type != pull_request AND repo = DanySK/Template-for-Gradle-Plugins
 
 jobs:
   exclude:
@@ -52,7 +52,10 @@ jobs:
         - export ORG_GRADLE_PROJECT_signingKey=$(cat secrets.asc)
         - rm secrets.asc
       script:
-        - travis_retry ./gradlew dokka publish
+        - travis_retry ./gradlew dokka publishMavenCentral
+      after_success:
+        # Uploading to the Gradle Plugin Portal now, as it fails in case of duplicates
+        - travis_retry ./gradlew publishPlugin
 
 before_install:
   - travis_retry git clone --depth 1 $GRAVIS_REPO $GRAVIS
