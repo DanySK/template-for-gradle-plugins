@@ -24,7 +24,7 @@ class Tests : StringSpec({
     }
     val scan = ClassGraph()
         .enableAllInfo()
-        .acceptPackages(Tests::class.java.packageName)
+        .acceptPackages(Tests::class.java.`package`.name)
         .scan()
     scan.getResourcesWithLeafName("test.yaml")
         .flatMap {
