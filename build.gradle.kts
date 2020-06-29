@@ -12,7 +12,19 @@ plugins {
     id("org.danilopianini.publish-on-central")
 }
 
+/*
+ * Project information
+ */
 group = "org.danilopianini"
+description = "A template repository for kickstarting Gradle Plugins"
+inner class ProjectInfo {
+    val longName = "Template for Gradle Plugins"
+    val website = "https://github.com/DanySK/Template-for-Gradle-Plugins"
+    val scm = "git@github.com:DanySK/Template-for-Gradle-Plugins.git"
+    val pluginImplementationClass = "$group.template.HelloGradle"
+    val tags = listOf("template", "kickstart", "example")
+}
+val info = ProjectInfo()
 
 gitSemVer {
     version = computeGitSemVer()
@@ -51,8 +63,9 @@ dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
     api(gradleApi())
     api(gradleKotlinDsl())
-    implementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
+    testImplementation("com.uchuhimo:konf-yaml:_")
     testImplementation("io.kotest:kotest-runner-junit5:_")
     testImplementation("io.kotest:kotest-assertions-core-jvm:_")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
@@ -66,6 +79,7 @@ kotlin {
             kotlinOptions {
                 allWarningsAsErrors = true
                 freeCompilerArgs = listOf("-XXLanguage:+InlineClasses", "-Xopt-in=kotlin.RequiresOptIn")
+                jvmTarget = JavaVersion.VERSION_1_8.toString()
             }
         }
     }
@@ -118,21 +132,11 @@ signing {
 /*
  * Publication on Maven Central and the Plugin portal
  */
-group = "org.danilopianini"
-description = "A template repository for kickstarting Gradle Plugins"
-object ProjectInfo {
-    const val longName = "Template for Gradle Plugins"
-    const val website = "https://github.com/DanySK/Template-for-Gradle-Plugins"
-    const val scm = "git@github.com:DanySK/Template-for-Gradle-Plugins.git"
-    val pluginImplementationClass = "$group.template.HelloGradle"
-    val tags = listOf("template", "kickstart", "example")
-}
-
 publishOnCentral {
-    projectLongName.set(ProjectInfo.longName)
+    projectLongName.set(info.longName)
     projectDescription.set(description)
-    projectUrl.set(ProjectInfo.website)
-    scmConnection.set(ProjectInfo.scm)
+    projectUrl.set(info.website)
+    scmConnection.set(info.scm)
 //    licenseName.set("...") // Defaults to Apache 2.0
 //    licenseUrl.set("...") // Defaults to Apache 2.0 url
 }
@@ -154,18 +158,18 @@ publishing {
 }
 
 pluginBundle {
-    website = ProjectInfo.website
-    vcsUrl = ProjectInfo.website
-    tags = ProjectInfo.tags
+    website = info.website
+    vcsUrl = info.website
+    tags = info.tags
 }
 
 gradlePlugin {
     plugins {
         create("GradleLatex") {
             id = "$group.${project.name}"
-            displayName = ProjectInfo.longName
+            displayName = info.longName
             description = project.description
-            implementationClass = ProjectInfo.pluginImplementationClass
+            implementationClass = info.pluginImplementationClass
         }
     }
 }
