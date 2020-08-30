@@ -32,14 +32,9 @@ gitSemVer {
 
 repositories {
     mavenCentral()
-    mapOf(
-        "kotlin/dokka" to setOf("org.jetbrains.dokka"),
-        "kotlin/kotlinx.html" to setOf("org.jetbrains.kotlinx"),
-        "arturbosch/code-analysis" to setOf("io.gitlab.arturbosch.detekt")
-    ).forEach { (uriPart, groups) ->
-        maven {
-            url = uri("https://dl.bintray.com/$uriPart")
-            content { groups.forEach { includeGroup(it) } }
+    jcenter {
+        content {
+            includeGroupByRegex("""org\.jetbrains\.(dokka|kotlinx)""")
         }
     }
 }
@@ -115,13 +110,8 @@ detekt {
     }
 }
 
-tasks.withType<org.jetbrains.dokka.gradle.DokkaTask> {
-    // Workaround for https://github.com/Kotlin/dokka/issues/294
-    outputFormat = if (JavaVersion.current().isJava10Compatible) "html" else "javadoc"
-    outputDirectory = "$buildDir/javadoc"
-    tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
-        from(outputDirectory)
-    }
+tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
+    from(tasks.dokkaJavadoc.get().outputDirectory)
 }
 
 signing {
