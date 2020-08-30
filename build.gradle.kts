@@ -111,6 +111,7 @@ detekt {
 }
 
 tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
+    dependsOn(tasks.dokkaJavadoc)
     from(tasks.dokkaJavadoc.get().outputDirectory)
 }
 
