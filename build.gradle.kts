@@ -34,6 +34,7 @@ repositories {
     mavenCentral()
     jcenter {
         content {
+            includeGroup("com.soywiz.korlibs.korte")
             includeGroupByRegex("""org\.jetbrains\.(dokka|kotlinx)""")
         }
     }
