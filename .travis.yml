@@ -44,7 +44,7 @@ jobs:
       stage: base
       after_success: bash <(curl -s https://codecov.io/bash)
       script:
-        - travis_retry ./gradlew clean check jacocoTestReport
+        - travis_retry ./gradlew clean check jacocoTestReport dokkaJavadoc
     - <<: *reference_build
       stage: deploy
       install:
