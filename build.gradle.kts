@@ -114,11 +114,6 @@ detekt {
     }
 }
 
-tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
-    dependsOn(tasks.dokkaJavadoc)
-    from(tasks.dokkaJavadoc.get().outputDirectory)
-}
-
 signing {
     val signingKey: String? by project
     val signingPassword: String? by project
