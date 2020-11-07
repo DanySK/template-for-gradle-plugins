@@ -2,6 +2,8 @@ name: CI
 on:
   push:
   pull_request:
+  check_run:
+  check_suite:
   schedule:
     - cron: '0 3 * * SUN'
     
