@@ -1,0 +1,31 @@
+name: CI
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 3 * * SUN'
+    
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows, ubuntu, macos]
+        jvm_version: [8, 11, 'latest']
+        jvm: [hotspot, openj9]
+    runs-on: ${{ matrix.os }}-latest
+    container:
+      image: danysk/${{ matrix.jvm }}-${{ matrix.jvm_version }}
+    env:
+      OS: ${{ matrix.os }}
+      JDK_VERSION: ${{ matrix.version }}
+      JDK_TYPE: ${{ matrix.vm }}
+      IMAGE_NAME: danysk/${{ matrix.vm }}-${{ matrix.version || 'latest' }}-${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Check on Unix
+        if: "!contains(matrix.os, 'windows')"
+        run: ./gradlew check --parallel
+      - name: Check on Windows
+        if: "!contains(matrix.os, 'windows')"
+        run: gradlew.bat check --parallel
