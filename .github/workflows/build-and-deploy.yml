@@ -1,13 +1,11 @@
 name: CI
 on:
   push:
-  pull_request:
   schedule:
     - cron: '0 3 * * SAT'
 
 jobs:
   Build:
-    if: ${{ github.event_name != 'pull_request' || github.event.repository.full_name != github.repository }}
     strategy:
       matrix:
         os: [windows, macos, ubuntu]
@@ -28,19 +26,18 @@ jobs:
           fetch-depth: 0
       - shell: bash 
         run: ./gradlew check
-      - if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8  && github.event_name != 'pull_request' }}
+      - if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8 }}
         run: 
           ./gradlew publishMavenCentralPublicationToMavenRepository --parallel \
-          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel\
-          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel\
-          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel\
+          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel \
+          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel \
+          || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel \
           || ./gradlew publishMavenCentralPublicationToMavenRepository --parallel
-      - if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8  && github.event_name != 'pull_request' }}
+      - if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8 }}
         continue-on-error: true
         run: 
           ./gradlew publishPlugin --parallel -Pgradle.publish.key=${{ secrets.GRADLE_PUBLISH_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PUBLISH_SECRET }}
   CI-Complete:
-    if: ${{ github.event_name != 'pull_request' || github.event.repository.full_name != github.repository }}
     needs: Build
     runs-on: ubuntu-latest
     steps:
