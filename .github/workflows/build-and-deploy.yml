@@ -6,7 +6,17 @@ on:
     - cron: '0 3 * * SAT'
     
 jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.repository }}
+      - run: echo ${{ github.event_name }}
+      - run: echo ${{ github.event.repository }}
+      - run: echo ${{ github.event }}
+      - run: echo ${{ github.event.repository.owner }}
+      - run: echo ${{ github.event.repository.name }}
   Build:
+    needs: Test
     strategy:
       matrix:
         os: [windows, macos, ubuntu]
