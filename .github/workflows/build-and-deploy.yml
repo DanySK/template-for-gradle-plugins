@@ -12,7 +12,7 @@ jobs:
       - run: echo ${{ github.repository }}
       - run: echo ${{ github.event_name }}
       - run: echo ${{ github.event.repository }}
-      - run: echo ${{ github.event }}
+      - run: echo ${{ github.event.repository.full_name }}
       - run: echo ${{ github.event.repository.owner }}
       - run: echo ${{ github.event.repository.name }}
   Build:
