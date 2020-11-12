@@ -4,9 +4,9 @@ on:
   pull_request:
   schedule:
     - cron: '0 3 * * SAT'
-    
+
 jobs:
-  Build${{ github.event_name }}:
+  Build:
     if: ${{ github.event_name != 'pull_request' || github.event.repository.full_name != github.repository }}
     strategy:
       matrix:
@@ -39,7 +39,8 @@ jobs:
         continue-on-error: true
         run: 
           ./gradlew publishPlugin --parallel -Pgradle.publish.key=${{ secrets.GRADLE_PUBLISH_KEY }} -Pgradle.publish.secret=${{ secrets.GRADLE_PUBLISH_SECRET }}
-  CI-Complete${{ github.event_name }}:
+  CI-Complete:
+    if: ${{ github.event_name != 'pull_request' || github.event.repository.full_name != github.repository }}
     needs: Build
     runs-on: ubuntu-latest
     steps:
