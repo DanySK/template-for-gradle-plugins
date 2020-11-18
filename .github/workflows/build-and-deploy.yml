@@ -27,7 +27,7 @@ jobs:
           java-version: ${{ matrix.jvm_version }}
       - name: Checkout
         shell: bash  
-        run: git clone $GITHUB_SERVER_URL/GITHUB_REPOSITORY $GITHUB_WORKSPACE
+        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY $GITHUB_WORKSPACE
 #      - uses: actions/checkout@v2
 #        with:
 #          fetch-depth: 0
