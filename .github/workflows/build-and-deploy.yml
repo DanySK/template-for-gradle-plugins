@@ -31,9 +31,6 @@ jobs:
       - name: Checkout
         shell: bash  
         run: git checkout "$(echo ${{ github.event.ref }} | sed s#refs/heads/## | sed s#refs/tags##)"
-#      - uses: actions/checkout@v2
-#        with:
-#          fetch-depth: 0
       - name: Check
         shell: bash
         run: |
