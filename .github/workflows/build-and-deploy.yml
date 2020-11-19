@@ -30,7 +30,7 @@ jobs:
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY $GITHUB_WORKSPACE
       - name: Checkout
         shell: bash  
-        run: git checkout "${{ github.event.ref }}"
+        run: git checkout git checkout "$(echo ${{ github.event.ref }} | sed s#refs/heads/## | sed s#refs/tags##)"
 #      - uses: actions/checkout@v2
 #        with:
 #          fetch-depth: 0
