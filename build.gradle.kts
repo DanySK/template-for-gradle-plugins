@@ -125,7 +125,7 @@ signing {
  */
 publishOnCentral {
     projectLongName = info.longName
-    projectDescription = description
+    projectDescription = description ?: TODO("Missing description")
     projectUrl = info.website
     scmConnection = info.scm
 //    licenseName = "..." // Defaults to Apache 2.0
