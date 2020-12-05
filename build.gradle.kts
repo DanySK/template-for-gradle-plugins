@@ -124,12 +124,12 @@ signing {
  * Publication on Maven Central and the Plugin portal
  */
 publishOnCentral {
-    projectLongName.set(info.longName)
-    projectDescription.set(description)
-    projectUrl.set(info.website)
-    scmConnection.set(info.scm)
-//    licenseName.set("...") // Defaults to Apache 2.0
-//    licenseUrl.set("...") // Defaults to Apache 2.0 url
+    projectLongName = info.longName
+    projectDescription = description
+    projectUrl = info.website
+    scmConnection = info.scm
+//    licenseName = "..." // Defaults to Apache 2.0
+//    licenseUrl = "..." // Defaults to Apache 2.0 url
 }
 
 publishing {
