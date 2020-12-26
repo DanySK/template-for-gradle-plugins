@@ -1,3 +1,5 @@
+import org.danilopianini.gradle.mavencentral.mavenCentral
+
 plugins {
     jacoco
     `java-gradle-plugin`
@@ -130,6 +132,11 @@ publishOnCentral {
     scmConnection = info.scm
 //    licenseName = "..." // Defaults to Apache 2.0
 //    licenseUrl = "..." // Defaults to Apache 2.0 url
+    val central = mavenCentral()
+    repository(central.url.replace("://", "://s01.")) {
+        user = central.user()
+        password = central.password()
+    }
 }
 
 publishing {
