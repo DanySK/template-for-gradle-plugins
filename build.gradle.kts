@@ -1,4 +1,5 @@
 import org.danilopianini.gradle.mavencentral.mavenCentral
+import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 plugins {
     jacoco
@@ -67,6 +68,16 @@ dependencies {
     testImplementation("org.mockito:mockito-core:_")
     testRuntimeOnly(files(createClasspathManifest))
     additionalTools("org.jacoco:org.jacoco.core:_")
+}
+
+// Enforce Kotlin version coherence
+configurations.all {
+    resolutionStrategy.eachDependency {
+        if (requested.group == "org.jetbrains.kotlin" && requested.name.startsWith("kotlin")) {
+            useVersion(KOTLIN_VERSION)
+            because("All Kotlin modules should use the same version, and compiler uses $KOTLIN_VERSION")
+        }
+    }
 }
 
 kotlin {
