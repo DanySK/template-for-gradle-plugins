@@ -34,15 +34,6 @@ gitSemVer {
 
 repositories {
     mavenCentral()
-    jcenter {
-        content {
-            onlyForConfigurations(
-                "detekt",
-                "dokkaJavadocPlugin",
-                "dokkaJavadocRuntime"
-            )
-        }
-    }
 }
 
 /*
@@ -60,6 +51,8 @@ val createClasspathManifest = tasks.register("createClasspathManifest") {
 }
 tasks.withType<Test> { dependsOn(createClasspathManifest) }
 
+val additionalTools: Configuration by configurations.creating
+
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
     api(gradleApi())
@@ -73,6 +66,7 @@ dependencies {
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
     testImplementation("org.mockito:mockito-core:_")
     testRuntimeOnly(files(createClasspathManifest))
+    additionalTools("org.jacoco:org.jacoco.core:_")
 }
 
 kotlin {
@@ -98,6 +92,12 @@ tasks.test {
     }
 }
 
+jacoco {
+    toolVersion = additionalTools.resolvedConfiguration.resolvedArtifacts.find {
+        "jacoco" in it.moduleVersion.id.name
+    }?.moduleVersion?.id?.version ?: toolVersion
+}
+
 tasks.jacocoTestReport {
     reports {
         // Used by Codecov.io
@@ -106,7 +106,7 @@ tasks.jacocoTestReport {
 }
 
 detekt {
-    failFast = true
+    allRules = true
     buildUponDefaultConfig = true
     config = files("$projectDir/config/detekt.yml")
     reports {
