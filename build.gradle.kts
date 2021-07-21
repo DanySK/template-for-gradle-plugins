@@ -29,10 +29,6 @@ inner class ProjectInfo {
 }
 val info = ProjectInfo()
 
-gitSemVer {
-    version = computeGitSemVer()
-}
-
 repositories {
     mavenCentral()
 }
