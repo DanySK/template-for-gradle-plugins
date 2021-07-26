@@ -115,17 +115,6 @@ tasks.jacocoTestReport {
     }
 }
 
-detekt {
-    allRules = true
-    buildUponDefaultConfig = true
-    config = files("$projectDir/config/detekt.yml")
-    reports {
-        html.enabled = true
-        xml.enabled = true
-        txt.enabled = true
-    }
-}
-
 signing {
     val signingKey: String? by project
     val signingPassword: String? by project
