@@ -7,10 +7,9 @@ plugins {
     kotlin("jvm")
     `maven-publish`
     signing
+    id("kotlin-qa")
     id("com.gradle.plugin-publish")
-    id("io.gitlab.arturbosch.detekt")
     id("org.jetbrains.dokka")
-    id("org.jlleitschuh.gradle.ktlint")
     id("org.danilopianini.git-sensitive-semantic-versioning")
     id("org.danilopianini.publish-on-central")
 }
