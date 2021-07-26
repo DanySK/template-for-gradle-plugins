@@ -28,6 +28,10 @@ inner class ProjectInfo {
 }
 val info = ProjectInfo()
 
+gitSemVer {
+    buildMetadataSeparator.set("-")
+}
+
 repositories {
     mavenCentral()
 }
