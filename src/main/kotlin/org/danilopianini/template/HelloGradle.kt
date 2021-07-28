@@ -14,6 +14,9 @@ import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.property
 import org.gradle.kotlin.dsl.register
 
+/**
+ * Just a template.
+ */
 open class HelloGradle : Plugin<Project> {
     override fun apply(target: Project) {
         val extension = target.extensions.create<HelloExtension>("hello")
@@ -23,24 +26,43 @@ open class HelloGradle : Plugin<Project> {
     }
 }
 
+/**
+ * Just a template.
+ */
 open class HelloTask : DefaultTask() {
+
+    /**
+     * Just a template.
+     */
     @Input
     val author: Property<String> = project.objects.property()
 
-    // Read-only property calculated from the greeting
+    /**
+     * Read-only property calculated from the greeting.
+     */
     @Internal
     val message: Provider<String> = author.map { "Hello from $it" }
 
+    /**
+     * Just a template.
+     */
     @TaskAction
     fun printMessage() {
         logger.quiet(message.get())
     }
 }
 
+/**
+ * Just a template.
+ */
 open class HelloExtension(objects: ObjectFactory) : Serializable {
+
+    /**
+     * Just a template.
+     */
     val author: Property<String> = objects.property()
 
     companion object {
-        const val serialVersionUID = 1L
+        private const val serialVersionUID = 1L
     }
 }
