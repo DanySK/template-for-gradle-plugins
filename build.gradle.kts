@@ -61,10 +61,10 @@ dependencies {
     testImplementation(gradleTestKit())
     testImplementation("com.uchuhimo:konf-yaml:_")
     testImplementation("io.github.classgraph:classgraph:_")
-    testImplementation("io.kotest:kotest-runner-junit5:_")
+    testImplementation(Testing.kotest.runner.junit5)
     testImplementation("io.kotest:kotest-assertions-core-jvm:_")
-    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
-    testImplementation("org.mockito:mockito-core:_")
+    testImplementation(Testing.mockito.kotlin)
+    testImplementation(Testing.mockito.core)
     testRuntimeOnly(files(createClasspathManifest))
     additionalTools("org.jacoco:org.jacoco.core:_")
 }
