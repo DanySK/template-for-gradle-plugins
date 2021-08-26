@@ -1,4 +1,4 @@
-import org.danilopianini.gradle.mavencentral.mavenCentral
+import java.net.URL
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 plugins {
@@ -36,6 +36,16 @@ repositories {
     mavenCentral()
 }
 
+val minimumJava = JavaLanguageVersion.of(8)
+val maximumJava = latestSupportedJava()
+
+java {
+    toolchain {
+        languageVersion.set(minimumJava)
+        vendor.set(JvmVendorSpec.ADOPTOPENJDK)
+    }
+}
+
 /*
  * By default, Gradle does not include all the plugin classpath into the testing classpath.
  * This task creates a descriptor of the runtime classpath, to be injected (manually) when running tests.
@@ -49,7 +59,28 @@ val createClasspathManifest = tasks.register("createClasspathManifest") {
         file("$outputDir/plugin-classpath.txt").writeText(sourceSets.main.get().runtimeClasspath.joinToString("\n"))
     }
 }
-tasks.withType<Test> { dependsOn(createClasspathManifest) }
+
+tasks.withType<Test> {
+    dependsOn(createClasspathManifest)
+}
+
+fun latestSupportedJava(): JavaLanguageVersion =
+    Regex("""<tr.*>[\s|\n|\r]*<td.*>.*?(\d+).*?<\/td>[\s|\n|\r]*<td.*>.*?(\d+(?:\.\d+)).*?<\/td>""")
+        .findAll(URL("https://docs.gradle.org/current/userguide/compatibility.html").readText())
+        .map {
+            val (javaVersion, gradleVersion) = it.destructured
+            JavaLanguageVersion.of(javaVersion) to GradleVersion.version(gradleVersion)
+        }
+        .filter { (_, gradleVersion) -> GradleVersion.current() >= gradleVersion }
+        .maxByOrNull { (_, gradleVersion) -> gradleVersion }
+        ?.first
+        ?: JavaLanguageVersion.of(16)
+
+java {
+    toolchain {
+        languageVersion.set(minimumJava)
+    }
+}
 
 val additionalTools: Configuration by configurations.creating
 
@@ -102,6 +133,30 @@ tasks.test {
     }
 }
 
+operator fun JavaLanguageVersion.rangeTo(that: JavaLanguageVersion): List<JavaLanguageVersion> =
+    (asInt()..that.asInt()).map(JavaLanguageVersion::of)
+
+val JvmImplementation.name: String get() = when(this) {
+    JvmImplementation.VENDOR_SPECIFIC -> "Classic"
+    else -> toString()
+}
+
+for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava) {
+//    val base = tasks.test.get()
+//    val testTask =
+    tasks.register<Test>("testUnderJava${javaVersion.asInt()}") {
+        javaLauncher.set(
+            javaToolchains.launcherFor {
+                languageVersion.set(javaVersion)
+            }
+        )
+//        classpath = base.classpath
+//        testClassesDirs = base.testClassesDirs
+//        isScanForTestClasses = true
+    }
+//    tasks.test.configure { finalizedBy(testTask) }
+}
+
 jacoco {
     toolVersion = additionalTools.resolvedConfiguration.resolvedArtifacts.find {
         "jacoco" in it.moduleVersion.id.name
@@ -111,7 +166,7 @@ jacoco {
 tasks.jacocoTestReport {
     reports {
         // Used by Codecov.io
-        xml.isEnabled = true
+        xml.required.set(true)
     }
 }
 
