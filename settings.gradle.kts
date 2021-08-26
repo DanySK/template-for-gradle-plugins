@@ -6,3 +6,5 @@ refreshVersions {
         enable(de.fayard.refreshVersions.core.FeatureFlag.LIBS)
     }
 }
+
+rootProject.name = "Template-for-Gradle-Plugins"
