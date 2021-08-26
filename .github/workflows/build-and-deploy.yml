@@ -83,6 +83,15 @@ jobs:
           if [ -f .github/scripts/configure_windows ]; then
             .github/scripts/configure_windows
           fi
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
       - name: Build
         if: ${{ env.COMPATIBLE == 'true' }}
         shell: bash
@@ -110,6 +119,10 @@ jobs:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: .github/build-steps/deploy.sh || .github/build-steps/deploy.sh
+      - name: Cleanup Gradle Cache
+        run: |
+          rm -f ~/.gradle/caches/modules-2/modules-2.lock
+          rm -f ~/.gradle/caches/modules-2/gc.properties
   Build-Success:
     runs-on: ubuntu-latest
     needs: Build
