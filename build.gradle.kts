@@ -110,19 +110,43 @@ configurations.all {
     }
 }
 
+operator fun JavaLanguageVersion.rangeTo(that: JavaLanguageVersion): List<JavaLanguageVersion> =
+    (asInt()..that.asInt()).map(JavaLanguageVersion::of)
+
+val JvmImplementation.name: String get() = when (this) {
+    JvmImplementation.VENDOR_SPECIFIC -> "Classic"
+    else -> toString()
+}
+
+val testMultiPlatform by tasks.registering
+for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava) {
+    val testTask = tasks.register<Test>("testWithJava${javaVersion.asInt()}") {
+        javaLauncher.set(
+            javaToolchains.launcherFor {
+                languageVersion.set(javaVersion)
+            }
+        )
+    }
+    testMultiPlatform.configure {
+        dependsOn(testTask)
+    }
+}
+tasks.check.configure {
+    dependsOn(testMultiPlatform)
+}
+
 kotlin {
     target {
         compilations.all {
             kotlinOptions {
                 allWarningsAsErrors = true
                 freeCompilerArgs = listOf("-XXLanguage:+InlineClasses", "-Xopt-in=kotlin.RequiresOptIn")
-                jvmTarget = JavaVersion.VERSION_1_8.toString()
             }
         }
     }
 }
 
-tasks.test {
+tasks.withType<Test> {
     useJUnitPlatform()
     testLogging {
         showStandardStreams = true
@@ -131,30 +155,6 @@ tasks.test {
         events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
-}
-
-operator fun JavaLanguageVersion.rangeTo(that: JavaLanguageVersion): List<JavaLanguageVersion> =
-    (asInt()..that.asInt()).map(JavaLanguageVersion::of)
-
-val JvmImplementation.name: String get() = when(this) {
-    JvmImplementation.VENDOR_SPECIFIC -> "Classic"
-    else -> toString()
-}
-
-for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava) {
-//    val base = tasks.test.get()
-//    val testTask =
-    tasks.register<Test>("testUnderJava${javaVersion.asInt()}") {
-        javaLauncher.set(
-            javaToolchains.launcherFor {
-                languageVersion.set(javaVersion)
-            }
-        )
-//        classpath = base.classpath
-//        testClassesDirs = base.testClassesDirs
-//        isScanForTestClasses = true
-    }
-//    tasks.test.configure { finalizedBy(testTask) }
 }
 
 jacoco {
