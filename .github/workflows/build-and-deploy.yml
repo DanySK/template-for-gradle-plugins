@@ -86,6 +86,9 @@ jobs:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: .github/build-steps/deploy.sh || .github/build-steps/deploy.sh
+      - name: Turn off the Gradle Daemon
+        shell: bash
+        run: ./gradlew --stop
       - name: Cleanup Gradle Cache
         shell: bash
         run: |
