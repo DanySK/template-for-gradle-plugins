@@ -48,21 +48,6 @@ jobs:
           server-password: MAVEN_CENTRAL_PASSWORD
           gpg-private-key: ${{ secrets.SIGNING_KEY }}
           gpg-passphrase: SIGNING_PASSWORD
-      # Install additional packages
-      - name: Configure Linux
-        shell: bash
-        if: ${{ env.COMPATIBLE == 'true' && contains(matrix.os, 'ubuntu') }}
-        run: |
-          if [ -x .github/scripts/configure_linux ]; then
-            .github/scripts/configure_linux
-          fi
-      - name: Configure MacOS X
-        shell: bash
-        if: ${{ env.COMPATIBLE == 'true' && contains(matrix.os, 'macos') }}
-        run: |
-          if [ -f .github/scripts/configure_macos ]; then
-            .github/scripts/configure_macos
-          fi
       - name: Configure the Windows Pagefile
         if: ${{ runner.os == 'Windows' }}
         uses: al-cheb/configure-pagefile-action@v1.2
