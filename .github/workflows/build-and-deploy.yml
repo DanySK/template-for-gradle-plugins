@@ -17,7 +17,6 @@ jobs:
         distribution: [adopt]
     runs-on: ${{ matrix.os }}-latest
     env:
-      JAVA_VERSION: ${{ matrix.jvm_version }}
       OS: ${{ matrix.os }}
       TERM: dumb
     steps:
@@ -39,17 +38,8 @@ jobs:
           BRANCH=$([ -z "$TAG" ] && echo ${GITHUB_REF#refs/heads/} || echo $TAG)
           echo "Current tag is: '$BRANCH' (setup in BRANCH TAG environment variable)"
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
-      # Check if the configuration is supported
-      # COMPATIBLE means the build can run on this matrix combination
-      # REFERENCE means this is the combination that produces the reference artifacts
-      # (hence, artifacts from REFERENCE configuration shall be deployed)
-      # Only one matrix entry should be REFERENCE=true
-      # If REFERENCE=true, then also COMPATIBLE=true
-      - shell: bash
-        run: .github/build-steps/compatibility_check.sh
       # Install the JDK
       - uses: actions/setup-java@v2
-        if: ${{ env.COMPATIBLE == 'true' }}
         with:
           distribution: ${{ matrix.distribution }}
           java-version: 16
@@ -74,15 +64,8 @@ jobs:
             .github/scripts/configure_macos
           fi
       - name: Configure the Windows Pagefile
-        if: ${{ env.COMPATIBLE == 'true' && contains(matrix.os, 'windows') }}
+        if: ${{ runner.os == 'Windows') }}
         uses: al-cheb/configure-pagefile-action@v1.2
-      - name: Configure Windows
-        shell: bash
-        if: ${{ env.COMPATIBLE == 'true' && contains(matrix.os, 'windows') }}
-        run: |
-          if [ -f .github/scripts/configure_windows ]; then
-            .github/scripts/configure_windows
-          fi
       - name: Cache Gradle packages
         uses: actions/cache@v2
         with:
@@ -93,18 +76,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - name: Build
-        if: ${{ env.COMPATIBLE == 'true' }}
         shell: bash
         run: .github/build-steps/build.sh || .github/build-steps/build.sh
       - name: Check
-        if: ${{ env.COMPATIBLE == 'true' }}
         shell: bash
         run: .github/build-steps/check.sh || .github/build-steps/check.sh
       - name: CodeCov
-        if: ${{ env.REFERENCE == 'true' }}
+        if: ${{ runner.os == 'Linux' }}
         uses: codecov/codecov-action@v1
       - name: Deploy
-        if: ${{ env.REFERENCE == 'true' && github.event_name == 'push' }}
+        if: ${{ runner.os == 'Linux' && github.event_name == 'push' }}
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,6 +101,7 @@ jobs:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: .github/build-steps/deploy.sh || .github/build-steps/deploy.sh
       - name: Cleanup Gradle Cache
+        shell: bash
         run: |
           rm -f ~/.gradle/caches/modules-2/modules-2.lock
           rm -f ~/.gradle/caches/modules-2/gc.properties
@@ -149,7 +131,7 @@ jobs:
     if: success()
     steps:
       - name: automerge
-        uses: "DanySK/yaagha@master"
+        uses: "DanySK/yaagha@0.1.2"
         env:
           GITHUB_TOKEN: "${{ secrets.AUTOMERGE_TOKEN }}"
           MERGE_FORKS: "false"
