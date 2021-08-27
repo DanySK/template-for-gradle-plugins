@@ -65,6 +65,7 @@ jobs:
         shell: bash
         run: .github/build-steps/build.sh || .github/build-steps/build.sh
       - name: Check
+        if: false
         shell: bash
         run: .github/build-steps/check.sh || .github/build-steps/check.sh
       - name: CodeCov
@@ -89,6 +90,10 @@ jobs:
       - name: Turn off the Gradle Daemon
         shell: bash
         run: ./gradlew --stop
+      - name: Kill every Java process on Windows
+        if: ${{ runner.os == 'Windows' }}
+        run: |
+          handle %HOME%\.gradle\caches\modules-2\modules-2.lock
       - name: Cleanup Gradle Cache
         shell: bash
         run: |
