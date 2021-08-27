@@ -91,7 +91,7 @@ dependencies {
     testImplementation(gradleTestKit())
     val kotestVersion = "4.6.2"
     testImplementation("com.uchuhimo:konf-yaml:1.1.2")
-    testImplementation("io.github.classgraph:classgraph:4.8.115")
+    testImplementation(Libs.classgraph)
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
     testImplementation("org.mockito:mockito-core:3.12.3")
