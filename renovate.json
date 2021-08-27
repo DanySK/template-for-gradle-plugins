@@ -2,11 +2,5 @@
    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
    "extends": [
       "github>DanySK/renovate-config"
-   ],
-   "baseBranches": [
-      "master",
-      "renovate-testing"
-   ],
-   "automerge": false,
-   "schedule": "at any time"
+   ]
 }
