@@ -7,7 +7,6 @@ plugins {
     kotlin("jvm")
     `maven-publish`
     signing
-    id("kotlin-qa")
     id("com.gradle.plugin-publish")
     id("org.jetbrains.dokka")
     id("org.danilopianini.git-sensitive-semantic-versioning")
@@ -85,19 +84,19 @@ java {
 val additionalTools: Configuration by configurations.creating
 
 dependencies {
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
+//    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
     api(gradleApi())
     api(gradleKotlinDsl())
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
-    testImplementation("com.uchuhimo:konf-yaml:_")
-    testImplementation("io.github.classgraph:classgraph:_")
-    testImplementation(Testing.kotest.runner.junit5)
-    testImplementation("io.kotest:kotest-assertions-core-jvm:_")
-    testImplementation(Testing.mockito.kotlin)
-    testImplementation(Testing.mockito.core)
+    val kotestVersion = "4.6.0"
+    testImplementation("com.uchuhimo:konf-yaml:1.1.2")
+    testImplementation("io.github.classgraph:classgraph:4.8.115")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
+    testImplementation("org.mockito:mockito-core:3.12.3")
     testRuntimeOnly(files(createClasspathManifest))
-    additionalTools("org.jacoco:org.jacoco.core:_")
+    additionalTools("org.jacoco:org.jacoco.core:0.8.7")
 }
 
 // Enforce Kotlin version coherence
