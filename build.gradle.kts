@@ -94,7 +94,7 @@ dependencies {
     testImplementation("io.github.classgraph:classgraph:4.8.115")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
-    testImplementation("org.mockito:mockito-core:3.12.3")
+    testImplementation("org.mockito:mockito-core:3.12.4")
     testRuntimeOnly(files(createClasspathManifest))
     additionalTools("org.jacoco:org.jacoco.core:0.8.7")
 }
