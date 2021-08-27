@@ -4,5 +4,6 @@
     "github>DanySK/renovate-config"
   ],
   "baseBranches": [ "master", "renovate-testing" ],
-  "automerge": false
+  "automerge": false,
+  "schedule": "at any time",
 }
