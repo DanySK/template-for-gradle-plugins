@@ -112,12 +112,15 @@ configurations.all {
 operator fun JavaLanguageVersion.rangeTo(that: JavaLanguageVersion): List<JavaLanguageVersion> =
     (asInt()..that.asInt()).map(JavaLanguageVersion::of)
 
+val JavaLanguageVersion.isLTS: Boolean get() = asInt() == 8 || (asInt() - 11) % 6 == 0
+
 val JvmImplementation.name: String get() = when (this) {
     JvmImplementation.VENDOR_SPECIFIC -> "Classic"
     else -> toString()
 }
 
 val testMultiPlatform by tasks.registering
+val testWithAllCompatibleJavaVersions by tasks.registering
 for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava) {
     val testTask = tasks.register<Test>("testWithJava${javaVersion.asInt()}") {
         javaLauncher.set(
@@ -126,9 +129,10 @@ for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava
             }
         )
     }
-    testMultiPlatform.configure {
-        dependsOn(testTask)
+    if (javaVersion.isLTS || javaVersion == maximumJava) {
+        testMultiPlatform.configure { dependsOn(testTask) }
     }
+    testWithAllCompatibleJavaVersions.configure { dependsOn(testTask) }
 }
 tasks.check.configure {
     dependsOn(testMultiPlatform)
