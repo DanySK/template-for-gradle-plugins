@@ -65,6 +65,7 @@ jobs:
         shell: bash
         run: .github/build-steps/build.sh || .github/build-steps/build.sh
       - name: Check
+        if: false
         shell: bash
         run: .github/build-steps/check.sh || .github/build-steps/check.sh
       - name: CodeCov
