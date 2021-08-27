@@ -89,6 +89,11 @@ jobs:
       - name: Turn off the Gradle Daemon
         shell: bash
         run: ./gradlew --stop
+      - name: Try a forced cleanup on Windows
+        if: ${{ runner.os == 'Windows' }}
+        run: |
+          Remove-Item -Force %HOME%\.gradle\caches\modules-2\modules-2.lock
+          Remove-Item -Force %HOME%\.gradle\caches\modules-2\gc.properties
       - name: Cleanup Gradle Cache
         # Temporarily disabled on Windows, waiting to see if someone helps with:
         # https://stackoverflow.com/questions/68950823/remove-despite-device-or-resource-busy-on-a-github-actions-windows-worker
