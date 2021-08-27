@@ -3,5 +3,5 @@
   "extends": [
     "github>DanySK/renovate-config"
   ],
-  "baseBranches": [ "master", "renovate/testing" ]
+  "baseBranches": [ "master", "renovate-testing" ]
 }
