@@ -14,9 +14,9 @@ jobs:
   Build:
     strategy:
       matrix:
-        os: [windows-2019, macos-10.15, ubuntu-18.04]
+        os: [windows, macos, ubuntu]
         distribution: [adopt]
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}-latest
     env:
       TERM: dumb
     steps:
