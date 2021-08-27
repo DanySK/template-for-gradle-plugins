@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>DanySK/renovate-config"
-  ]
+    "github>DanySK/renovate-config"
+  ],
+  "baseBranches": [ "master", "renovate/testing" ]
 }
