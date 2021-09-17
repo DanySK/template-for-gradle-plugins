@@ -89,7 +89,7 @@ dependencies {
     api(gradleKotlinDsl())
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
-    val kotestVersion = "4.6.2"
+    val kotestVersion = "4.6.3"
     testImplementation("com.uchuhimo:konf-yaml:1.1.2")
     testImplementation(Libs.classgraph)
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
