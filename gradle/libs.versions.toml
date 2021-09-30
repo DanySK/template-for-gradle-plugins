@@ -1,0 +1,24 @@
+[versions]
+jacoco = "0.8.7"
+konf = "1.1.2"
+kotlin = "1.5.30"
+kotest = "4.6.2"
+mockito = "3.12.3"
+
+[libraries]
+classgraph = "io.github.classgraph:classgraph:4.8.99"
+jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
+kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
+kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
+
+[bundles]
+kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
+
+[plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
+gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
+gradlePluginPublish = { id = "com.gradle.plugin-publish", version = "0.15.0" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+publishOnCentral = { id = "org.danilopianini.publish-on-central", version = "0.5.0" }

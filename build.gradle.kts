@@ -1,16 +1,15 @@
 import java.net.URL
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     jacoco
     `java-gradle-plugin`
-    kotlin("jvm")
-    `maven-publish`
-    signing
-    id("com.gradle.plugin-publish")
-    id("org.jetbrains.dokka")
-    id("org.danilopianini.git-sensitive-semantic-versioning")
-    id("org.danilopianini.publish-on-central")
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.gitSemVer)
+    alias(libs.plugins.gradlePluginPublish)
+    alias(libs.plugins.kotlinJvm)
+    alias(libs.plugins.publishOnCentral)
 }
 
 /*
@@ -84,19 +83,14 @@ java {
 val additionalTools: Configuration by configurations.creating
 
 dependencies {
-//    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
     api(gradleApi())
     api(gradleKotlinDsl())
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
-    val kotestVersion = "4.6.3"
-    testImplementation("com.uchuhimo:konf-yaml:1.1.2")
-    testImplementation(Libs.classgraph)
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
-    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
-    testImplementation("org.mockito:mockito-core:3.12.4")
+    testImplementation(libs.konf.yaml)
+    testImplementation(libs.classgraph)
+    testImplementation(libs.bundles.kotlin.testing)
     testRuntimeOnly(files(createClasspathManifest))
-    additionalTools("org.jacoco:org.jacoco.core:0.8.7")
 }
 
 // Enforce Kotlin version coherence
@@ -161,9 +155,7 @@ tasks.withType<Test> {
 }
 
 jacoco {
-    toolVersion = additionalTools.resolvedConfiguration.resolvedArtifacts.find {
-        "jacoco" in it.moduleVersion.id.name
-    }?.moduleVersion?.id?.version ?: toolVersion
+    toolVersion = libs.versions.jacoco.getOrElse(toolVersion)
 }
 
 tasks.jacocoTestReport {
