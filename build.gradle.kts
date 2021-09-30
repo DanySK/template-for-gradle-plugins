@@ -207,7 +207,7 @@ pluginBundle {
 
 gradlePlugin {
     plugins {
-        create("GradleLatex") {
+        create("plugin-template") {
             id = "$group.${project.name}"
             displayName = info.longName
             description = project.description
