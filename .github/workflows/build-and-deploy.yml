@@ -6,6 +6,8 @@ on:
       - 'autodelivery**'
       - 'bump-**'
       - 'renovate/**'
+    paths-ignore:
+      - '**/README.md'
   pull_request:
   schedule:
     - cron: '0 3 * * SUN'
