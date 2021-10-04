@@ -8,6 +8,8 @@ on:
       - 'renovate/**'
     paths-ignore:
       - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
   pull_request:
 
 jobs:
@@ -15,7 +17,6 @@ jobs:
     strategy:
       matrix:
         os: [windows, macos, ubuntu]
-        distribution: [adopt]
     runs-on: ${{ matrix.os }}-latest
     env:
       TERM: dumb
@@ -29,19 +30,10 @@ jobs:
       - name: Fetch tags
         shell: bash
         run: git fetch --tags -f
-      - name: Populate TAG and BRANCH environment variables
-        shell: bash
-        run: |
-          TAG=$(git describe --tags --exact-match HEAD || echo '')
-          echo "Current tag is: '$TAG' (setup in the TAG environment variable)"
-          echo "TAG=$TAG" >> $GITHUB_ENV
-          BRANCH=$([ -z "$TAG" ] && echo ${GITHUB_REF#refs/heads/} || echo $TAG)
-          echo "Current tag is: '$BRANCH' (setup in BRANCH TAG environment variable)"
-          echo "BRANCH=$BRANCH" >> $GITHUB_ENV
       # Install the JDK
       - uses: actions/setup-java@v2
         with:
-          distribution: ${{ matrix.distribution }}
+          distribution: adopt
           java-version: 16
           server-id: ossrh
           server-username: MAVEN_CENTRAL_USERNAME
@@ -62,10 +54,10 @@ jobs:
             ${{ runner.os }}-gradle-
       - name: Build
         shell: bash
-        run: .github/build-steps/build.sh || .github/build-steps/build.sh
+        run: ./gradlew assemble
       - name: Check
         shell: bash
-        run: .github/build-steps/check.sh || .github/build-steps/check.sh
+        run: ./gradlew Check
       - name: CodeCov
         if: ${{ runner.os == 'Linux' }}
         uses: codecov/codecov-action@v2
@@ -84,13 +76,13 @@ jobs:
           SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: .github/build-steps/deploy.sh || .github/build-steps/deploy.sh
+        run: |
+          ./gradlew publishKotlinMavenPublicationToMavenCentralRepository
+          ./gradlew publishPlugins -Pgradle.publish.key=$GRADLE_PUBLISH_KEY -Pgradle.publish.secret=$GRADLE_PUBLISH_SECRET || true
       - name: Turn off the Gradle Daemon
         shell: bash
         run: ./gradlew --stop
       - name: Cleanup the Gradle cache
-        # Temporarily disabled on Windows, waiting to see if someone helps with:
-        # https://stackoverflow.com/questions/68950823/remove-despite-device-or-resource-busy-on-a-github-actions-windows-worker
         if: ${{ runner.os != 'Windows' }}
         shell: bash
         run: |
@@ -101,23 +93,3 @@ jobs:
         run: |
           Remove-Item -Force c:\Users\runneradmin\.gradle\caches\modules-2\modules-2.lock
           Remove-Item -Force c:\Users\runneradmin\.gradle\caches\modules-2\gc.properties
-  Build-Success:
-    runs-on: ubuntu-latest
-    needs: Build
-    steps:
-      - shell: bash
-        run: touch ok
-      - uses: actions/upload-artifact@v2
-        with:
-          name: success
-          path: ok
-  CI-Complete:
-    needs: Build-Success
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@v2
-        with:
-          name: success
-      - shell: bash
-        run: '[ -f ok ]'
