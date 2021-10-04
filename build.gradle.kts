@@ -10,6 +10,8 @@ plugins {
     alias(libs.plugins.gradlePluginPublish)
     alias(libs.plugins.kotlinJvm)
     alias(libs.plugins.publishOnCentral)
+    alias(libs.plugins.multiJvmTesting)
+    alias(libs.plugins.taskTree)
 }
 
 /*
@@ -34,14 +36,8 @@ repositories {
     mavenCentral()
 }
 
-val minimumJava = JavaLanguageVersion.of(8)
-val maximumJava = latestSupportedJava()
-
-java {
-    toolchain {
-        languageVersion.set(minimumJava)
-        vendor.set(JvmVendorSpec.ADOPTOPENJDK)
-    }
+multiJvm {
+    maximumSupportedJvmVersion.set(latestJavaSupportedByGradle)
 }
 
 /*
@@ -62,26 +58,6 @@ tasks.withType<Test> {
     dependsOn(createClasspathManifest)
 }
 
-fun latestSupportedJava(): JavaLanguageVersion =
-    Regex("""<tr.*>[\s|\n|\r]*<td.*>.*?(\d+).*?<\/td>[\s|\n|\r]*<td.*>.*?(\d+(?:\.\d+)).*?<\/td>""")
-        .findAll(URL("https://docs.gradle.org/current/userguide/compatibility.html").readText())
-        .map {
-            val (javaVersion, gradleVersion) = it.destructured
-            JavaLanguageVersion.of(javaVersion) to GradleVersion.version(gradleVersion)
-        }
-        .filter { (_, gradleVersion) -> GradleVersion.current() >= gradleVersion }
-        .maxByOrNull { (_, gradleVersion) -> gradleVersion }
-        ?.first
-        ?: JavaLanguageVersion.of(16)
-
-java {
-    toolchain {
-        languageVersion.set(minimumJava)
-    }
-}
-
-val additionalTools: Configuration by configurations.creating
-
 dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
@@ -101,35 +77,6 @@ configurations.all {
             because("All Kotlin modules should use the same version, and compiler uses $KOTLIN_VERSION")
         }
     }
-}
-
-operator fun JavaLanguageVersion.rangeTo(that: JavaLanguageVersion): List<JavaLanguageVersion> =
-    (asInt()..that.asInt()).map(JavaLanguageVersion::of)
-
-val JavaLanguageVersion.isLTS: Boolean get() = asInt() == 8 || (asInt() - 11) % 6 == 0
-
-val JvmImplementation.name: String get() = when (this) {
-    JvmImplementation.VENDOR_SPECIFIC -> "Classic"
-    else -> toString()
-}
-
-val testMultiPlatform by tasks.registering
-val testWithAllCompatibleJavaVersions by tasks.registering
-for (javaVersion in JavaLanguageVersion.of(minimumJava.asInt() + 1)..maximumJava) {
-    val testTask = tasks.register<Test>("testWithJava${javaVersion.asInt()}") {
-        javaLauncher.set(
-            javaToolchains.launcherFor {
-                languageVersion.set(javaVersion)
-            }
-        )
-    }
-    if (javaVersion.isLTS || javaVersion == maximumJava) {
-        testMultiPlatform.configure { dependsOn(testTask) }
-    }
-    testWithAllCompatibleJavaVersions.configure { dependsOn(testTask) }
-}
-tasks.check.configure {
-    dependsOn(testMultiPlatform)
 }
 
 kotlin {
@@ -166,9 +113,11 @@ tasks.jacocoTestReport {
 }
 
 signing {
-    val signingKey: String? by project
-    val signingPassword: String? by project
-    useInMemoryPgpKeys(signingKey, signingPassword)
+    if (System.getenv()["CI"].equals("true", ignoreCase = true)) {
+        val signingKey: String? by project
+        val signingPassword: String? by project
+        useInMemoryPgpKeys(signingKey, signingPassword)
+    }
 }
 
 /*
