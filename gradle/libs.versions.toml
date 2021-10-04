@@ -1,7 +1,7 @@
 [versions]
 jacoco = "0.8.7"
 konf = "1.1.2"
-kotlin = "1.5.30"
+kotlin = "1.5.31"
 kotest = "4.6.3"
 mockito = "3.12.4"
 
