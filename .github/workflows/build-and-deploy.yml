@@ -57,7 +57,7 @@ jobs:
         run: ./gradlew assemble
       - name: Check
         shell: bash
-        run: ./gradlew Check
+        run: ./gradlew check --parallel
       - name: CodeCov
         if: ${{ runner.os == 'Linux' }}
         uses: codecov/codecov-action@v2
