@@ -21,7 +21,7 @@ dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
 gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
 gradlePluginPublish = { id = "com.gradle.plugin-publish", version = "0.16.0" }
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-publishOnCentral = { id = "org.danilopianini.publish-on-central", version = "0.5.0" }
+publishOnCentral = { id = "org.danilopianini.publish-on-central", version = "0.6.0-dev07-b403ca3" }
 multiJvmTesting = { id = "org.danilopianini.multi-jvm-test-plugin", version = "0.1.0" }
 taskTree = { id = "com.dorongold.task-tree", version = "2.1.0" }
 
