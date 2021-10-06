@@ -6,7 +6,7 @@ kotlin = "1.5.31"
 mockito = "3.12.4"
 
 [libraries]
-classgraph = "io.github.classgraph:classgraph:4.8.123"
+classgraph = "io.github.classgraph:classgraph:4.8.124"
 jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
 konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
