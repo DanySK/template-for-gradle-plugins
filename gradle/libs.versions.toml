@@ -1,17 +1,17 @@
 [versions]
 jacoco = "0.8.7"
 konf = "1.1.2"
-kotlin = "1.5.31"
 kotest = "4.6.3"
+kotlin = "1.5.31"
 mockito = "3.12.4"
 
 [libraries]
 classgraph = "io.github.classgraph:classgraph:4.8.123"
 jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
+konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
 kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
-konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 
 [bundles]
 kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
@@ -22,6 +22,6 @@ gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", versio
 gradlePluginPublish = { id = "com.gradle.plugin-publish", version = "0.16.0" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = { id = "org.danilopianini.gradle-kotlin-qa", version = "0.1.0" }
-publishOnCentral = { id = "org.danilopianini.publish-on-central", version = "0.6.0-dev07-b403ca3" }
 multiJvmTesting = { id = "org.danilopianini.multi-jvm-test-plugin", version = "0.1.0" }
+publishOnCentral = { id = "org.danilopianini.publish-on-central", version = "0.6.0-dev07-b403ca3" }
 taskTree = { id = "com.dorongold.task-tree", version = "2.1.0" }
