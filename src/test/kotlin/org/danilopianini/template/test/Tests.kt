@@ -47,7 +47,7 @@ class Tests : StringSpec(
                         .withProjectDir(testFolder.root)
                         .withPluginClasspath(classpath)
                         .withArguments(test.configuration.tasks + test.configuration.options)
-                        .build()
+                        .run { if(test.expectation.failure.isEmpty()) build() else buildAndFail() }
                     println(result.tasks)
                     println(result.output)
                     test.expectation.output_contains.forEach {
