@@ -39,6 +39,9 @@ jobs:
         uses: al-cheb/configure-pagefile-action@v1.2
       - name: Gradle cache / assemble / check / coverage upload
         uses: danysk/action-gradle-check@master
+      - name: CodeCov
+        if: ${{ runner.os == 'Linux' }}
+        uses: codecov/codecov-action@v2
       - name: Deploy
         if: ${{ runner.os == 'Linux' && github.event_name == 'push' }}
         shell: bash
