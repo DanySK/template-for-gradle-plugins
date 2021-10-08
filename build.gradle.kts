@@ -120,17 +120,17 @@ publishOnCentral {
         user = "danysk"
         password = System.getenv("GITHUB_TOKEN")
     }
-}
-
-publishing {
-    publications {
-        withType<MavenPublication> {
-            pom {
-                developers {
-                    developer {
-                        name.set("Danilo Pianini")
-                        email.set("danilo.pianini@gmail.com")
-                        url.set("http://www.danilopianini.org/")
+    publishing {
+        publications {
+            withType<MavenPublication> {
+                configurePomForMavenCentral()
+                pom {
+                    developers {
+                        developer {
+                            name.set("Danilo Pianini")
+                            email.set("danilo.pianini@gmail.com")
+                            url.set("http://www.danilopianini.org/")
+                        }
                     }
                 }
             }
