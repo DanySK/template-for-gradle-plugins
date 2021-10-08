@@ -71,17 +71,5 @@ jobs:
           ./gradlew publishPluginMavenPublicationToMavenCentralRepository publishKotlinMavenPublicationToMavenCentralRepository
           ./gradlew publishPluginMavenPublicationToGithubRepository || true
           ./gradlew publishPlugins -Pgradle.publish.key=$GRADLE_PUBLISH_KEY -Pgradle.publish.secret=$GRADLE_PUBLISH_SECRET || true
-      - name: Turn off the Gradle Daemon
-        shell: bash
-        run: ./gradlew --stop
       - name: Cleanup the Gradle cache
-        if: ${{ runner.os != 'Windows' }}
-        shell: bash
-        run: |
-          rm -f ~/.gradle/caches/modules-2/modules-2.lock
-          rm -f ~/.gradle/caches/modules-2/gc.properties
-      - name: Force the Gradle cleanup on Windows
-        if: ${{ runner.os == 'Windows' }}
-        run: |
-          Remove-Item -Force c:\Users\runneradmin\.gradle\caches\modules-2\modules-2.lock
-          Remove-Item -Force c:\Users\runneradmin\.gradle\caches\modules-2\gc.properties
+        uses: danysk/action-cleanup-gradle-cache@master
