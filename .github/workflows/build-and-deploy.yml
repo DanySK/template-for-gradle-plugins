@@ -37,24 +37,8 @@ jobs:
       - name: Configure the Windows Pagefile
         if: ${{ runner.os == 'Windows' }}
         uses: al-cheb/configure-pagefile-action@v1.2
-      - name: Cache Gradle packages
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-      - name: Build
-        shell: bash
-        run: ./gradlew assemble
-      - name: Check
-        shell: bash
-        run: ./gradlew check --parallel
-      - name: CodeCov
-        if: ${{ runner.os == 'Linux' }}
-        uses: codecov/codecov-action@v2
+      - name: Gradle cache / assemble / check / coverage upload
+        uses: actions/action-gradle-check@master
       - name: Deploy
         if: ${{ runner.os == 'Linux' && github.event_name == 'push' }}
         shell: bash
