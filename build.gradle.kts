@@ -2,7 +2,6 @@ import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSI
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    jacoco
     `java-gradle-plugin`
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
@@ -98,17 +97,6 @@ tasks.withType<Test> {
         showStackTraces = true
         events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-    }
-}
-
-jacoco {
-    toolVersion = libs.versions.jacoco.getOrElse(toolVersion)
-}
-
-tasks.jacocoTestReport {
-    reports {
-        // Used by Codecov.io
-        xml.required.set(true)
     }
 }
 
