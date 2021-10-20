@@ -16,7 +16,7 @@ on:
 
 jobs:
   Build:
-    uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project@master
+    uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project.yml@master
     with:
       deploy-command: |
         ./gradlew publishPluginMavenPublicationToMavenCentralRepository publishKotlinMavenPublicationToMavenCentralRepository
