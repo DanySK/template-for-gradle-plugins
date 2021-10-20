@@ -18,7 +18,6 @@ jobs:
   Build:
     uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project.yml@master
     with:
-      deploy-if: ${{ runner.os == 'Linux' && github.event_name == 'push' }}
       deploy-command: |
         ./gradlew publishPluginMavenPublicationToMavenCentralRepository publishKotlinMavenPublicationToMavenCentralRepository
         ./gradlew publishPluginMavenPublicationToGithubRepository || true
