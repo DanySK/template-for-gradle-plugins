@@ -60,7 +60,7 @@ tasks.withType<Test> {
 dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
-    implementation(kotlin("stdlib-jdk8"))
+    api(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)
     testImplementation(libs.classgraph)
@@ -112,18 +112,17 @@ signing {
  * Publication on Maven Central and the Plugin portal
  */
 publishOnCentral {
-    projectLongName = info.longName
-    projectDescription = description ?: TODO("Missing description")
-    projectUrl = info.website
-    scmConnection = info.scm
+    projectLongName.set(info.longName)
+    projectDescription.set(description ?: TODO("Missing description"))
+    projectUrl.set(info.website)
+    scmConnection.set(info.scm)
     repository("https://maven.pkg.github.com/DanySK/${rootProject.name}".toLowerCase(), name = "github") {
-        user = "danysk"
-        password = System.getenv("GITHUB_TOKEN")
+        user.set("danysk")
+        password.set(System.getenv("GITHUB_TOKEN"))
     }
     publishing {
         publications {
             withType<MavenPublication> {
-                configurePomForMavenCentral()
                 pom {
                     developers {
                         developer {

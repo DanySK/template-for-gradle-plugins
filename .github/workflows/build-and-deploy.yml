@@ -16,16 +16,37 @@ on:
 
 jobs:
   Build:
-    uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project.yml@0.1.0-dev41
-    with:
-      deploy-command: | 
-        ./gradlew publishPluginMavenPublicationToMavenCentralRepository publishKotlinMavenPublicationToMavenCentralRepository
-        ./gradlew publishPluginMavenPublicationToGithubRepository || true
-        ./gradlew publishPlugins -Pgradle.publish.key=$GRADLE_PUBLISH_KEY -Pgradle.publish.secret=$GRADLE_PUBLISH_SECRET || true
-    secrets:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
-      gradle-publish-secret: ${{ secrets.GRADLE_PUBLISH_SECRET }}
-      gradle-publish-key: ${{ secrets.GRADLE_PUBLISH_KEY }}
-      maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
-      signing-key: ${{ secrets.SIGNING_KEY }}
-      signing-password: ${{ secrets.SIGNING_PASSWORD }}
+    strategy:
+      matrix:
+        os: [windows, macos, ubuntu]
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - name: Checkout
+        uses: DanySK/action-checkout@0.1.0
+      - uses: DanySK/build-check-deploy-gradle-action@1.0.4
+        with:
+          should-run-codecov: ${{ runner.os == 'Linux' }}
+          should-deploy: false
+  Release:
+    needs:
+      - Build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - uses: DanySK/build-check-deploy-gradle-action@1.0.4
+        with:
+          build-command: true
+          check-command: true
+          deploy-command: |
+            npm install
+            npx semantic-release
+          should-run-codecov: false
+          should-deploy: true
+          github-token: ${{ github.token }}
+          gradle-publish-secret: ${{ secrets.GRADLE_PUBLISH_SECRET }}
+          gradle-publish-key: ${{ secrets.GRADLE_PUBLISH_KEY }}
+          maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          signing-key: ${{ secrets.SIGNING_KEY }}
+          signing-password: ${{ secrets.SIGNING_PASSWORD }}

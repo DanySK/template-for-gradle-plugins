@@ -1,6 +1,0 @@
----
-linters:
-  ktlint:
-    android: true
-    config: .editorconfig
-    fixer: true

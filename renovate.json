@@ -2,5 +2,16 @@
    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
    "extends": [
       "github>DanySK/renovate-config"
+   ],
+   "packageRules": [
+      {
+         "description": "Trigger a patch update on some dependencies",
+         "matchPackageNames": [
+            "gradle",
+            "org.jetbrains.kotlin.jvm",
+            "org.jetbrains.dokka"
+         ],
+         "semanticCommitType": "fix"
+      }
    ]
 }
