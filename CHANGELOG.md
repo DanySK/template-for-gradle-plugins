@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.3...1.0.4) (2021-12-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gradle to v7.3.2 ([409d84d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/409d84d0905950cf0b42801be1c68c5880a881d7))
+
 ## [1.0.3](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.2...1.0.3) (2021-12-01)
 
 
