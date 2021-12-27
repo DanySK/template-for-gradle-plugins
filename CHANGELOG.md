@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.5...1.0.6) (2021-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update plugin dokka to v1.6.10 ([b2862fa](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b2862fabb8aaa4fe8081d75336e31b308de26659))
+
 ## [1.0.5](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.4...1.0.5) (2021-12-22)
 
 
