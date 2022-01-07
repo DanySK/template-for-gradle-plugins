@@ -60,7 +60,7 @@ class Tests : StringSpec(
                         result.outcomeOf(it) shouldBe TaskOutcome.FAILED
                     }
                     test.expectation.file_exists.forEach {
-                        with(File("${testFolder.root.absolutePath}/$it")) {
+                        with(File("${testFolder.root.absolutePath}/${it.name}")) {
                             shouldExist()
                             shouldBeAFile()
                         }
