@@ -8,6 +8,7 @@ import io.kotest.matchers.file.shouldBeAFile
 import io.kotest.matchers.file.shouldExist
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldContain
+import org.danilopianini.gradle.git.hooks.test.Root
 import org.gradle.internal.impldep.org.junit.rules.TemporaryFolder
 import org.gradle.testkit.runner.BuildResult
 import org.gradle.testkit.runner.GradleRunner
@@ -60,10 +61,11 @@ class Tests : StringSpec(
                         result.outcomeOf(it) shouldBe TaskOutcome.FAILED
                     }
                     test.expectation.file_exists.forEach {
-                        with(File("${testFolder.root.absolutePath}/${it.name}")) {
+                        val file = File("${testFolder.root.absolutePath}/${it.name}").apply {
                             shouldExist()
                             shouldBeAFile()
                         }
+                        it.validate(file)
                     }
                 }
             }
