@@ -1,3 +1,33 @@
+### [1.0.8](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.7...1.0.8) (2022-03-10)
+
+
+### General maintenance
+
+* **build:** remove the catalog feature preview ([48e6073](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/48e60737b81b0cb17f34d7ab7672ee2d95e98032))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3 ([c6ebd47](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c6ebd472429359da93d5e9178ea48ec2803bed74))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.4 ([9d09d40](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9d09d40af7ac0407ce186f9e53f81577f4aa933d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.6 ([83f93cc](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/83f93ccaab9a40ab58e46bc36e578fecad101a28))
+* **release:** limit the concurrecy of the release job ([2aa71a3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2aa71a3473a77fe32b37f3d2e56a868f5087c72d))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v7.4.1 ([43a9537](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/43a9537f577d7ab9601bb7f8d00e6cac706398af))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.139 ([7d02dad](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7d02dad915f791d8aefc1d7393f22b1740940d50))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.140 ([9c00c99](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9c00c99f9d37a2f223562ba82e91e93770f949df))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.141 ([a073ce3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a073ce32c4ba9a337618435278a73c4ba28dc815))
+* **deps:** update dependency node-fetch to 2.6.7 [security] ([dfd7dcb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dfd7dcb270bd1ff518fb81a074130c2cc6cd371b))
+* **deps:** update dependency org.mockito:mockito-core to v4.4.0 ([96451a5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/96451a5e52e9049edd0fba5e5ff3051c7220255a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.5 ([bea0e70](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bea0e70344503bb974c6392a4cdf56c115b928f4))
+* **deps:** update node.js to 16.14 ([274b1de](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/274b1de7ae7cc80641353323283ae8a1eb1b7f54))
+* **deps:** update plugin kotlin-qa to v0.10.1 ([f317d48](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f317d48bbd72f1c2a5c651a459623e367cab0487))
+* **deps:** update plugin kotlin-qa to v0.12.0 ([445afda](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/445afdab510ab646ae8283e1322b90374491c898))
+* **deps:** update plugin publishoncentral to v0.7.13 ([9396e6c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9396e6c7d95818790b29b2834f7df3f76f59800c))
+
 ### [1.0.7](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.6...1.0.7) (2022-02-08)
 
 
