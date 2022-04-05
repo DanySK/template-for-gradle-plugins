@@ -1,3 +1,22 @@
+### [1.0.10](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.9...1.0.10) (2022-04-05)
+
+
+### Dependency updates
+
+* **core-deps:** update plugin kotlin-jvm to v1.6.20 ([031c621](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/031c6214f13257c56cd2ba05c2673377e7f6b542))
+* **deps:** update plugin kotlin-qa to v0.14.1 ([55162a4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/55162a493908be2040145b144562cdb8c406781d))
+* **deps:** update plugin publishoncentral to v0.7.15 ([5ebcf04](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5ebcf043180e04c4e650d54c0ed6f887a953f2c3))
+* **deps:** update plugin publishoncentral to v0.7.16 ([4830c2f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4830c2f469194df7ec38d19fef3477ec1e358e73))
+
+
+### Build and continuous integration
+
+* '-Xopt-in' is deprecated, use '-opt-in' ([18285e1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/18285e10306d47dbb34bac722b3c4ba70e3483a1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.8 ([61179ec](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/61179ec2b28c5e59037143c2ab7b0ac06781d6c9))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.9 ([17ea9f5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/17ea9f5cf251a1349bc5ce376acef30cde0ef4d8))
+* limit parallelism and use a dedicated deployment token ([8bc4bb7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8bc4bb717369352df3d64bf2d1c92252b4c5a04f))
+* separate the versions of Kotlin and Dokka ([9717b9d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9717b9df3a3264f0ff766f374e7774aa6c68c513))
+
 ### [1.0.9](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.8...1.0.9) (2022-03-31)
 
 
