@@ -1,3 +1,21 @@
+### [1.0.11](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.10...1.0.11) (2022-04-14)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.10 ([a2556e8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a2556e84ae1b81bd17ee7b12b29d59133385a116))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.11 ([d9f683b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d9f683be26a0dc644bfdbb70908ff45ccb2a62a4))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.12 ([46553eb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/46553eb0cb6e051187ecaf295c4ca05d0214dc7f))
+
+
+### Dependency updates
+
+* **core-deps:** update plugin dokka to v1.6.20 ([cf38162](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cf38162266aec4383b97670d91fa5ca125194d34))
+* **deps:** update io.kotest to v5.2.3 ([6ce2c16](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6ce2c16cb23b3f7adcacde8e59da61d57e17d295))
+* **deps:** update plugin kotlin-qa to v0.14.2 ([0d75755](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0d75755cee7dbd7c6aec4a4d918d55904d6e06ae))
+* **deps:** update plugin kotlin-qa to v0.15.0 ([5b02391](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5b023912f52d88159757f35a49e185d403656b6b))
+* **deps:** update plugin multijvmtesting to v0.3.5 ([12175d7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/12175d712b92721a6af9eb69412f1313094c1d0a))
+
 ### [1.0.10](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.9...1.0.10) (2022-04-05)
 
 
