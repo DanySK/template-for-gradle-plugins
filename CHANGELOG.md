@@ -1,3 +1,28 @@
+### [1.0.12](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.11...1.0.12) (2022-04-19)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.0.1 ([c17cfa5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c17cfa5d3dc4c82d7abc61d98b996e5b676fb4cb))
+
+
+### Style improvements
+
+* add trailing commas ([dc5eff5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dc5eff5f0ca991cb8bc1b1ad0697b665cd750b02))
+* suppress ConstructorParameterNaming over data class meant to interoperate with YAML ([40048ea](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/40048ea155c13664eec114f1951617ed6d21c26a))
+
+
+### Dependency updates
+
+* **core-deps:** update plugin kotlin-jvm to v1.6.21 ([2de1f77](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2de1f779e8c08af04faf04ab8c20dfc0fda5cb78))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.145 ([3308279](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3308279c58cb9362c7822f76955ed46778826242))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.146 ([9900d15](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9900d15d1868bff3074c085e768d6ecddfab2eeb))
+* **deps:** update plugin com.gradle.enterprise to v3.10 ([00a07c8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/00a07c8716ee069de6dac0312e1023fbd7aecb1d))
+* **deps:** update plugin kotlin-qa to v0.15.1 ([98c9b5e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/98c9b5e032f6e741aeddf3429de405a422bfc5f2))
+* **deps:** update plugin kotlin-qa to v0.16.0 ([bab5c2b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bab5c2b2946c474b2c8fad4b92264cdbce03f477))
+* **deps:** update plugin multijvmtesting to v0.3.6 ([23b73b2](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/23b73b292225d3a2e47dbc0c5139059811ce8deb))
+* **deps:** update plugin publishoncentral to v0.7.17 ([12ba6d8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/12ba6d8ec4a068ad788d052a684e64073cd9f3b9))
+
 ### [1.0.11](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.10...1.0.11) (2022-04-14)
 
 
