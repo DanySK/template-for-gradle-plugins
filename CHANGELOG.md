@@ -1,3 +1,20 @@
+### [1.0.13](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.12...1.0.13) (2022-04-25)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.0.2 ([18077ba](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/18077ba6e4e59c9e685f54cc0ebcef52b4bd522e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.13 ([65b091a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/65b091a67780f5772d2c2bc3a35d8dfeed7fdc19))
+* **test:** remove unused mockito dependency ([6b5bc50](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6b5bc50d4c40015861bcfd0e725f74565ca4e2e2))
+
+
+### Dependency updates
+
+* **core-deps:** update plugin dokka to v1.6.21 ([39b55f8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/39b55f8fcc60e5b0c50e1eba95ce72771270bdab))
+* **deps:** update dependency org.mockito:mockito-core to v4.5.0 ([706a172](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/706a1723104c2888f0b7d73e25afd1bb29fb5961))
+* **deps:** update plugin kotlin-qa to v0.16.1 ([c1d4e41](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c1d4e418032fed56df52f7d86fe84ec2d5dede60))
+* **deps:** update plugin publishoncentral to v0.7.18 ([1811a77](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1811a77d27476d750e048bb6e89172de38f11462))
+
 ### [1.0.12](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.11...1.0.12) (2022-04-19)
 
 
