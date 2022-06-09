@@ -1,3 +1,5 @@
+@file:Suppress("OPT_IN_USAGE")
+
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
@@ -39,24 +41,6 @@ multiJvm {
     maximumSupportedJvmVersion.set(latestJavaSupportedByGradle)
 }
 
-/*
- * By default, Gradle does not include all the plugin classpath into the testing classpath.
- * This task creates a descriptor of the runtime classpath, to be injected (manually) when running tests.
- */
-val createClasspathManifest = tasks.register("createClasspathManifest") {
-    val outputDir = file("$buildDir/$name")
-    inputs.files(sourceSets.main.get().runtimeClasspath)
-    outputs.dir(outputDir)
-    doLast {
-        outputDir.mkdirs()
-        file("$outputDir/plugin-classpath.txt").writeText(sourceSets.main.get().runtimeClasspath.joinToString("\n"))
-    }
-}
-
-tasks.withType<Test> {
-    dependsOn(createClasspathManifest)
-}
-
 dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
@@ -65,7 +49,6 @@ dependencies {
     testImplementation(libs.konf.yaml)
     testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
-    testRuntimeOnly(files(createClasspathManifest))
 }
 
 // Enforce Kotlin version coherence

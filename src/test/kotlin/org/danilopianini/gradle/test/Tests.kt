@@ -1,4 +1,4 @@
-package org.danilopianini.template.test
+package org.danilopianini.gradle.test
 
 import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.source.yaml
@@ -8,6 +8,7 @@ import io.kotest.matchers.file.shouldBeAFile
 import io.kotest.matchers.file.shouldExist
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldContain
+import io.kotest.matchers.string.shouldNotContain
 import org.danilopianini.gradle.git.hooks.test.Root
 import org.gradle.internal.impldep.org.junit.rules.TemporaryFolder
 import org.gradle.testkit.runner.BuildResult
@@ -18,12 +19,6 @@ import java.io.File
 
 class Tests : StringSpec(
     {
-        val pluginClasspathResource = ClassLoader.getSystemClassLoader()
-            .getResource("plugin-classpath.txt")
-            ?: throw IllegalStateException("Did not find plugin classpath resource, run \"testClasses\" build task.")
-        val classpath = pluginClasspathResource.openStream().bufferedReader().use { reader ->
-            reader.readLines().map { File(it) }
-        }
         val scan = ClassGraph()
             .enableAllInfo()
             .acceptPackages(Tests::class.java.`package`.name)
@@ -46,13 +41,16 @@ class Tests : StringSpec(
                 test.description {
                     val result = GradleRunner.create()
                         .withProjectDir(testFolder.root)
-                        .withPluginClasspath(classpath)
+                        .withPluginClasspath()
                         .withArguments(test.configuration.tasks + test.configuration.options)
                         .run { if (test.expectation.failure.isEmpty()) build() else buildAndFail() }
                     println(result.tasks)
                     println(result.output)
                     test.expectation.output_contains.forEach {
                         result.output shouldContain it
+                    }
+                    test.expectation.output_doesnt_contain.forEach {
+                        result.output shouldNotContain it
                     }
                     test.expectation.success.forEach {
                         result.outcomeOf(it) shouldBe TaskOutcome.SUCCESS

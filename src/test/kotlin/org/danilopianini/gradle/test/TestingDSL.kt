@@ -22,6 +22,7 @@ data class Expectation(
     val success: List<String> = emptyList(),
     val failure: List<String> = emptyList(),
     val output_contains: List<String> = emptyList(),
+    val output_doesnt_contain: List<String> = emptyList(),
 )
 
 enum class Permission(private val hasPermission: File.() -> Boolean) {
@@ -34,7 +35,7 @@ enum class Permission(private val hasPermission: File.() -> Boolean) {
 
 data class ExistingFile(
     val name: String,
-    val findRegex: String? = null,
+    val findRegex: List<String> = emptyList(),
     val content: String? = null,
     val trim: Boolean = false,
     val permissions: List<Permission> = emptyList(),
@@ -60,8 +61,8 @@ data class ExistingFile(
                 """.trimIndent()
             }
         }
-        if (findRegex != null) {
-            val regex = Regex(findRegex)
+        findRegex.forEach { regexString ->
+            val regex = Regex(regexString)
             requireNotNull(readLines().find { regex.matches(it) }) {
                 """
                 None of the lines in $name matches the regular expression $findRegex. File content:
