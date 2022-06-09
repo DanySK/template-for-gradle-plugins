@@ -12,6 +12,9 @@ gradleEnterprise {
 }
 
 gitHooks {
+    preCommit {
+        tasks("ktlintCheck")
+    }
     commitMsg { conventionalCommits() }
     createHooks()
 }
