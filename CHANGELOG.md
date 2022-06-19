@@ -1,3 +1,36 @@
+## [1.0.15](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.14...1.0.15) (2022-06-19)
+
+
+### Tests
+
+* improve the testing framework ([557f4eb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/557f4ebafbbfef6eea3d89e5894b32eb5f71c2c8))
+
+
+### Build and continuous integration
+
+* add a ci-complete summary job ([7e12f45](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7e12f451ccc788b21ef9fbea1e7d3cab480347ad))
+* **deps:** bump npm from 8.3.1 to 8.12.1 ([e821ca3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e821ca3dc19d1fbdd981bb88a5e1de64b643fbd7))
+* **deps:** bump semantic-release from 19.0.2 to 19.0.3 ([b8964bb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b8964bb9210468b39b5ffebcdbd2ef8d4a4fd07a))
+* **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([c8545e2](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c8545e2388463d210d7f3f12988014f8afe43672))
+* enable git hooks generation for conventional commits ([4d9bc23](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4d9bc23697e820940e28cd484d9c77eeda9ad919))
+* rename ci-complete to ci-success ([153d388](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/153d3886be4b489f367870bfd7a8ab5ae89f917e))
+* run ktlintCheck before allowing to commit ([9460b1a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9460b1abcdec7290debe34c5dba28d08d67e75df))
+* skip branch builds for dependabot updates ([5908375](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/59083759bd1ef957b8672bf536fcd538ffc79a04))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.dokka to v1.7.0 ([64a691f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/64a691f62eb4f58c2528d6e664a4aeb6a292c5b5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.8 ([11130a5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/11130a55fbcaf7fd99ac1b2931e3946a399119f0))
+* **deps:** update plugin com.gradle.enterprise to v3.10.2 ([53e7ae0](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/53e7ae0a6c3d14aef03146a315ffb37a95f8290b))
+* **deps:** update plugin kotlin-qa to v0.19.1 ([5c8d4e0](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5c8d4e0510781d06840cbf2cf1451ca98b01ecb8))
+* **deps:** update plugin multijvmtesting to v0.4.1 ([48a3b65](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/48a3b651b92745a05627e07a2679598f5a8f785a))
+* **deps:** update plugin multijvmtesting to v0.4.2 ([bfbcf5b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bfbcf5bbd078bdee2e20e7d2ccfe4bd2536846e0))
+* **deps:** update plugin multijvmtesting to v0.4.3 ([42c2eda](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/42c2edad719766fc610f2900b3a9ebd77952450f))
+* **deps:** update plugin publishoncentral to v0.8.2 ([185731e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/185731e80fd59a7bcde5654eb1c81702d05ca656))
+* **deps:** update plugin publishoncentral to v0.8.3 ([dda45fc](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dda45fc5dc4fcba4f5bb59eabe5f6507de380c5c))
+* **deps:** update plugin publishoncentral to v1 ([1c2693a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1c2693ab0955f69f60c9d3083eb4d664b281059d))
+
 ## [1.0.14](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.13...1.0.14) (2022-06-08)
 
 
