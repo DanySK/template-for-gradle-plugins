@@ -1,19 +1,6 @@
-name: CI
+name: CI/CD Process
 on:
-  push:
-    tags: '*'
-    branches-ignore:
-      - 'autodelivery**'
-      - 'bump-**'
-      - 'renovate/**'
-      - 'dependabot/**'
-    paths-ignore:
-      - 'CHANGELOG.md'
-      - 'LICENSE'
-      - 'README.md'
-      - 'renovate.json'
-      - '.gitignore'
-  pull_request:
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -30,8 +17,22 @@ jobs:
         uses: DanySK/action-checkout@0.2.1
       - uses: DanySK/build-check-deploy-gradle-action@2.0.3
         with:
+          # Dry-deployment
+          deploy-command: >-
+            ./gradlew
+            uploadKotlinOSSRHToMavenCentralNexus
+            uploadPluginMavenToMavenCentralNexus
+            uploadPlugin-templatePluginMarkerMavenToMavenCentralNexus
+            close
           should-run-codecov: ${{ runner.os == 'Linux' }}
-          should-deploy: false
+          should-deploy: >-
+            ${{
+              runner.os == 'Linux'
+              && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+            }}
+          maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          signing-key: ${{ secrets.SIGNING_KEY }}
+          signing-password: ${{ secrets.SIGNING_PASSWORD }}
   release:
     concurrency:
       # Only one release job at a time. Strictly sequential.
@@ -39,7 +40,7 @@ jobs:
     needs:
       - build
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
@@ -60,7 +61,7 @@ jobs:
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
-  ci-success:
+  success:
     runs-on: ubuntu-latest
     needs:
       - release
