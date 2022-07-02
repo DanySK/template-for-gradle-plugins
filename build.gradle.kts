@@ -128,7 +128,7 @@ pluginBundle {
 
 gradlePlugin {
     plugins {
-        create("plugin-template") {
+        create(project.name) {
             id = "$group.${project.name}"
             displayName = info.longName
             description = project.description
