@@ -28,7 +28,11 @@ jobs:
           should-deploy: >-
             ${{
               runner.os == 'Linux'
-              && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+              && !github.event.repository.fork
+              && (
+                github.event_name != 'pull_request'
+                || github.event.pull_request.head.repo.full_name == github.repository
+              )
             }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           signing-key: ${{ secrets.SIGNING_KEY }}
@@ -40,7 +44,12 @@ jobs:
     needs:
       - build
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    if: >-
+      !github.event.repository.fork
+      && (
+        github.event_name != 'pull_request'
+        || github.event.pull_request.head.repo.full_name == github.repository
+      )
     steps:
       - name: Checkout
         uses: actions/checkout@v3.0.2
