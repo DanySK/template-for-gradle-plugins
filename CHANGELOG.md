@@ -1,3 +1,24 @@
+## [1.0.16](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.15...1.0.16) (2022-07-07)
+
+
+### Build and continuous integration
+
+* create a dispatcher workflow triggering only one CI/CD workflow per update on non-default branches with open PRs ([1c519c1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1c519c1d9ec34db03a591a38092be5e50afe636f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.0.3 ([42a8e68](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/42a8e68de9c815a983d6e2cc9b52a6c315975142))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.0 ([141e5c4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/141e5c4b25d5bfddd74226fb88408f20d09a79a3))
+* use the project name as plugin descriptor ([#449](https://github.com/DanySK/Template-for-Gradle-Plugins/issues/449)) ([26b62ae](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/26b62ae8f91f0612c80658e2377986c87591bbd8))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.10 ([220b49e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/220b49e114d918c0f40a4fa1ff970857c9c41a22))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.148 ([63d97fd](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/63d97fde8fd8e7ec81f2e591035cc744739dc474))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.149 ([f1fc69c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f1fc69cb53cdaf64d288999af25a708ff6285479))
+* **deps:** update plugin gradlepluginpublish to v1 ([c646d14](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c646d143cf3e18a2c57df76a2560d80c6186dbf5))
+* **deps:** update plugin multijvmtesting to v0.4.4 ([ec56787](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ec56787f80e7bc36837a0cbcec06fbbb6f933c67))
+* **deps:** update plugin multijvmtesting to v0.4.5 ([b8d94c5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b8d94c52753d571c790b2796bf5dc6292cdce6d9))
+* **deps:** update plugin publishoncentral to v2.0.2 ([bd96f38](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bd96f38724347251ddcd4dcf74984980fe70885e))
+
 ## [1.0.15](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.14...1.0.15) (2022-06-19)
 
 
