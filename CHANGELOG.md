@@ -1,3 +1,23 @@
+## [1.0.17](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.16...1.0.17) (2022-07-12)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.1 ([e045240](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e0452408f2f4de269c6efb9e125029ede82baf6a))
+* improve fork detection ([b78ac82](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b78ac82fb3e27585a930c9d2fe049d142480a400))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.dokka to v1.7.10 ([c54c823](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c54c8239e99a7036ff01fc10596fb70214c9b2b5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.9 ([ab6b487](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ab6b487959c1569eee08838998cecb8de5a2894a))
+* **deps:** update node.js to 16.16 ([05021bf](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/05021bf33fea0b4d813ffed15d7c406af66c04a4))
+* **deps:** update plugin com.gradle.enterprise to v3.10.3 ([0d9d03a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0d9d03ad5eb825c06920eac8b3597bdba686fff9))
+* **deps:** update plugin multijvmtesting to v0.4.6 ([fe8492c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/fe8492c3cd004166a5983ea79e33c3b1f35e2290))
+* **deps:** update plugin multijvmtesting to v0.4.7 ([cd80298](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cd802986cae65cae2dd1d7454067837060993bf2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.14 ([25a1c6c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/25a1c6ce42c9fb7af375ab842379165ec05051c5))
+* **deps:** update plugin publishoncentral to v2.0.3 ([e4604f7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e4604f7f8e9f66fa575c00d12d0dafd8ad24cedc))
+
 ## [1.0.16](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.15...1.0.16) (2022-07-07)
 
 
