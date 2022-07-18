@@ -22,7 +22,7 @@ jobs:
             ./gradlew
             uploadKotlinOSSRHToMavenCentralNexus
             uploadPluginMavenToMavenCentralNexus
-            uploadTemplate
+            uploadPluginMarkerMavenToMavenCentralNexus
             close
           should-run-codecov: ${{ runner.os == 'Linux' }}
           should-deploy: >-
