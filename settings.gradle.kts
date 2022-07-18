@@ -16,7 +16,7 @@ gitHooks {
         tasks("ktlintCheck")
     }
     commitMsg { conventionalCommits() }
-    createHooks()
+    createHooks(true)
 }
 
 rootProject.name = "Template-for-Gradle-Plugins"
