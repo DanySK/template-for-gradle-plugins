@@ -1,3 +1,24 @@
+## [1.0.19](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.18...1.0.19) (2022-07-18)
+
+
+### Bug Fixes
+
+* **release:** use the same task names for release and CI ([4e00f6a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4e00f6a68421cc314f29ea94171e4a1abed82a6c))
+
+
+### Dependency updates
+
+* **deps:** update kotest to v5.3.2 ([808febc](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/808febc9954bbd12f7b570632d2215b946e23474))
+* **deps:** update plugin kotlin-qa to v0.20.4 ([3de52cb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3de52cbb0ac7d4b3d91a45687fb02fc5762a6c26))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.16 ([8ee5faa](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8ee5faaad1dcc83c0d9e6fac1466411f928794e3))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.17 ([bdfa2c8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bdfa2c88d368a90e726b1f5315038f2c9690c3ee))
+* **deps:** update plugin publishoncentral to v2.0.5 ([8c217aa](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8c217aa52e464836fe52343419f66cdf70416965))
+
+
+### General maintenance
+
+* **build:** auto-update the git hooks ([e002884](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e0028842a2a2013e37d7b41ca740d14397dd2043))
+
 ## [1.0.18](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.17...1.0.18) (2022-07-14)
 
 
