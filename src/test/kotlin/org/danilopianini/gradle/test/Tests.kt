@@ -72,9 +72,9 @@ class Tests : StringSpec(
     companion object {
         val log = LoggerFactory.getLogger(Tests::class.java)
 
-        private fun BuildResult.outcomeOf(name: String) = task(":$name")
-            ?.outcome
-            ?: throw IllegalStateException("Task $name was not present among the executed tasks")
+        private fun BuildResult.outcomeOf(name: String) = checkNotNull(task(":$name")?.outcome) {
+            "Task $name was not present among the executed tasks"
+        }
 
         private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
             create()
