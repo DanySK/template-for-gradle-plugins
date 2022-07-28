@@ -1,3 +1,17 @@
+## [1.0.20](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.19...1.0.20) (2022-07-28)
+
+
+### Bug Fixes
+
+* **deps:** update kotest to v5.4.1 ([567ea79](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/567ea79e2154d32774360a2b86926c5a662b9b18))
+
+
+### Dependency updates
+
+* **deps:** update kotest to v5.4.0 ([ff7926e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ff7926e475c9c96ecd204da54d7facc70ed84b81))
+* **deps:** update plugin kotlin-qa to v0.21.0 ([#475](https://github.com/DanySK/Template-for-Gradle-Plugins/issues/475)) ([1775dd3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1775dd3074ea047723bce8bfa1c168e754b3c34d))
+* **deps:** update plugin kotlin-qa to v0.22.0 ([8619858](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8619858bf573969f051372a9c9e4cca9bdfd114b))
+
 ## [1.0.19](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.18...1.0.19) (2022-07-18)
 
 
