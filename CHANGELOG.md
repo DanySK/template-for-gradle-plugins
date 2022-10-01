@@ -1,3 +1,34 @@
+## [1.0.22](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.21...1.0.22) (2022-10-01)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/action-checkout action to v0.2.2 ([13961c1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/13961c1b3190c389c0124a22b6b5ed04f567487b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.4 ([03f39f8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/03f39f832d23e1fa49ab49e75016438fdf482df7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.5 ([6d13fba](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6d13fbaf3d25a3eba61a02619aa4fe2a9244aef0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.6 ([f6e3435](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f6e3435ad6de80d8d1ba5f98ac600390ba0dff77))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.7 ([9e15960](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9e15960838a3b06bf72aa74521cb4c31bd9abdaa))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.8 ([cc465e1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cc465e1b148410a6e51a3935bb219ae30d87e6a3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.9 ([017ad3a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/017ad3ac5bb314deab17857f401411dd5e25198f))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.20 ([5bbe66f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5bbe66f760b13b97e55eefb9910eeb3df6d4eeb7))
+* **deps:** update dependency io.kotest:kotest-runner-junit5-jvm to v5.4.2 ([a536863](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a53686304d17d1007923031ce0f7224a2ae34a15))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.10 ([069aded](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/069adede75d0eeb2faf889fadd0781db70062135))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.11 ([0553e11](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0553e11f5c7396f2e63b6ebbcff508ba062e116f))
+* **deps:** update node.js to 16.17 ([acdec56](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/acdec5676ab3b94459698566793c5ff75844e9d8))
+* **deps:** update plugin com.gradle.enterprise to v3.11 ([566efa8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/566efa878d8ba6979c479697846ead7b09da3e7d))
+* **deps:** update plugin com.gradle.enterprise to v3.11.1 ([d328536](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d328536007acdc96d0727fe5f4b92378eff2995c))
+* **deps:** update plugin kotlin-qa to v0.23.2 ([a6305ec](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a6305ec528d54b859d43a2008331d14607a8b074))
+* **deps:** update plugin kotlin-qa to v0.24.0 ([3d66256](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3d6625653b9224337bca9ce3ea5c014700813290))
+* **deps:** update plugin kotlin-qa to v0.25.0 ([c20e68b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c20e68b0cc5c4e10eadfa19d6071c5069e49712a))
+* **deps:** update plugin multijvmtesting to v0.4.10 ([f151de1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f151de1d8bb061701d2f5da8d55867a9f176484c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.19 ([5373e29](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5373e298bbc3973fb8549f7823699258d816fff6))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.20 ([118e423](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/118e423e14e48c4ce28a7777be6b4dc42e31eb99))
+* **deps:** update plugin publishoncentral to v2.0.6 ([8d21384](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8d21384e46d74a2757d6179bbbd1cad6a1af3c32))
+
 ## [1.0.21](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.20...1.0.21) (2022-08-05)
 
 
