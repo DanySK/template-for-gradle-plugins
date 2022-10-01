@@ -2,7 +2,7 @@
 dokka = "1.7.10"
 konf = "1.1.2"
 kotest = "5.4.2"
-kotlin = "1.7.10"
+kotlin = "1.7.20"
 
 [libraries]
 classgraph = "io.github.classgraph:classgraph:4.8.149"
