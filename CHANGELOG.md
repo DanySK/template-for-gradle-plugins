@@ -1,3 +1,15 @@
+## [1.0.25](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.24...1.0.25) (2022-11-28)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v7.6 ([a84607a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a84607a89604b57b02efa7dca04d4a510151bf41))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.150 ([051b805](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/051b8055ba227e99159e1fbaa026a0e597fed7d3))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.151 ([92966e1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/92966e1095f0c7537a6d6cb0907a46116d949979))
+* **deps:** update plugin kotlin-qa to v0.28.0 ([5f5bb0c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5f5bb0cdd4b7e691ced22e1642a00b59e8413ecd))
+* **deps:** update plugin multijvmtesting to v0.4.13 ([50fd161](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/50fd16113435b72cf39c9b60e7abee6373f94504))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.23 ([cd17dc5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cd17dc5edfefc0701546fee5c27fca67f735458e))
+
 ## [1.0.24](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.23...1.0.24) (2022-11-14)
 
 
