@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.25...1.0.26) (2022-12-01)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.22 ([38a7926](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/38a79265658a3eb237a0822134a945d5b37601a7))
+
 ## [1.0.25](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.24...1.0.25) (2022-11-28)
 
 
