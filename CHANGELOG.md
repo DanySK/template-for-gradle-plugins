@@ -1,3 +1,31 @@
+## [1.0.27](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.26...1.0.27) (2022-12-30)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.2.0 ([d3cfe28](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d3cfe28a8eae56e330f2973d07d52e832256479d))
+* **deps:** update danysk/action-checkout action to v0.2.4 ([a5e4fd1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a5e4fd1bee71ef6636eb616862f0e1ba3f5db31c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.15 ([9bbe680](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9bbe680f2f1c9f18120251f7090c4545447f1272))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.16 ([4957a55](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4957a551c6abf46252882311f9bcc6df2047a666))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.17 ([f7f7c56](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f7f7c5623bb3b84883c38e67fa02c09cef5de0d3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.18 ([562d8a9](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/562d8a940cb9c07f1e8ff9084a4ef7f0f5309cfd))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.19 ([7be9d99](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7be9d994e2489cb48733a9aa48bee64af4e33d2a))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.0 ([cfde3eb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cfde3ebc28d67e31608bfc9ede13f20d298094fa))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.152 ([e97645b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e97645b44062198c6f07ea2e4bc2649e760902e4))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.153 ([91ea9f6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/91ea9f61d542a46ea7476cf40b4bda0de7dc9684))
+* **deps:** update plugin kotlin-qa to v0.29.0 ([8e1d3f4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8e1d3f475c95b99aec8d1c8a9b68191857109486))
+* **deps:** update plugin kotlin-qa to v0.29.1 ([7df26f9](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7df26f95604f0c96ea4ed3ab4123ed8116b6e629))
+* **deps:** update plugin multijvmtesting to v0.4.14 ([2846b59](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2846b59091299faf87b239a0966c5c088887814b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.24 ([4807103](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/48071030493fffceefd36b46a7bb5c1d0afc0ed7))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.25 ([f45820e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f45820e27f7339da3ba00522e256e0830c792287))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.0 ([96ea50b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/96ea50bb62f832d85e2b7722eaea5e802217d61a))
+* **deps:** update plugin publishoncentral to v2.0.10 ([ef6a233](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ef6a233cfa985b09ca365f0118bf6932f9b47c2b))
+* **deps:** update plugin publishoncentral to v2.0.11 ([dcc46ca](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dcc46ca65fa724a7b82b996aa6e31df7ef942b2b))
+
 ## [1.0.26](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.25...1.0.26) (2022-12-01)
 
 
