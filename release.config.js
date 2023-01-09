@@ -1,6 +1,4 @@
 var publishCmd = `
-git tag -a -f \${nextRelease.version} \${nextRelease.version} -F CHANGELOG.md
-git push --force origin \${nextRelease.version}
 ./gradlew uploadKotlinOSSRHToMavenCentralNexus uploadPluginMavenToMavenCentralNexus uploadPluginMarkerMavenToMavenCentralNexus release || exit 1
 ./gradlew publishPlugins -Pgradle.publish.key=$GRADLE_PUBLISH_KEY -Pgradle.publish.secret=$GRADLE_PUBLISH_SECRET || exit 2
 ./gradlew publishKotlinMavenPublicationToGithubRepository || true
