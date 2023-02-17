@@ -1,3 +1,11 @@
+## [1.0.29](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.28...1.0.29) (2023-02-17)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.10 ([ba069f1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ba069f1ef4ef1a0a2199650054abbfe473a7f5b2))
+* **deps:** update plugin publishoncentral to v3.1.1 ([4761d8e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4761d8ef55ea83bc6d8c43f4902e3dcaf0bc7e4e))
+
 ## [1.0.28](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.27...1.0.28) (2023-02-17)
 
 
