@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.gradlePluginPublish)
+    alias(libs.plugins.jacoco.testkit)
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.qa)
     alias(libs.plugins.publishOnCentral)
@@ -75,6 +76,7 @@ kotlin {
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
+    dependsOn(tasks.generateJacocoTestKitProperties)
     testLogging {
         showStandardStreams = true
         showCauses = true
