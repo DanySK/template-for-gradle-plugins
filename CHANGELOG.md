@@ -1,3 +1,22 @@
+## [1.0.30](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.29...1.0.30) (2023-02-19)
+
+
+### Build and continuous integration
+
+* apply the foojay-resolver-convention ([bbf251d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bbf251d94e49ab09813aff42322cd1fc6192379f))
+* do not attempt at running deployments on PR builds ([32ffea0](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/32ffea0283d12a1b32878144167f3c762d8afa16))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8 ([5982fb5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5982fb578509a89f82415db4054a04376a38243a))
+* **core-deps:** update dependency gradle to v8.0.1 ([89d84c4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/89d84c447fa45881d0b063108461942165b111bd))
+* **deps:** update plugin com.gradle.enterprise to v3.11.4 ([330126e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/330126e07115790145624706da501d114324ef39))
+* **deps:** update plugin com.gradle.enterprise to v3.12.3 ([1c952cc](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1c952ccfcf52af60c91a6ce1fe6f21a12fd1e904))
+* **deps:** update plugin publishoncentral to v3.2.1 ([bf6465c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bf6465cae6d47c3428d4580084612e671cf4d824))
+* **deps:** update plugin publishoncentral to v3.2.2 ([9e3766f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9e3766fb4b94c4f92f12f0b3d4446ef0ad5fe697))
+* **deps:** update plugin tasktree to v2.1.1 ([bcce801](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bcce80177953f269066d15c135a82dee893e7ade))
+
 ## [1.0.29](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.28...1.0.29) (2023-02-17)
 
 
