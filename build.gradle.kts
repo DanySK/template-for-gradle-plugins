@@ -1,5 +1,7 @@
 @file:Suppress("OPT_IN_USAGE")
 
+import org.apache.tools.ant.taskdefs.condition.Os
+import pl.droidsonroids.gradle.jacoco.testkit.GenerateJaCoCoTestKitProperties
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
@@ -74,9 +76,18 @@ kotlin {
     }
 }
 
+if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+    tasks.withType<GenerateJaCoCoTestKitProperties>().configureEach { enabled = false }
+    tasks.withType<JacocoReport>().configureEach { enabled = false }
+}
+
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
-    dependsOn(tasks.generateJacocoTestKitProperties)
+    when {
+        Os.isFamily(Os.FAMILY_WINDOWS) ->
+            doNotTrackState("Windows is a mess and JaCoCo does not work correctly")
+        else -> dependsOn(tasks.generateJacocoTestKitProperties)
+    }
     testLogging {
         showStandardStreams = true
         showCauses = true
