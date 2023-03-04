@@ -1,5 +1,6 @@
 @file:Suppress("OPT_IN_USAGE")
 
+import org.apache.tools.ant.taskdefs.condition.Os
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
@@ -77,6 +78,9 @@ kotlin {
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     dependsOn(tasks.generateJacocoTestKitProperties)
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        doNotTrackState("Windows is a mess and JaCoCo does not work correctly")
+    }
     testLogging {
         showStandardStreams = true
         showCauses = true
