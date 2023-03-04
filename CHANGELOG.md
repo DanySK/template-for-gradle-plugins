@@ -1,3 +1,17 @@
+## [1.0.32](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.31...1.0.32) (2023-03-04)
+
+
+### Bug Fixes
+
+* **build:** work around JaCoCo issues on Windows ([#608](https://github.com/DanySK/Template-for-Gradle-Plugins/issues/608)) ([feb9e5e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/feb9e5e2169bcad40d9b5fa89ff7c6d972511107))
+
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.enterprise to v3.12.4 ([d6c8292](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d6c829272f49af794505f7faf3159c99952f5a8b))
+* **deps:** update plugin gitsemver to v1.1.4 ([eb6f4fe](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/eb6f4fe724b2603294ef9d62bfd14be00efd49ae))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.5 ([07d087e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/07d087ee071b3fae761ecf8ce0353e60f7cbaa5c))
+
 ## [1.0.31](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.30...1.0.31) (2023-03-04)
 
 
