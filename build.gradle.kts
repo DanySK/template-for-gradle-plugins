@@ -75,12 +75,20 @@ kotlin {
     }
 }
 
+inline fun <reified T : Task> Project.disableTrackStateOnWindows() {
+    tasks.withType<T>().configureEach {
+        doNotTrackState("Windows is a mess and JaCoCo does not work correctly")
+    }
+}
+
+if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+    disableTrackStateOnWindows<Test>()
+    disableTrackStateOnWindows<JacocoReport>()
+}
+
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     dependsOn(tasks.generateJacocoTestKitProperties)
-    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        doNotTrackState("Windows is a mess and JaCoCo does not work correctly")
-    }
     testLogging {
         showStandardStreams = true
         showCauses = true
