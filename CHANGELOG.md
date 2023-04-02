@@ -1,3 +1,36 @@
+## [1.0.33](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.32...1.0.33) (2023-04-02)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.4.0 ([a457385](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a457385b94bc3d79f084f87d0dd257ee0979efaa))
+* **deps:** update actions/checkout action to v3.5.0 ([31b12ed](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/31b12ed8ba471e03e78bdd540f7d03607bca6fdb))
+* **deps:** update danysk/action-checkout action to v0.2.6 ([4d99678](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4d99678e00b4cb44c393bdd87980fa51c196e24f))
+* **deps:** update danysk/action-checkout action to v0.2.7 ([c6feaf5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c6feaf599a76f43b46d4a3e8d11ca56d4f68293f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.1 ([a46c2de](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a46c2def3ce87800c8988c98e9d4f58e0c8b7df0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.2 ([996733a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/996733afe467b0e6f5c1dbd2ff217c2df42698c5))
+* disable tracking of jacoco reporting tasks on windows ([53e4f34](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/53e4f34dcd49a86b0e3a928266f6ce746676b100))
+* **mergify:** disable auto-rebasing due to Mergifyio/mergify[#5074](https://github.com/DanySK/Template-for-Gradle-Plugins/issues/5074) ([d3f021b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d3f021b2cd3f0fa11d822d78e03ba116433a0457))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.20 ([8263515](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/82635153ddfa16c88c35054e0f41d27ed27d8e26))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.156 ([94c41bf](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/94c41bfbb710f5c9aa8f3bffa5d1f1c21025b8d3))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.157 ([0b3fc83](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0b3fc83b41b3cacde7d0f81d4797b67d66bbe5ed))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.17 ([a9bc3fe](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a9bc3fefa3e70103ba2e1d74ac2e1fa5f04b3441))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([c9b226d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c9b226d2de714b80ce947d3e115f7d4b0d5e0b00))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([b1dba64](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b1dba64e6f1aae4be3ffe50a0f3ede91113e8ad2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.21 ([30bf39e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/30bf39eb9528dfd5d4a37338d39ab579a9a4a896))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.22 ([d74f8de](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d74f8de71dbceca97e2665e84a5ea747791f8456))
+* **deps:** update node.js to 18.15 ([bb249b1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bb249b19bd244bad526b0d14ac2c568f862be506))
+* **deps:** update plugin com.gradle.enterprise to v3.12.5 ([7d6f44f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7d6f44f765e31d895659a77a0d768c08903c09fa))
+* **deps:** update plugin com.gradle.enterprise to v3.12.6 ([bdd0913](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bdd09130ecbf717bb2182f8299454f9831cba09c))
+* **deps:** update plugin publishoncentral to v3.3.1 ([4910b43](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4910b430e33feaf985f7df5fe3c1a5e192659dcd))
+* **deps:** update plugin publishoncentral to v3.3.3 ([473ba44](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/473ba4463c5b4595be8cffb9bba34026a2775788))
+* **deps:** update plugin publishoncentral to v3.4.0 ([f90df48](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f90df4853dbb8744fc0ed78612cd41d57c72e209))
+* **deps:** update plugin publishoncentral to v4 ([1a57689](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1a57689f4ba4150006a87962f50ae74bfae689c6))
+
 ## [1.0.32](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.31...1.0.32) (2023-03-04)
 
 
