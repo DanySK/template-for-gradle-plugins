@@ -1,3 +1,13 @@
+## [1.0.35](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.34...1.0.35) (2023-04-21)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.1.1 ([7921f92](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7921f92434e4175ef7ec21bbe6b0b761195aba80))
+* **deps:** update plugin gitsemver to v1.1.9 ([b22825c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b22825cd1ef195a658fa6f29b1f3e3f4f594cbd6))
+* **deps:** update plugin multijvmtesting to v0.4.22 ([49fa2b5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/49fa2b5979cc55fba180f067fb68965fc12b7019))
+* **deps:** update plugin publishoncentral to v5.0.2 ([016694d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/016694df5cd431fb118ca0dfbec73295cdaa8279))
+
 ## [1.0.34](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.33...1.0.34) (2023-04-19)
 
 
