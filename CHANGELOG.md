@@ -1,3 +1,18 @@
+## [1.0.36](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.35...1.0.36) (2023-04-25)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.4 ([bcab18a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/bcab18a664d5b51525c0ed4dcc5be2e9fd7e1814))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.21 ([db73669](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/db736697830398b1b204430a89f454088799ed72))
+* **deps:** update plugin multijvmtesting to v0.4.23 ([260acdc](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/260acdc7ceae142a7393b02e1ac5d4e28b3411cd))
+* **deps:** update plugin publishoncentral to v5.0.3 ([c3bf64a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c3bf64a2404e1848c7bd63363b8a9796744541ac))
+* **deps:** update plugin publishoncentral to v5.0.4 ([d45c8c4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d45c8c4e1a94bfb35d95bbe643f28821f4949e4e))
+
 ## [1.0.35](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.34...1.0.35) (2023-04-21)
 
 
