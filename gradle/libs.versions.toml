@@ -17,7 +17,7 @@ kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm" ]
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 gitSemVer = "org.danilopianini.git-sensitive-semantic-versioning:1.1.9"
 gradlePluginPublish = "com.gradle.plugin-publish:1.2.0"
-jacoco-testkit = "pl.droidsonroids.jacoco.testkit:1.0.11"
+jacoco-testkit = "pl.droidsonroids.jacoco.testkit:1.0.12"
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = "org.danilopianini.gradle-kotlin-qa:0.29.2"
 multiJvmTesting = "org.danilopianini.multi-jvm-test-plugin:0.4.23"
