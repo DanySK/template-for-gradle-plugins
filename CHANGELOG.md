@@ -1,3 +1,34 @@
+## [1.0.37](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.36...1.0.37) (2023-06-05)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.5 ([e58daeb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e58daebcc29f03be1a59668bf0f2238599006387))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.6 ([5c0759b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5c0759b4b1a883365d14e3cd104e61b9f5100373))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.dokka to v1.8.20 ([2609ff6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2609ff6650dd7d7da120b9d2f2c6a8119852ddfb))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.158 ([2d157be](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2d157be5e5ea17ae10a8d0c8358683e5c52234c5))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.159 ([8cc9981](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8cc9981d9f9d9211a0729a8a5db9d34ea8c794b6))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.160 ([4cce18b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4cce18b520e1c08c25a5b1a04263b2d3f60f0896))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.26 ([83ec4d7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/83ec4d78094daae16e8a98efc7a55ffa0a795904))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.27 ([b650a41](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b650a4193884c659820df26c9f1132da7dc165e3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.28 ([d6bd933](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d6bd9330ad4d2cbe2d64b5c10a9270caebd92993))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.29 ([a7187e3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a7187e354001ca8d425344eda510442e4babfb4a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.30 ([55bbc2e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/55bbc2e0645170ae47b9ff98b7545acf505e2998))
+* **deps:** update kotest to v5.6.2 ([dc8ce9f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dc8ce9fca3d5e1218571b6ee3ef0fe6ae2538f39))
+* **deps:** update plugin com.gradle.enterprise to v3.13.1 ([493bcc6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/493bcc6d0ee0e28cf818c5f37d2b996e28e9455c))
+* **deps:** update plugin com.gradle.enterprise to v3.13.2 ([5701567](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5701567cff687fa7a9283eda69e766ee0d78a0ff))
+* **deps:** update plugin com.gradle.enterprise to v3.13.3 ([3845541](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/384554148ade13878486357398167f0bd21cda2c))
+* **deps:** update plugin jacoco-testkit to v1.0.12 ([66ad4c6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/66ad4c65ba56c4b15e04527811d4beb9b3ea078a))
+* **deps:** update plugin multijvmtesting to v0.5.0 ([5bed786](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5bed786f2ab52bd7139292d0682897c3f0e4a1ba))
+* **deps:** update plugin multijvmtesting to v0.5.1 ([30b3826](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/30b3826242e9f52e04445a7f815671fa293b8c48))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.7 ([158338f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/158338f7b536a8372a8eda1272c11bb112a01db4))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.5.0 ([8eb690d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8eb690d5d46d85720b99840fb5784efd19d7ab65))
+* **deps:** update plugin publishoncentral to v5.0.5 ([ad7a1cb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/ad7a1cbe394bf74c203a694064b9d0dbd880cea7))
+
 ## [1.0.36](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.35...1.0.36) (2023-04-25)
 
 
