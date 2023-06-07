@@ -1,3 +1,13 @@
+## [1.0.38](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.37...1.0.38) (2023-06-07)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.22 ([d058296](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d058296a4294c09949558387576769cb564d4aee))
+* **deps:** update plugin gitsemver to v1.1.10 ([65e3ecb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/65e3ecb747e68cc68d89062123889b39529ac8ab))
+* **deps:** update plugin multijvmtesting to v0.5.2 ([059667a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/059667a138a0273dc82515c5d58a72492a7be99c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.8 ([211e701](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/211e7016bbf3b0d093f5b4ed198c5bc1dba6fecb))
+
 ## [1.0.37](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.36...1.0.37) (2023-06-05)
 
 
