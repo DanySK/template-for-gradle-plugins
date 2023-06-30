@@ -1,3 +1,29 @@
+## [1.0.39](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.38...1.0.39) (2023-06-30)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.3 ([f2993d8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f2993d87b62c3f93d1877e7c3dc4b36fe5ae4ad4))
+* **deps:** update danysk/action-checkout action to v0.2.10 ([5cbde0a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5cbde0af0713cffbc2823b60997d77dd744bb7b6))
+
+
+### Tests
+
+* use the new testkit library ([53a18b4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/53a18b41c2983af5e444fbdba882436d8134542f))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.2 ([5ace46c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5ace46c1c6491b64963dab29f82f455d11b72855))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.32 ([a7ca5cb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a7ca5cb2f2552ace524a77301cfdd40336daa47b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.35 ([c73fa11](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c73fa110c867eca282956e666574618991bcc539))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.36 ([2f6ea56](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2f6ea56c77c201175eed96638ceb2c364639b464))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.37 ([95f1c92](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/95f1c921acc7d773fff53d519ebfced22d4d0adc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.38 ([913e73c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/913e73cb262c9bf2af08309762089fc5f4c2f595))
+* **deps:** update plugin com.gradle.enterprise to v3.13.4 ([f74e4c6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f74e4c6ae9374928a438bd1cd5cbdd0a61997ade))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.9 ([a8e623f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a8e623fa5288c9d920e787e2d28426dd6a956be8))
+* **deps:** update plugin publishoncentral to v5.0.7 ([3ebd237](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3ebd237b793f253328f84d26b1befbde91ab89a7))
+
 ## [1.0.38](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.37...1.0.38) (2023-06-07)
 
 
