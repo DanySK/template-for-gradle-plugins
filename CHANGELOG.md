@@ -1,3 +1,20 @@
+## [1.0.40](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.39...1.0.40) (2023-07-10)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v3.7.0 ([67303ea](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/67303ea5036faf70900cbe4b1efff4314020d930))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.2.1 ([e7c4f57](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e7c4f579348b2491cab2b94bed28a6ab2dbf6334))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.39 ([93c6ce1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/93c6ce1d03e9081e5516b4bbdf2e9f0d145016b2))
+* **deps:** update plugin multijvmtesting to v0.5.3 ([9b25e9c](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9b25e9c25d7a4865e167e3fb0807120e1a1bf2aa))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.6.0 ([0f2d04d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0f2d04db3d4a68a4f281d1aa66f7453131673b63))
+* **deps:** update plugin publishoncentral to v5.0.8 ([be4ed75](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/be4ed75e9a0284fee82dad1b2353f43c80fa43c9))
+* **deps:** update plugin publishoncentral to v5.0.9 ([e91a5e2](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e91a5e2355f4bc9ece1e54f2b86d4896f3fdacc5))
+
 ## [1.0.39](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.38...1.0.39) (2023-06-30)
 
 
