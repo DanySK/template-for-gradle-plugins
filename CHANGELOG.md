@@ -1,3 +1,27 @@
+## [1.0.41](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.40...1.0.41) (2023-08-17)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v3.8.0 ([3d888b4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3d888b42e08b326c3baeb34fb5eec64fe8e7f27d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.7 ([5c276d8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5c276d816951cf160e7739f943ce015c2328f078))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.8 ([a2ed670](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a2ed6709c07e01786c6da4394bb08ad45b016a0b))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.3 ([1dadc05](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1dadc05a5a58028f390a4a74fb6f4b80b635bc55))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.40 ([3b6f7b0](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3b6f7b07c1c8ff994be020121b23037aac0f5bd1))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.41 ([cbf611a](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cbf611a9283fe21fd388948e828328a8e871552a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.42 ([3f895d4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3f895d4fa9ee3967d29d4d45268f98519635cda8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.43 ([2dd96d7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2dd96d738aa7ada924c6065c4f2b8a0cd9a4a333))
+* **deps:** update node.js to 18.17 ([373aaa8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/373aaa83171bf022bef6659ceaa65b8f09a81498))
+* **deps:** update plugin com.gradle.enterprise to v3.14 ([218c736](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/218c736e872a14d423c1bd781658622ab6f4d4e6))
+* **deps:** update plugin com.gradle.enterprise to v3.14.1 ([24c3787](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/24c3787805fa096441a3acef6ed500824a81efe5))
+* **deps:** update plugin gradlepluginpublish to v1.2.1 ([643f315](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/643f3154a17ab3d302566d7619fcc0a05bed11c9))
+* **deps:** update plugin multijvmtesting to v0.5.4 ([edc7f83](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/edc7f83ab5e82435344d6a9da60f1055372b205a))
+* **deps:** update plugin publishoncentral to v5.0.10 ([524bcd1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/524bcd196942c65c25dfd8c436b12a9f760f468e))
+
 ## [1.0.40](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.39...1.0.40) (2023-07-10)
 
 
