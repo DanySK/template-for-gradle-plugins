@@ -1,3 +1,22 @@
+## [1.0.42](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.41...1.0.42) (2023-08-31)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.6.0 ([006c3b3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/006c3b32df634e51c7b04b83cb8d77cb50519bec))
+* **deps:** update actions/setup-node action to v3.8.1 ([7510c97](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/7510c9795810b5488a5797381897d7603799aafc))
+* **deps:** update danysk/action-checkout action to v0.2.11 ([4a3b855](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4a3b8557ceaa5fd96e710db9e20b32b3464e5e20))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.dokka to v1.9.0 ([e767090](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e7670902da024b5fbfd354aac28f3ea4b2bb8423))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([dd4cad7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dd4cad7beee3dff6a6f0150051e78acc9d4e9a75))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([e09dd31](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e09dd31d894e50ecc49ff0a22c480119dc897a2f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([fbb9c8b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/fbb9c8b26e06ed7f147f9dce43c749176f1d07f8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.48 ([1d83369](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/1d83369b8ab0dea12eaca5fef216b55b1201c988))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.7.0 ([e1635d6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/e1635d63f7bd742b679494381c1234567443a8fa))
+
 ## [1.0.41](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.40...1.0.41) (2023-08-17)
 
 
