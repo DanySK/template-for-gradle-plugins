@@ -1,3 +1,45 @@
+## [1.0.43](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.42...1.0.43) (2023-10-05)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.4 ([98c7e47](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/98c7e475cd71605bfbee6a5a05e38cd83fdf9dd2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.49 ([eaae7be](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/eaae7be06099488b1006a86bb4428a41e034725b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.50 ([c0551c1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c0551c14e785f4eb91be1e898687068b8b1f6954))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.51 ([6e90ae5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6e90ae5908969600b0f3d043c9943724db4c3172))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.52 ([69566ed](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/69566ed4c1a2fd90e53825ba50c2429ddd560d38))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([a3fb274](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a3fb27492aa75b069f6118977572fa57595a1286))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([29f2bcb](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/29f2bcb6a1fd9163f923a9ddaf22f45b40d08d8e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([69a1cba](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/69a1cba78baf768ea6ab5c96bd66d11461f74743))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([cdd6a24](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/cdd6a24192a0430ac4df40e48722ce8ff7d7c342))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.58 ([d2c31e1](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d2c31e1f3250239810b8ad390843c961966dd86d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.59 ([5639db3](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5639db36afdb628c68d3609cbb3944b2cfa1e4ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([8779344](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/8779344445eebda617f1edb7533386d3a42326db))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.61 ([26e39bf](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/26e39bf5451a8ed19a93ea81bf8ee35996bf8c61))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.62 ([33a24e8](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/33a24e8cc12262c3be154a1f5e296ade9191f668))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.63 ([eb53fea](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/eb53fea34dd982fbcc67fad834eb7e4311b569ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.64 ([6726f21](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6726f210a5f6ca41279b63422b9080baf67ac661))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.65 ([16ab4ce](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/16ab4ce5d602e354cc01f4fa224c1ec5212be401))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.66 ([a09ef53](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a09ef5335a67149fc9efc174ff7cd78c6c544e64))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.67 ([c3316c5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c3316c594d6c1b582363567593e7dbdb3524765e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.68 ([9e34a5b](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9e34a5b0fe21a7f1be65ee7ed681ad7210569c0c))
+* **deps:** update kotest to v5.7.2 ([0e34c88](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0e34c88094af300dd06a5f06d2afe0fb832b5d01))
+* **deps:** update node.js to 18.18 ([3969a3d](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3969a3d5f7728e8c639b7857170988af267a1faf))
+* **deps:** update plugin com.gradle.enterprise to v3.15 ([862a32f](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/862a32faea6cb03681ebf9e774d9099e9b820eaf))
+* **deps:** update plugin com.gradle.enterprise to v3.15.1 ([4f2b7b9](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/4f2b7b9ddbbaf1eda5b495242f2c08a7933ebac4))
+* **deps:** update plugin multijvmtesting to v0.5.5 ([0e1e71e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0e1e71e6382b54f7b0c178dd603bdd445e564e45))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.10 ([f2ac421](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f2ac42139a5d89bb544364fb9cd3acfc9c4d4b8d))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([56a4005](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/56a40056befbd5dfcf2b30ffe2ed45b7e4e832d3))
+* **deps:** update actions/checkout action to v4.1.0 ([2be9bd6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/2be9bd63cd3384bc2d5d2b0aa214aaf2b2c46523))
+* **deps:** update danysk/action-checkout action to v0.2.12 ([62dd6b5](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/62dd6b53081cb68b012efc54e31006078659070c))
+* **deps:** update danysk/action-checkout action to v0.2.13 ([f565db0](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f565db06fb4aff9d8dacbeb0544cb4560e591e1f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.10 ([5d21176](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/5d211767c6c3214bb4eed8d0826bb04d2cad0344))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.9 ([39e5f8e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/39e5f8ec1cd96792146649f45505cb1f93e51d56))
+
 ## [1.0.42](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.41...1.0.42) (2023-08-31)
 
 
