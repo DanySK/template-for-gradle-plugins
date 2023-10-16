@@ -1,3 +1,10 @@
+## [1.0.44](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.43...1.0.44) (2023-10-16)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.dokka to v1.9.10 ([6b41550](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/6b41550c028664a08b011b16ad2cec1106adb41b))
+
 ## [1.0.43](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.42...1.0.43) (2023-10-05)
 
 
