@@ -17,9 +17,7 @@ jobs:
       - name: Checkout
         uses: DanySK/action-checkout@0.2.14
       - uses: DanySK/build-check-deploy-gradle-action@2.2.10
-        with:    permissions:
-      contents: write
-
+        with:
           # Dry-deployment
           check-command: ./gradlew build --parallel
           deploy-command: >-
