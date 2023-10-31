@@ -1,5 +1,6 @@
 @file:Suppress("OPT_IN_USAGE")
 
+import org.apache.tools.ant.taskdefs.condition.Os
 import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
@@ -47,7 +48,9 @@ dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
     api(kotlin("stdlib-jdk8"))
-    testImplementation(libs.testkit)
+    testImplementation(gradleTestKit())
+    testImplementation(libs.konf.yaml)
+    testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
 }
 
@@ -72,20 +75,16 @@ kotlin {
     }
 }
 
-/*
- * The following lines are a workaround for
- * https://github.com/gradle/gradle/issues/16603.
- * The issue is related to the Gradle Daemon getting terminated by the Gradle Testkit,
- * and the JaCoCo agent not waiting for it.
- */
-inline fun <reified T : Task> Project.disableTrackState() {
+inline fun <reified T : Task> Project.disableTrackStateOnWindows() {
     tasks.withType<T>().configureEach {
-        doNotTrackState("Otherwise JaCoCo does not work correctly")
+        doNotTrackState("Windows is a mess and JaCoCo does not work correctly")
     }
 }
 
-disableTrackState<Test>()
-disableTrackState<JacocoReport>()
+if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+    disableTrackStateOnWindows<Test>()
+    disableTrackStateOnWindows<JacocoReport>()
+}
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
