@@ -1,12 +1,7 @@
 tests:
   - description: "A greeting should get printed"
     configuration:
-      tasks:
-        - hello
+      tasks: hello
     expectation:
-      outcomes:
-        success:
-          - hello
-      output:
-        contains:
-          - "Hello from Danilo Pianini"
+      output_contains: "Hello from Danilo Pianini"
+      success: hello
