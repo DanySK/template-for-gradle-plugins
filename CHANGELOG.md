@@ -1,3 +1,36 @@
+## [1.0.45](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.44...1.0.45) (2023-10-31)
+
+
+### Dependency updates
+
+* **deps:** update node.js to 20.9 ([9e674b4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/9e674b4870efca2c2527db80dbf283b5f219d37a))
+* **deps:** update node.js to v20 ([526e315](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/526e3159404358240b9072d259bb180bd1b879b8))
+* **deps:** update plugin gitsemver to v1.1.11 ([d57fc24](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/d57fc2401bc0773395ea317bb0333eec94fa2c79))
+* **deps:** update plugin gitsemver to v1.1.13 ([a357660](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a357660e5ec9c116eb16e8243793f54be234679e))
+* **deps:** update plugin gitsemver to v1.1.14 ([eb2aed4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/eb2aed47e603457c06ec22bc22be288fb9437652))
+* **deps:** update plugin gitsemver to v1.1.15 ([efeeea6](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/efeeea6ccabba40a1573090f318fab295334004c))
+* **deps:** update plugin multijvmtesting to v0.5.6 ([a2bc202](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/a2bc2021c92172c843a427ccae0689fcb196eff7))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.11 ([dea485e](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/dea485e6e42134f2d0fec0eb07806d55c27c534c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.13 ([b5a2cec](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b5a2ceccf765e9cd9bf573a6284159210c33f20a))
+
+
+### Bug Fixes
+
+* **release:** update the github release task names ([3199de7](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/3199de768053a7c9cea28448049ef74a8e086ca4))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.1 ([b574c01](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/b574c014749a65fc45424470c6a6504bf836717b))
+* **deps:** update actions/setup-node action to v3.8.2 ([c083286](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c083286fe4ab84ad41ea8e369597b8d0c00cd1c0))
+* **deps:** update actions/setup-node action to v4 ([c72f726](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/c72f7268e3dfb2cd19166237f84fd01263d0b513))
+* **deps:** update danysk/action-checkout action to v0.2.14 ([0f78d29](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/0f78d2902fedd80da651ff646c74400e72d9e377))
+
+
+### Style improvements
+
+* sort imports ([52d9938](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/52d9938ed53e0cff7a9b6f91b0e00601abf10107))
+
 ## [1.0.44](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.43...1.0.44) (2023-10-16)
 
 
