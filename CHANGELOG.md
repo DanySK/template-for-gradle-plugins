@@ -1,3 +1,10 @@
+## [1.0.46](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.45...1.0.46) (2023-10-31)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.20 ([f0166f4](https://github.com/DanySK/Template-for-Gradle-Plugins/commit/f0166f401e4f1774f38fe7085130b98e06a02724))
+
 ## [1.0.45](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.44...1.0.45) (2023-10-31)
 
 
