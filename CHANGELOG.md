@@ -1,3 +1,25 @@
+## [2.0.0](https://github.com/DanySK/template-for-gradle-plugins/compare/1.0.46...2.0.0) (2023-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch the project name to lowercase
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.70 ([1bb9006](https://github.com/DanySK/template-for-gradle-plugins/commit/1bb9006ed2a20d303c98b1cb7e13ec32b1d3a1d4))
+
+
+### Bug Fixes
+
+* **ci:** add package permissions ([8d48a33](https://github.com/DanySK/template-for-gradle-plugins/commit/8d48a333f67964132b5b2dcee6c6386ab0fcf770))
+* switch the project name to lowercase ([e09c2b3](https://github.com/DanySK/template-for-gradle-plugins/commit/e09c2b3aa626ff016272532ce5fe00d4d1e33772))
+
+
+### Tests
+
+* revert the use of Mirko's testkit library. Reverts commit 53a18b41c2983af5e444fbdba882436d8134542f. ([34deb8c](https://github.com/DanySK/template-for-gradle-plugins/commit/34deb8c5e32dacdbd3058201c697c8902b647cf1))
+
 ## [1.0.46](https://github.com/DanySK/Template-for-Gradle-Plugins/compare/1.0.45...1.0.46) (2023-10-31)
 
 
