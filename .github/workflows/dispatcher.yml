@@ -27,3 +27,6 @@ jobs:
       - dispatcher
     uses: ./.github/workflows/build-and-deploy.yml
     secrets: inherit
+    permissions:
+      contents: write
+      packages: write
