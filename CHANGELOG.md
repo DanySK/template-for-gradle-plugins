@@ -1,3 +1,33 @@
+## [2.0.1](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.0...2.0.1) (2023-11-23)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-gradle-plugin to v1.9.21 ([e2e98d6](https://github.com/DanySK/template-for-gradle-plugins/commit/e2e98d65b9c0055d8b17f1443c8b8820a5e00626))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.163 ([e5f4c81](https://github.com/DanySK/template-for-gradle-plugins/commit/e5f4c812f66e269bd367faf4317668dc851b4245))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.164 ([e26c0b9](https://github.com/DanySK/template-for-gradle-plugins/commit/e26c0b9c4c66f776bfa1e8a2351f216e50fe5d4e))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.165 ([52bc381](https://github.com/DanySK/template-for-gradle-plugins/commit/52bc38114102ac5aa3730b1612a1e0e73d564a69))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.71 ([34a8da1](https://github.com/DanySK/template-for-gradle-plugins/commit/34a8da107e44cce0becf67a176d36a6ece7e96d0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.72 ([4122047](https://github.com/DanySK/template-for-gradle-plugins/commit/41220471fcd887d55ed4e7b6f6464b89233c3a16))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.73 ([da763de](https://github.com/DanySK/template-for-gradle-plugins/commit/da763de064dee16e10e2ba35bfc303008fa9aeb3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.74 ([d26ae5d](https://github.com/DanySK/template-for-gradle-plugins/commit/d26ae5d704b1654d162fd6d071cb8dd55ba46dc5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.75 ([7236642](https://github.com/DanySK/template-for-gradle-plugins/commit/72366422487d26ba543fb12824be7c7e1939f54c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.76 ([676dcb7](https://github.com/DanySK/template-for-gradle-plugins/commit/676dcb738672f043fca6a15c55285d70c2367d6c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.77 ([f46e8fc](https://github.com/DanySK/template-for-gradle-plugins/commit/f46e8fce70125762b78f0e1c5188ed181f015ddf))
+* **deps:** update kotest to v5.8.0 ([3545bc1](https://github.com/DanySK/template-for-gradle-plugins/commit/3545bc142a06fcd27dd8a6de34610812fa0c55b9))
+* **deps:** update node.js to 20.10 ([335e3e2](https://github.com/DanySK/template-for-gradle-plugins/commit/335e3e2236144885e9751ff41d7357d888c8dd6d))
+* **deps:** update plugin gitsemver to v2 ([ea27fcf](https://github.com/DanySK/template-for-gradle-plugins/commit/ea27fcf625f0e9c80e7b939c505d59bfd3922c28))
+* **deps:** update plugin gitsemver to v2.0.2 ([f95ca31](https://github.com/DanySK/template-for-gradle-plugins/commit/f95ca316d426ca53b4ddca704fe44801121fc1d8))
+* **deps:** update plugin kotlin-qa to v0.54.0 ([#587](https://github.com/DanySK/template-for-gradle-plugins/issues/587)) ([3490a02](https://github.com/DanySK/template-for-gradle-plugins/commit/3490a02b4a507589220655e6cbb81adcd112d652))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.14 ([00d223e](https://github.com/DanySK/template-for-gradle-plugins/commit/00d223e9122e4dbb2985d741983f85f0926c4333))
+* **deps:** update plugin publishoncentral to v5.0.18 ([6610ed3](https://github.com/DanySK/template-for-gradle-plugins/commit/6610ed3a5f293fa61d7ab9011e206c34cf59456d))
+* **deps:** update plugin publishoncentral to v5.0.19 ([291974a](https://github.com/DanySK/template-for-gradle-plugins/commit/291974a9c15a858672c6bac11e55274b5ca82866))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.11 ([4b3b3ce](https://github.com/DanySK/template-for-gradle-plugins/commit/4b3b3cef4ea883baa96e54eb78984634043cb8f9))
+
 ## [2.0.0](https://github.com/DanySK/template-for-gradle-plugins/compare/1.0.46...2.0.0) (2023-11-01)
 
 
