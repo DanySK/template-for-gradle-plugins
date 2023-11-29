@@ -1,3 +1,17 @@
+## [2.0.2](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.1...2.0.2) (2023-11-29)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.5 ([6eea79e](https://github.com/DanySK/template-for-gradle-plugins/commit/6eea79e0c6fbe45ad3bdc3fccf9b8bb8b83fd85a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.78 ([31efb7c](https://github.com/DanySK/template-for-gradle-plugins/commit/31efb7cfe899ec9ea43a762edc42f1bb1f8da5e6))
+* **deps:** update plugin gitsemver to v2.0.3 ([aaec585](https://github.com/DanySK/template-for-gradle-plugins/commit/aaec5856d2fe79b936e9197815ef39d1d17a06b1))
+* **deps:** update plugin kotlin-qa to v0.54.1 ([b30784d](https://github.com/DanySK/template-for-gradle-plugins/commit/b30784da084f6de43ebae26a30a0f2848e82f4da))
+* **deps:** update plugin kotlin-qa to v0.55.1 ([f169c9f](https://github.com/DanySK/template-for-gradle-plugins/commit/f169c9fc8bcc522118b29516f376f351786cc24f))
+* **deps:** update plugin multijvmtesting to v0.5.7 ([f706adc](https://github.com/DanySK/template-for-gradle-plugins/commit/f706adc37e891789ab2476631f21da2e1856c439))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.15 ([8026425](https://github.com/DanySK/template-for-gradle-plugins/commit/8026425767dcada7694e2c74019053decf69c1a3))
+* **deps:** update plugin publishoncentral to v5.0.20 ([6343634](https://github.com/DanySK/template-for-gradle-plugins/commit/63436347aead97a3aec9935d4b90323b9e8f3de9))
+
 ## [2.0.1](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.0...2.0.1) (2023-11-23)
 
 
