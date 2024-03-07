@@ -1,3 +1,15 @@
+## [2.0.6](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.5...2.0.6) (2024-03-07)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-gradle-plugin to v1.9.23 ([f489489](https://github.com/DanySK/template-for-gradle-plugins/commit/f489489d34ee1fc408371bff35823d5961127201))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.166 ([78b1b7f](https://github.com/DanySK/template-for-gradle-plugins/commit/78b1b7f9d2791bdb9868d8203879b0ba2b994217))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.167 ([a9a099f](https://github.com/DanySK/template-for-gradle-plugins/commit/a9a099f449860201adf8879e70288da4fc5d51fd))
+* **deps:** update plugin kotlin-qa to v0.60.2 ([f00ce95](https://github.com/DanySK/template-for-gradle-plugins/commit/f00ce95e0c972cc9e04a6e97588bf7226a4d7813))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.2 ([c762121](https://github.com/DanySK/template-for-gradle-plugins/commit/c762121122a5558670c9008f84d7de9b78ce9079))
+* **deps:** update plugin publishoncentral to v5.0.24 ([a1d5684](https://github.com/DanySK/template-for-gradle-plugins/commit/a1d56849d37a4dba5a9773259ce75eed1c1bfe9f))
+
 ## [2.0.5](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.4...2.0.5) (2024-03-04)
 
 
