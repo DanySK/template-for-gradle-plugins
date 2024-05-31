@@ -1,3 +1,13 @@
+## [2.0.10](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.9...2.0.10) (2024-05-31)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.8 ([19daf29](https://github.com/DanySK/template-for-gradle-plugins/commit/19daf298709e02fc5319e094b307a787aad96ad2))
+* **deps:** update node.js to 20.14 ([2ef74c0](https://github.com/DanySK/template-for-gradle-plugins/commit/2ef74c0c5a5084bbf6ca5ee6747e6c63fffb9539))
+* **deps:** update plugin gitsemver to v3.1.6 ([c321833](https://github.com/DanySK/template-for-gradle-plugins/commit/c321833501990fd9468b731906f6e6d6136a242e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.6 ([036dcd2](https://github.com/DanySK/template-for-gradle-plugins/commit/036dcd20ae8a6e1b043b964afee66464e8089252))
+
 ## [2.0.9](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.8...2.0.9) (2024-05-21)
 
 
