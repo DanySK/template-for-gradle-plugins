@@ -1,3 +1,22 @@
+## [2.0.14](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.13...2.0.14) (2024-09-09)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.10.1 ([a5fe4cf](https://github.com/DanySK/template-for-gradle-plugins/commit/a5fe4cf11ac6c6cd20ff4a64b6777dce7a42bbba))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.100 ([7933afa](https://github.com/DanySK/template-for-gradle-plugins/commit/7933afaf95fe7762f0f5bf40051d11a5320f162a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.101 ([2a2ed96](https://github.com/DanySK/template-for-gradle-plugins/commit/2a2ed96ec0ba73c8624dd7cd6cfc83d3c06c77f2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.102 ([03da1fe](https://github.com/DanySK/template-for-gradle-plugins/commit/03da1fe34db3d7cf1ba82167b6a71f1606257fb5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.99 ([74298a8](https://github.com/DanySK/template-for-gradle-plugins/commit/74298a8725d1658c8259e0de3b853612b2fce817))
+* **deps:** update node.js to 20.17 ([0bb976e](https://github.com/DanySK/template-for-gradle-plugins/commit/0bb976ef61bbf17990ad3ed754b49bafeeb3a6cc))
+* **deps:** update plugin gradlepluginpublish to v1.2.2 ([266eac1](https://github.com/DanySK/template-for-gradle-plugins/commit/266eac1f7c855886a940198198ebfa0120692f98))
+* **deps:** update plugin kotlin-qa to v0.66.0 ([7c2233e](https://github.com/DanySK/template-for-gradle-plugins/commit/7c2233ee4302e17e8e9e1145c1d6bec7d6852971))
+* **deps:** update plugin kotlin-qa to v0.66.1 ([e6c2c27](https://github.com/DanySK/template-for-gradle-plugins/commit/e6c2c27f5e757331fe2158e4c23ca0881cb00cb5))
+* **deps:** update plugin multijvmtesting to v1.2.5 ([8935dc8](https://github.com/DanySK/template-for-gradle-plugins/commit/8935dc81dfa5f57bb49921f34cf10a0899b54c83))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.4 ([e0fa4ad](https://github.com/DanySK/template-for-gradle-plugins/commit/e0fa4ad1df0da063ce79d75210c7862d77470f84))
+
 ## [2.0.13](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.12...2.0.13) (2024-08-22)
 
 ### Dependency updates
