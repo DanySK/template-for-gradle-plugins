@@ -1,3 +1,23 @@
+## [2.0.15](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.14...2.0.15) (2024-09-12)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.103 ([8307079](https://github.com/DanySK/template-for-gradle-plugins/commit/8307079cb51f8ee595add36a8aa8ce9f2a57130f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.104 ([09fe3a4](https://github.com/DanySK/template-for-gradle-plugins/commit/09fe3a4c4215c78d527de2ce63b653b3256a670c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.105 ([3d58366](https://github.com/DanySK/template-for-gradle-plugins/commit/3d583664ca8ca814413db98643282d6388ff22b9))
+* **deps:** update plugin com.gradle.develocity to v3.18.1 ([abd47db](https://github.com/DanySK/template-for-gradle-plugins/commit/abd47db4a9e238551b26742444f8cc20fe5f797c))
+* **deps:** update plugin gradlepluginpublish to v1.3.0 ([9661135](https://github.com/DanySK/template-for-gradle-plugins/commit/966113544935ae2875bf31a7a6e66f4e132e3bd1))
+* **deps:** update plugin multijvmtesting to v1.2.6 ([ddfe78c](https://github.com/DanySK/template-for-gradle-plugins/commit/ddfe78c458aaac86cd288477df5a8d69710e5420))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.10 ([5b3ec0a](https://github.com/DanySK/template-for-gradle-plugins/commit/5b3ec0a837079753275324c4f22dbc11d22f93cc))
+
+### Bug Fixes
+
+* no need to mark the extensions as `Serializable` ([08f64ab](https://github.com/DanySK/template-for-gradle-plugins/commit/08f64ab97bcd0662b0e51cc541ff17db9e0ebad9))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.5 ([2fa22d9](https://github.com/DanySK/template-for-gradle-plugins/commit/2fa22d93712c693a6f194bec0391f1f1dffb5fd3))
+
 ## [2.0.14](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.13...2.0.14) (2024-09-09)
 
 ### Dependency updates
