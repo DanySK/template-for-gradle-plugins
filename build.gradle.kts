@@ -63,7 +63,7 @@ configurations.matching { it.name != "detekt" }.all {
     }
 }
 
-tasks.withType<KotlinCompilationTask<*>>() {
+tasks.withType<KotlinCompilationTask<*>>().configureEach {
     compilerOptions {
         allWarningsAsErrors = true
         freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn")
