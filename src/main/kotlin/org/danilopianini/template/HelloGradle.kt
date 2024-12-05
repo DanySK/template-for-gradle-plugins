@@ -29,7 +29,6 @@ open class HelloGradle : Plugin<Project> {
  * Just a template.
  */
 open class HelloTask : DefaultTask() {
-
     /**
      * Just a template.
      */
@@ -55,7 +54,6 @@ open class HelloTask : DefaultTask() {
  * Just a template.
  */
 open class HelloExtension(objects: ObjectFactory) {
-
     /**
      * Just a template.
      */
