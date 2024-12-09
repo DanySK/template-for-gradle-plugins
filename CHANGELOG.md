@@ -1,3 +1,29 @@
+## [2.0.19](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.18...2.0.19) (2024-12-09)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.0 ([#1109](https://github.com/DanySK/template-for-gradle-plugins/issues/1109)) ([619ad17](https://github.com/DanySK/template-for-gradle-plugins/commit/619ad17e3768170541c72e67dbe9e929978caf61))
+* **deps:** drop unused dependencies ([09e6c1a](https://github.com/DanySK/template-for-gradle-plugins/commit/09e6c1a025fe4e86ad6b558e3fca72fc45483b70))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.116 ([#1123](https://github.com/DanySK/template-for-gradle-plugins/issues/1123)) ([e241f00](https://github.com/DanySK/template-for-gradle-plugins/commit/e241f0035eb4958c036d29330b77c921072dac39))
+* **deps:** update node.js to 22.12 ([#1114](https://github.com/DanySK/template-for-gradle-plugins/issues/1114)) ([8b811d4](https://github.com/DanySK/template-for-gradle-plugins/commit/8b811d4256990660998076ca8023d300fc594524))
+* **deps:** update plugin kotlin-qa to v0.70.2 ([#1103](https://github.com/DanySK/template-for-gradle-plugins/issues/1103)) ([70611fb](https://github.com/DanySK/template-for-gradle-plugins/commit/70611fbfe4f544e0dae47a79ab7937a67f30f30c))
+* **deps:** update plugin kotlin-qa to v0.75.0 ([#1111](https://github.com/DanySK/template-for-gradle-plugins/issues/1111)) ([8cdbbb7](https://github.com/DanySK/template-for-gradle-plugins/commit/8cdbbb72a03da3185dff0b818adc5d1cdf0027a6))
+* **deps:** update plugin kotlin-qa to v0.77.1 ([9f6e64d](https://github.com/DanySK/template-for-gradle-plugins/commit/9f6e64d8e384f38d9e4980d1677437017423c333))
+* **deps:** update plugin multijvmtesting to v2 ([#1115](https://github.com/DanySK/template-for-gradle-plugins/issues/1115)) ([7b1b4b7](https://github.com/DanySK/template-for-gradle-plugins/commit/7b1b4b76e32a8ed46713a8d7fbddfdbf49502d22))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.15 ([#1101](https://github.com/DanySK/template-for-gradle-plugins/issues/1101)) ([7d24aad](https://github.com/DanySK/template-for-gradle-plugins/commit/7d24aad250fc4bb4e9fceb025dfce83845cfd62f))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.9.0 ([#1112](https://github.com/DanySK/template-for-gradle-plugins/issues/1112)) ([fb53c06](https://github.com/DanySK/template-for-gradle-plugins/commit/fb53c0658f807f5c60a9e1c0da679c6b7fbee311))
+* **deps:** update plugin publishoncentral to v5.1.11 ([#1102](https://github.com/DanySK/template-for-gradle-plugins/issues/1102)) ([8beea63](https://github.com/DanySK/template-for-gradle-plugins/commit/8beea633792cc761f121e128690af0f40369c316))
+* **deps:** update plugin publishoncentral to v6 ([#1113](https://github.com/DanySK/template-for-gradle-plugins/issues/1113)) ([1145fc7](https://github.com/DanySK/template-for-gradle-plugins/commit/1145fc71572871db0a0074b25ea7b8ffbf84cffe))
+* **deps:** update plugin publishoncentral to v6.0.1 ([#1122](https://github.com/DanySK/template-for-gradle-plugins/issues/1122)) ([671f36e](https://github.com/DanySK/template-for-gradle-plugins/commit/671f36ed92218501990ba2a0f6613eeeb09c25dd))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.23 ([#1104](https://github.com/DanySK/template-for-gradle-plugins/issues/1104)) ([2577039](https://github.com/DanySK/template-for-gradle-plugins/commit/257703931ba382e42e5ea013956ea7944a8ebf1f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.24 ([#1118](https://github.com/DanySK/template-for-gradle-plugins/issues/1118)) ([618ea87](https://github.com/DanySK/template-for-gradle-plugins/commit/618ea870d07e0267d43b457781dfb6fcb796e500))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.25 ([#1119](https://github.com/DanySK/template-for-gradle-plugins/issues/1119)) ([439d8c6](https://github.com/DanySK/template-for-gradle-plugins/commit/439d8c6b66e5740a5597bf00f727847f6df02b7c))
+* disambiguate the drop task name ([68ec544](https://github.com/DanySK/template-for-gradle-plugins/commit/68ec5443d199fa768526244c5f47eed7b8f66501))
+* **release:** disambiguate the release task name ([416cf2b](https://github.com/DanySK/template-for-gradle-plugins/commit/416cf2bb65d06546dba4fd3bd47425df0978b299))
+
 ## [2.0.18](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.17...2.0.18) (2024-11-21)
 
 ### Dependency updates
