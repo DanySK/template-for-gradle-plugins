@@ -1,3 +1,26 @@
+## [2.0.20](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.19...2.0.20) (2024-12-16)
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.develocity to v3.19 ([#1127](https://github.com/DanySK/template-for-gradle-plugins/issues/1127)) ([b0f3582](https://github.com/DanySK/template-for-gradle-plugins/commit/b0f3582bc812761cbf5e0ee72e66fe8538280dcc))
+* **deps:** update plugin kotlin-qa to v0.78.0 ([#1125](https://github.com/DanySK/template-for-gradle-plugins/issues/1125)) ([d46dd1a](https://github.com/DanySK/template-for-gradle-plugins/commit/d46dd1a1b328326ccddb99a34340cc3e4f43d458))
+* **deps:** update plugin multijvmtesting to v3 ([#1121](https://github.com/DanySK/template-for-gradle-plugins/issues/1121)) ([16a0368](https://github.com/DanySK/template-for-gradle-plugins/commit/16a0368e0e20d32d810738d85c62da73dbb4ee9e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.16 ([#1126](https://github.com/DanySK/template-for-gradle-plugins/issues/1126)) ([402a76f](https://github.com/DanySK/template-for-gradle-plugins/commit/402a76f4fa8a2a0708ec13926bc77610e77d1d72))
+* **deps:** update plugin publishoncentral to v7 ([#1124](https://github.com/DanySK/template-for-gradle-plugins/issues/1124)) ([382ef69](https://github.com/DanySK/template-for-gradle-plugins/commit/382ef695c4aa94ba9b1863f058b0c49725b8c907))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2 ([#1128](https://github.com/DanySK/template-for-gradle-plugins/issues/1128)) ([440cd00](https://github.com/DanySK/template-for-gradle-plugins/commit/440cd0073ac9b9be46bb7176523297f0d9299a45))
+
+### Build and continuous integration
+
+* add the codecov token ([d076a9e](https://github.com/DanySK/template-for-gradle-plugins/commit/d076a9e5013c83e0b5fc1c684ce46a41c81b8d5e))
+* move the concurrency management at the dispatcher level ([fcb3d3d](https://github.com/DanySK/template-for-gradle-plugins/commit/fcb3d3d841ba648a568abb484d702e1432cc8f30))
+
+### General maintenance
+
+* track idea's settings ([95b803c](https://github.com/DanySK/template-for-gradle-plugins/commit/95b803c11c03fb3a8a2a0b38973634053b2d31a6))
+
 ## [2.0.19](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.18...2.0.19) (2024-12-09)
 
 ### Dependency updates
