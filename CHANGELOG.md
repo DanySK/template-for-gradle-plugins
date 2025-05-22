@@ -1,3 +1,19 @@
+## [2.0.28](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.27...2.0.28) (2025-05-22)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.14.1 ([#1239](https://github.com/DanySK/template-for-gradle-plugins/issues/1239)) ([3bb884d](https://github.com/DanySK/template-for-gradle-plugins/commit/3bb884d9d7674169bc0b79e01580896fbace2a54))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.128 ([#1234](https://github.com/DanySK/template-for-gradle-plugins/issues/1234)) ([829a4f8](https://github.com/DanySK/template-for-gradle-plugins/commit/829a4f80fee96a3bd116812daac137f3dc105ed6))
+* **deps:** update plugin gitsemver to v5.1.3 ([#1232](https://github.com/DanySK/template-for-gradle-plugins/issues/1232)) ([0cfc8ac](https://github.com/DanySK/template-for-gradle-plugins/commit/0cfc8ac6f2d47e717588cef8da07d3b5656d97f7))
+* **deps:** update plugin kotlin-qa to v0.87.0 ([#1238](https://github.com/DanySK/template-for-gradle-plugins/issues/1238)) ([f40f061](https://github.com/DanySK/template-for-gradle-plugins/commit/f40f0613d9672da97e4716f01cf022e577454c51))
+* **deps:** update plugin multijvmtesting to v3.4.2 ([#1233](https://github.com/DanySK/template-for-gradle-plugins/issues/1233)) ([1d556a0](https://github.com/DanySK/template-for-gradle-plugins/commit/1d556a0c63c72e8650285a57c020a2b81b0fb6c0))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v1 ([#1237](https://github.com/DanySK/template-for-gradle-plugins/issues/1237)) ([347fc4b](https://github.com/DanySK/template-for-gradle-plugins/commit/347fc4b0c30bfccba67685f814888157c25d8caf))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.19 ([#1235](https://github.com/DanySK/template-for-gradle-plugins/issues/1235)) ([b910cc7](https://github.com/DanySK/template-for-gradle-plugins/commit/b910cc79e8534232b78c1b682354354b03c6d9e5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.20 ([#1236](https://github.com/DanySK/template-for-gradle-plugins/issues/1236)) ([4658618](https://github.com/DanySK/template-for-gradle-plugins/commit/4658618eec5da682000da6e7a2659ff75f368f85))
+
 ## [2.0.27](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.26...2.0.27) (2025-05-13)
 
 ### Dependency updates
