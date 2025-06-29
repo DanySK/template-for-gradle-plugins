@@ -1,3 +1,9 @@
+## [2.0.32](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.31...2.0.32) (2025-06-29)
+
+### Bug Fixes
+
+* retry a release ([c372223](https://github.com/DanySK/template-for-gradle-plugins/commit/c3722235b904224d67a900874f6962a055a8b43e))
+
 ## [2.0.31](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.30...2.0.31) (2025-06-29)
 
 ### Dependency updates
