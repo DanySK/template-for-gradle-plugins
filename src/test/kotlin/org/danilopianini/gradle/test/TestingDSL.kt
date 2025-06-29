@@ -1,8 +1,8 @@
 package org.danilopianini.gradle.test
 
 import com.uchuhimo.konf.ConfigSpec
-import org.gradle.internal.impldep.org.apache.commons.lang.StringUtils
 import java.io.File
+import org.gradle.internal.impldep.org.apache.commons.lang.StringUtils
 
 object Root : ConfigSpec("") {
     val tests by required<List<Test>>()
@@ -36,10 +36,9 @@ enum class Permission(
     X(File::canExecute),
     ;
 
-    fun requireOnFile(file: File) =
-        require(file.hasPermission()) {
-            "File ${file.absolutePath} must have permission $name, but it does not."
-        }
+    fun requireOnFile(file: File) = require(file.hasPermission()) {
+        "File ${file.absolutePath} must have permission $name, but it does not."
+    }
 }
 
 data class ExistingFile(
@@ -49,15 +48,14 @@ data class ExistingFile(
     val trim: Boolean = false,
     val permissions: List<Permission> = emptyList(),
 ) {
-    fun validate(actualFile: File): Unit =
-        with(actualFile) {
-            require(exists()) {
-                "File $name does not exist."
-            }
-            if (content != null) {
-                val text = readText()
-                require(text == content) {
-                    """
+    fun validate(actualFile: File): Unit = with(actualFile) {
+        require(exists()) {
+            "File $name does not exist."
+        }
+        if (content != null) {
+            val text = readText()
+            require(text == content) {
+                """
                     Content of $name does not match expectations.
                     
                     Expected:
@@ -68,18 +66,18 @@ data class ExistingFile(
                     
                     Difference starts at index ${StringUtils.indexOfDifference(content, text)}:
                     ${StringUtils.difference(content, text)}
-                    """.trimIndent()
-                }
+                """.trimIndent()
             }
-            findRegex.forEach { regexString ->
-                val regex = Regex(regexString)
-                requireNotNull(readLines().find { regex.matches(it) }) {
-                    """
+        }
+        findRegex.forEach { regexString ->
+            val regex = Regex(regexString)
+            requireNotNull(readLines().find { regex.matches(it) }) {
+                """
                     None of the lines in $name matches the regular expression $findRegex. File content:
                     ${readText()}
-                    """.trimIndent()
-                }
+                """.trimIndent()
             }
-            permissions.forEach { it.requireOnFile(this) }
         }
+        permissions.forEach { it.requireOnFile(this) }
+    }
 }

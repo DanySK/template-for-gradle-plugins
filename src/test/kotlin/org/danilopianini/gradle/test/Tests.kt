@@ -9,13 +9,13 @@ import io.kotest.matchers.file.shouldExist
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldContain
 import io.kotest.matchers.string.shouldNotContain
+import java.io.File
 import org.gradle.internal.impldep.org.junit.rules.TemporaryFolder
 import org.gradle.testkit.runner.BuildResult
 import org.gradle.testkit.runner.GradleRunner
 import org.gradle.testkit.runner.TaskOutcome
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import java.io.File
 
 class Tests :
     StringSpec(
@@ -84,15 +84,13 @@ class Tests :
     companion object {
         val log: Logger = LoggerFactory.getLogger(Tests::class.java)
 
-        private fun BuildResult.outcomeOf(name: String) =
-            checkNotNull(task(":$name")?.outcome) {
-                "Task $name was not present among the executed tasks"
-            }
+        private fun BuildResult.outcomeOf(name: String) = checkNotNull(task(":$name")?.outcome) {
+            "Task $name was not present among the executed tasks"
+        }
 
-        private fun folder(closure: TemporaryFolder.() -> Unit) =
-            TemporaryFolder().apply {
-                create()
-                closure()
-            }
+        private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
+            create()
+            closure()
+        }
     }
 }

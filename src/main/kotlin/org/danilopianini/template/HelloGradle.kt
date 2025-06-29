@@ -53,9 +53,7 @@ open class HelloTask : DefaultTask() {
 /**
  * Just a template.
  */
-open class HelloExtension(
-    objects: ObjectFactory,
-) {
+open class HelloExtension(objects: ObjectFactory) {
     /**
      * Just a template.
      */
