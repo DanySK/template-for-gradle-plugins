@@ -1,3 +1,25 @@
+## [2.0.31](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.30...2.0.31) (2025-06-29)
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.180 ([#1265](https://github.com/DanySK/template-for-gradle-plugins/issues/1265)) ([36dfd59](https://github.com/DanySK/template-for-gradle-plugins/commit/36dfd59f57aec1133f869d0a306056b5ee4c5f31))
+* **deps:** update node.js to 22.17 ([#1266](https://github.com/DanySK/template-for-gradle-plugins/issues/1266)) ([f2b5dd3](https://github.com/DanySK/template-for-gradle-plugins/commit/f2b5dd3905ad431d1fde7d86d751c9fe3d7bba17))
+* **deps:** update plugin kotlin-qa to v0.89.2 ([#1262](https://github.com/DanySK/template-for-gradle-plugins/issues/1262)) ([2712a3f](https://github.com/DanySK/template-for-gradle-plugins/commit/2712a3fa0166d28f89386a5133def5ba9537b5ed))
+* **deps:** update plugin kotlin-qa to v0.90.0 ([#1267](https://github.com/DanySK/template-for-gradle-plugins/issues/1267)) ([73f6111](https://github.com/DanySK/template-for-gradle-plugins/commit/73f6111342257f12270d7d509d2cd252daf86dd2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.27 ([#1264](https://github.com/DanySK/template-for-gradle-plugins/issues/1264)) ([86dc728](https://github.com/DanySK/template-for-gradle-plugins/commit/86dc728cafccb603e834574311ff7dbc8f00ec7c))
+
+### Bug Fixes
+
+* **release:** switch to the Maven Central Portal ([f90fe5c](https://github.com/DanySK/template-for-gradle-plugins/commit/f90fe5c007ea7099e297ec8cb928bbdd8ae21d7e))
+
+### Build and continuous integration
+
+* run in parallel by default ([c932b77](https://github.com/DanySK/template-for-gradle-plugins/commit/c932b77016fb2104f017ceadec714a2b626f727a))
+
+### Style improvements
+
+* use ktlint_code_style=intellij_idea ([547be6f](https://github.com/DanySK/template-for-gradle-plugins/commit/547be6f86280fbbadad4435e78065bf864e42e7f))
+
 ## [2.0.30](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.29...2.0.30) (2025-06-23)
 
 ### Dependency updates
