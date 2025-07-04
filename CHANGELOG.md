@@ -1,3 +1,15 @@
+## [2.0.33](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.32...2.0.33) (2025-07-04)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.14.3 ([#1274](https://github.com/DanySK/template-for-gradle-plugins/issues/1274)) ([3e480b3](https://github.com/DanySK/template-for-gradle-plugins/commit/3e480b3a554f1eb01863774ac496f307ce204dc0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.134 ([#1270](https://github.com/DanySK/template-for-gradle-plugins/issues/1270)) ([e4b8c16](https://github.com/DanySK/template-for-gradle-plugins/commit/e4b8c16e81af02cf517b0c37adb44706f5e1c132))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.135 ([#1273](https://github.com/DanySK/template-for-gradle-plugins/issues/1273)) ([03a76f6](https://github.com/DanySK/template-for-gradle-plugins/commit/03a76f6c3db1f15f5d3f876a6742bc88ab8f85a7))
+* **deps:** update plugin gitsemver to v5.1.5 ([#1268](https://github.com/DanySK/template-for-gradle-plugins/issues/1268)) ([cbefc98](https://github.com/DanySK/template-for-gradle-plugins/commit/cbefc983e6ae7f062584d071d22ea296472435c2))
+* **deps:** update plugin gitsemver to v5.1.6 ([#1271](https://github.com/DanySK/template-for-gradle-plugins/issues/1271)) ([2fa31a7](https://github.com/DanySK/template-for-gradle-plugins/commit/2fa31a74a0c0f03f12be8f41fbb57eb71dbc736e))
+* **deps:** update plugin kotlin-qa to v0.90.1 ([#1269](https://github.com/DanySK/template-for-gradle-plugins/issues/1269)) ([f638931](https://github.com/DanySK/template-for-gradle-plugins/commit/f63893156c4e777131b4d18cec8c7c1e3aa2ce8e))
+* **deps:** update plugin multijvmtesting to v3.5.3 ([#1272](https://github.com/DanySK/template-for-gradle-plugins/issues/1272)) ([a671800](https://github.com/DanySK/template-for-gradle-plugins/commit/a671800b879601754723c0b04aa7697f394702bc))
+
 ## [2.0.32](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.31...2.0.32) (2025-06-29)
 
 ### Bug Fixes
