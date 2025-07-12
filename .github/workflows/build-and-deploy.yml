@@ -13,23 +13,35 @@ jobs:
     steps:
       - name: Checkout
         uses: DanySK/action-checkout@0.2.24
-      - uses: DanySK/build-check-deploy-gradle-action@4.0.10
+      - name: Determine dry-run flag
+        id: check_branch
+        shell: bash
+        run: |
+          ruby << 'RUBY' >> $GITHUB_OUTPUT
+            branch = ENV['GITHUB_REF'].sub(/^refs\/heads\//, '')
+            keywords = %w[gradle kotlin publish release deploy]
+            dry = keywords.any? { |kw| branch.include?(kw) } ? '' : '--dry-run'
+            puts "dry_run=#{dry}"
+          RUBY
+      - uses: DanySK/build-check-deploy-gradle-action@4.0.1
         with:
           # Dry-deployment
-          check-command: ./gradlew build --parallel
           deploy-command: >-
             ./gradlew
             publishAllPublicationsToProjectLocalRepository
             zipMavenCentralPortalPublication
             releaseMavenCentralPortalPublication
-            --dry-run
+            ${{ steps.check_branch.outputs.dry_run }}
           should-run-codecov: ${{ runner.os == 'Linux' }}
           codecov-token: ${{ secrets.CODECOV_TOKEN }}
           should-deploy: >-
             ${{
-              runner.os == 'Linux'
-              && !github.event.repository.fork
-              && github.event_name != 'pull_request'
+            runner.os == 'Linux'
+            && !github.event.repository.fork
+              && (
+                github.event_name != 'pull_request'
+                || github.event.pull_request.head.repo.full_name == github.repository
+              )
             }}
           maven-central-username: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
@@ -44,7 +56,10 @@ jobs:
     runs-on: ubuntu-24.04
     if: >-
       !github.event.repository.fork
-      && github.event_name != 'pull_request'
+      && (
+        github.event_name != 'pull_request'
+        || github.event.pull_request.head.repo.full_name == github.repository
+      )
     steps:
       - name: Checkout
         uses: actions/checkout@v5.0.0
