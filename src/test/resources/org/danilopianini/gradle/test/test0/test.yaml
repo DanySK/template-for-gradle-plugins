@@ -2,6 +2,7 @@ tests:
   - description: "A greeting should get printed"
     configuration:
       tasks: hello
+      options: --stacktrace
     expectation:
       output_contains: "Hello from Danilo Pianini"
       success: hello
