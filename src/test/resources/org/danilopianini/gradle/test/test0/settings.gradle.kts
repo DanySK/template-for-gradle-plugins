@@ -7,6 +7,7 @@ develocity {
         termsOfUseUrl = "https://gradle.com/terms-of-service"
         termsOfUseAgree = "yes"
         uploadInBackground = !System.getenv("CI").toBoolean()
+        publishing.onlyIf { it.buildResult.failures.isNotEmpty() }
     }
 }
 
