@@ -1,3 +1,25 @@
+## [2.0.35](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.34...2.0.35) (2025-08-16)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v9 ([#1291](https://github.com/DanySK/template-for-gradle-plugins/issues/1291)) ([578f183](https://github.com/DanySK/template-for-gradle-plugins/commit/578f1832573c8c6a9d87907ec407efdf026c7b15))
+* **deps:** update plugin gitsemver to v6.0.1 ([#1311](https://github.com/DanySK/template-for-gradle-plugins/issues/1311)) ([258bf31](https://github.com/DanySK/template-for-gradle-plugins/commit/258bf310aed581ccddde4e08012df2b2f5325f19))
+* **deps:** update plugin multijvmtesting to v4.1.0 ([#1310](https://github.com/DanySK/template-for-gradle-plugins/issues/1310)) ([efe5214](https://github.com/DanySK/template-for-gradle-plugins/commit/efe5214b3d2df0222327d1ba61ce126e806de308))
+
+### Tests
+
+* add `-Dorg.gradle.kotlin.dsl.scriptCompilationAvoidance=false` to work around gradle/gradle[#34115](https://github.com/DanySK/template-for-gradle-plugins/issues/34115) ([7e6b7d9](https://github.com/DanySK/template-for-gradle-plugins/commit/7e6b7d93b88706cf2b7aad0d00e49a2ea3178b3b))
+* add stacktrace to simplify the debug ([#1313](https://github.com/DanySK/template-for-gradle-plugins/issues/1313)) ([19364f5](https://github.com/DanySK/template-for-gradle-plugins/commit/19364f5f3e6dbfe4df4a695810a85c9d4311e6e4))
+* drop the usage of Gradle's internal `TemporaryFolder` ([#1317](https://github.com/DanySK/template-for-gradle-plugins/issues/1317)) ([f97d452](https://github.com/DanySK/template-for-gradle-plugins/commit/f97d452c72ca2eda6b32aabdfdd1e7853b64f633))
+* publish build scans only on failure ([#1318](https://github.com/DanySK/template-for-gradle-plugins/issues/1318)) ([490b33e](https://github.com/DanySK/template-for-gradle-plugins/commit/490b33e7b4611c287b6a9378f0871ce4d0c96a4f))
+* use Apache Commons Lang 3 instead of relying on Gradle's internals ([#1316](https://github.com/DanySK/template-for-gradle-plugins/issues/1316)) ([5b0d77c](https://github.com/DanySK/template-for-gradle-plugins/commit/5b0d77cc4e9efd15344ce426c3aed51eafb564e1))
+
+### Build and continuous integration
+
+* automatically set the minimum JVM compatibility based on the current version of Gradle ([#1312](https://github.com/DanySK/template-for-gradle-plugins/issues/1312)) ([19f5155](https://github.com/DanySK/template-for-gradle-plugins/commit/19f515502e9dd059f3d9106f9d0a52c391fcc45a))
+* migrate to develocity ([#1314](https://github.com/DanySK/template-for-gradle-plugins/issues/1314)) ([36f2fdf](https://github.com/DanySK/template-for-gradle-plugins/commit/36f2fdf15c22e93f3e408df340bf2e8372816760))
+* remove `inner` modifier from ProjectInfo ([#1315](https://github.com/DanySK/template-for-gradle-plugins/issues/1315)) ([4260c97](https://github.com/DanySK/template-for-gradle-plugins/commit/4260c97d254dee0cd411a561421be0e1576d6d71))
+
 ## [2.0.34](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.33...2.0.34) (2025-08-14)
 
 ### Dependency updates
