@@ -22,7 +22,7 @@ plugins {
 group = "org.danilopianini"
 description = "A template repository for kickstarting Gradle Plugins"
 
-inner class ProjectInfo {
+class ProjectInfo {
     val longName = "Template for Gradle Plugins"
     val website = "https://github.com/DanySK/$name"
     val vcsUrl = "$website.git"
