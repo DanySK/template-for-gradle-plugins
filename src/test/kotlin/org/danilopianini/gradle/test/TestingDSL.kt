@@ -2,7 +2,7 @@ package org.danilopianini.gradle.test
 
 import com.uchuhimo.konf.ConfigSpec
 import java.io.File
-import org.gradle.internal.impldep.org.apache.commons.lang.StringUtils
+import org.apache.commons.lang3.StringUtils
 
 object Root : ConfigSpec("") {
     val tests by required<List<Test>>()
