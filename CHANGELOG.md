@@ -1,3 +1,18 @@
+## [2.0.37](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.36...2.0.37) (2025-09-18)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.1.0 ([#1353](https://github.com/DanySK/template-for-gradle-plugins/issues/1353)) ([fe12422](https://github.com/DanySK/template-for-gradle-plugins/commit/fe124224e4f89553470d4093a5015d6e07b3225d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.142 ([#1347](https://github.com/DanySK/template-for-gradle-plugins/issues/1347)) ([2c6e2ab](https://github.com/DanySK/template-for-gradle-plugins/commit/2c6e2ab06bb2202babea50a8f82db67799483612))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.143 ([#1348](https://github.com/DanySK/template-for-gradle-plugins/issues/1348)) ([67f8db9](https://github.com/DanySK/template-for-gradle-plugins/commit/67f8db93139c058ee9bbdf4fd10e88171b93f512))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.144 ([#1351](https://github.com/DanySK/template-for-gradle-plugins/issues/1351)) ([c5f3eb9](https://github.com/DanySK/template-for-gradle-plugins/commit/c5f3eb988783c33d53f7ef7c7f203d30af183795))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.145 ([#1352](https://github.com/DanySK/template-for-gradle-plugins/issues/1352)) ([d043772](https://github.com/DanySK/template-for-gradle-plugins/commit/d043772a1ae6d175d1290767f049cf2e8674690d))
+* **deps:** update plugin com.gradle.develocity to v4.2 ([#1350](https://github.com/DanySK/template-for-gradle-plugins/issues/1350)) ([4f138c6](https://github.com/DanySK/template-for-gradle-plugins/commit/4f138c6725aa33d0a2ddfebe183a7621e63ea405))
+* **deps:** update plugin gitsemver to v7.0.3 ([#1345](https://github.com/DanySK/template-for-gradle-plugins/issues/1345)) ([9de2ac7](https://github.com/DanySK/template-for-gradle-plugins/commit/9de2ac761d219e0e08f42c6e5f7a2be4364ba838))
+* **deps:** update plugin kotlin-qa to v0.95.0 ([#1349](https://github.com/DanySK/template-for-gradle-plugins/issues/1349)) ([70762a9](https://github.com/DanySK/template-for-gradle-plugins/commit/70762a9419663b7c5b07afe83164f5a16970e158))
+* **deps:** update plugin multijvmtesting to v4.1.1 ([#1343](https://github.com/DanySK/template-for-gradle-plugins/issues/1343)) ([e31a41f](https://github.com/DanySK/template-for-gradle-plugins/commit/e31a41f7216621ccf3fae777da66b3ebb18ae4a5))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.1 ([#1346](https://github.com/DanySK/template-for-gradle-plugins/issues/1346)) ([cfc3cc1](https://github.com/DanySK/template-for-gradle-plugins/commit/cfc3cc13c2ac08d9dd57db4d6d098b320884563b))
+
 ## [2.0.36](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.35...2.0.36) (2025-09-10)
 
 ### Dependency updates
