@@ -2,7 +2,6 @@
 
 import org.apache.tools.ant.taskdefs.condition.Os
 
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     `java-gradle-plugin`
     alias(libs.plugins.dokka)
