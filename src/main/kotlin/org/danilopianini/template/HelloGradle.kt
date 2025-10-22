@@ -19,6 +19,7 @@ import org.gradle.kotlin.dsl.register
 open class HelloGradle : Plugin<Project> {
     override fun apply(target: Project) {
         val extension = target.extensions.create<HelloExtension>("hello")
+        // Enables `hello { ... }` in build.gradle.kts
         target.tasks.register<HelloTask>("hello") {
             author.set(extension.author)
         }
@@ -30,7 +31,7 @@ open class HelloGradle : Plugin<Project> {
  */
 open class HelloTask : DefaultTask() {
     /**
-     * Just a template.
+     * The author of the greeting, lazily set.
      */
     @Input
     val author: Property<String> = project.objects.property()
@@ -42,7 +43,7 @@ open class HelloTask : DefaultTask() {
     val message: Provider<String> = author.map { "Hello from $it" }
 
     /**
-     * Just a template.
+     * This is the code that is executed when the task is run.
      */
     @TaskAction
     fun printMessage() {
@@ -55,7 +56,7 @@ open class HelloTask : DefaultTask() {
  */
 open class HelloExtension(objects: ObjectFactory) {
     /**
-     * Just a template.
+     * This is where you write your DSL to control the plugin.
      */
     val author: Property<String> = objects.property()
 }
