@@ -39,7 +39,7 @@ class Tests : StringSpec({
             testFolder.resolve("gradle.properties").writeText(testkitProperties)
             val result = GradleRunner.create()
                 .withProjectDir(testFolder.toFile())
-                .withPluginClasspath()
+                .withPluginClasspath() // include the plugin into Gradle's build classpath for this run
                 .withArguments(
                     test.configuration.tasks +
                         test.configuration.options +
