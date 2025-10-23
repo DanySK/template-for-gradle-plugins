@@ -1,3 +1,10 @@
+## [2.0.39](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.38...2.0.39) (2025-10-23)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.21 ([#1379](https://github.com/DanySK/template-for-gradle-plugins/issues/1379)) ([7d62cca](https://github.com/DanySK/template-for-gradle-plugins/commit/7d62cca48dc42599473d170340b7bc15eb95f8e1))
+* **deps:** update node.js to 22.21 ([#1378](https://github.com/DanySK/template-for-gradle-plugins/issues/1378)) ([4136122](https://github.com/DanySK/template-for-gradle-plugins/commit/4136122f0e27d54c0d65b8faa6f512e0b6c1d493))
+
 ## [2.0.38](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.37...2.0.38) (2025-10-22)
 
 ### Dependency updates
