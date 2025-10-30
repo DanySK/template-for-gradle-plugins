@@ -23,7 +23,7 @@ jobs:
             dry = keywords.any? { |kw| branch.include?(kw) } ? '' : '--dry-run'
             puts "dry_run=#{dry}"
           RUBY
-      - uses: DanySK/build-check-deploy-gradle-action@4.0.1
+      - uses: DanySK/build-check-deploy-gradle-action@4.0.10
         with:
           # Dry-deployment
           deploy-command: >-
