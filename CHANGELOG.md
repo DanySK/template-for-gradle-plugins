@@ -1,3 +1,21 @@
+## [2.0.41](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.40...2.0.41) (2025-10-31)
+
+### Dependency updates
+
+* **deps:** update node.js to v24 ([#1396](https://github.com/DanySK/template-for-gradle-plugins/issues/1396)) ([fb665db](https://github.com/DanySK/template-for-gradle-plugins/commit/fb665db5cac4e26c0a57e87e4f4f9a2ddd108497))
+* **deps:** update plugin kotlin-qa to v0.95.3 ([#1391](https://github.com/DanySK/template-for-gradle-plugins/issues/1391)) ([1510d9c](https://github.com/DanySK/template-for-gradle-plugins/commit/1510d9c0b9cd5d2f041d48e8e8d2a94f96945aaa))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.4 ([#1392](https://github.com/DanySK/template-for-gradle-plugins/issues/1392)) ([6ea31f0](https://github.com/DanySK/template-for-gradle-plugins/commit/6ea31f0fd523df7f7b8811c00aa5eb82b79ce9b6))
+* **deps:** update plugin publishoncentral to v9.1.7 ([#1393](https://github.com/DanySK/template-for-gradle-plugins/issues/1393)) ([ae1aa9e](https://github.com/DanySK/template-for-gradle-plugins/commit/ae1aa9e80024879cc964ac661cea5f8446b2502e))
+
+### Bug Fixes
+
+* use correct annotations in `HelloTask` ([#1397](https://github.com/DanySK/template-for-gradle-plugins/issues/1397)) ([9158baa](https://github.com/DanySK/template-for-gradle-plugins/commit/9158baa4345da67ea1d781cd06dd1809fc6224d5))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.10 ([d66844e](https://github.com/DanySK/template-for-gradle-plugins/commit/d66844e82b30c023e77013654083766ee5e30c4d))
+* publish unstable versions of branches with specific names ([#1394](https://github.com/DanySK/template-for-gradle-plugins/issues/1394)) ([83ccf38](https://github.com/DanySK/template-for-gradle-plugins/commit/83ccf382d87645f23d0bef1ca8fe7cb971ba0f14))
+
 ## [2.0.40](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.39...2.0.40) (2025-10-29)
 
 ### Dependency updates
