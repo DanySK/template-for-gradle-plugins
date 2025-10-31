@@ -33,13 +33,13 @@ open class HelloTask : DefaultTask() {
     /**
      * The author of the greeting, lazily set.
      */
-    @Input
+    @get:Input
     val author: Property<String> = project.objects.property()
 
     /**
      * Read-only property calculated from the greeting.
      */
-    @Internal
+    @get:Internal
     val message: Provider<String> = author.map { "Hello from $it" }
 
     /**
