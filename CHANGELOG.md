@@ -1,3 +1,22 @@
+## [2.0.42](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.41...2.0.42) (2025-11-17)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.2.1 ([#1408](https://github.com/DanySK/template-for-gradle-plugins/issues/1408)) ([3f5c22a](https://github.com/DanySK/template-for-gradle-plugins/commit/3f5c22a1aa398d71d31b9a83a89410082d5d86b4))
+* **deps:** update dependency org.apache.commons:commons-lang3 to v3.20.0 ([#1407](https://github.com/DanySK/template-for-gradle-plugins/issues/1407)) ([98e79da](https://github.com/DanySK/template-for-gradle-plugins/commit/98e79da287bedd469f5cc417f6550c2629fc2b7d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.153 ([#1400](https://github.com/DanySK/template-for-gradle-plugins/issues/1400)) ([f555ef4](https://github.com/DanySK/template-for-gradle-plugins/commit/f555ef4674f33a4a849d3cc8468f3c0f78fcaf5d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.154 ([#1402](https://github.com/DanySK/template-for-gradle-plugins/issues/1402)) ([0fceb15](https://github.com/DanySK/template-for-gradle-plugins/commit/0fceb159b2ad06e109f264e398045df91043394e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.155 ([#1403](https://github.com/DanySK/template-for-gradle-plugins/issues/1403)) ([dd31bbf](https://github.com/DanySK/template-for-gradle-plugins/commit/dd31bbfa0e8b11b6243fef063c68eb3d65c13923))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.156 ([#1405](https://github.com/DanySK/template-for-gradle-plugins/issues/1405)) ([170ca68](https://github.com/DanySK/template-for-gradle-plugins/commit/170ca68ff11d80dd56d19e6f0bf82d9374481940))
+* **deps:** update plugin kotlin-qa to v0.96.0 ([#1398](https://github.com/DanySK/template-for-gradle-plugins/issues/1398)) ([8b05850](https://github.com/DanySK/template-for-gradle-plugins/commit/8b058503e90dca0e0fb2000c4d7da000fb7121e8))
+* **deps:** update plugin kotlin-qa to v0.97.0 ([#1404](https://github.com/DanySK/template-for-gradle-plugins/issues/1404)) ([23ba4ad](https://github.com/DanySK/template-for-gradle-plugins/commit/23ba4ad62f7196501ba7e8beaea03e9a52d3c961))
+* **deps:** update plugin kotlin-qa to v0.98.0 ([#1406](https://github.com/DanySK/template-for-gradle-plugins/issues/1406)) ([0b872f9](https://github.com/DanySK/template-for-gradle-plugins/commit/0b872f94a792fc8d2a1f0253922396d393e9010b))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.11 ([#1399](https://github.com/DanySK/template-for-gradle-plugins/issues/1399)) ([2833bfb](https://github.com/DanySK/template-for-gradle-plugins/commit/2833bfb96bdadc81f5cece58f0bb9ac32edfff65))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.12 ([#1401](https://github.com/DanySK/template-for-gradle-plugins/issues/1401)) ([dc96482](https://github.com/DanySK/template-for-gradle-plugins/commit/dc964829a1b7d46b6b78b86d1eadca717a655e3f))
+
 ## [2.0.41](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.40...2.0.41) (2025-10-31)
 
 ### Dependency updates
