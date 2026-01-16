@@ -22,5 +22,5 @@ jacoco-testkit = "pl.droidsonroids.jacoco.testkit:1.0.12"
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = "org.danilopianini.gradle-kotlin-qa:0.100.0"
 multiJvmTesting = "org.danilopianini.multi-jvm-test-plugin:4.3.2"
-publishOnCentral = "org.danilopianini.publish-on-central:9.1.9"
+publishOnCentral = "org.danilopianini.publish-on-central:9.1.10"
 taskTree = "com.dorongold.task-tree:4.0.1"
