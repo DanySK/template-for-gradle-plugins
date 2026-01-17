@@ -1,3 +1,17 @@
+## [2.0.45](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.44...2.0.45) (2026-01-17)
+
+### Dependency updates
+
+* **deps:** update plugin kotlin-qa to v0.100.1 ([#1444](https://github.com/DanySK/template-for-gradle-plugins/issues/1444)) ([79868b4](https://github.com/DanySK/template-for-gradle-plugins/commit/79868b4721eae1e6b46c732e733e9ceac5bec692))
+
+### Bug Fixes
+
+* import the kotlin stdlib implicitly ([52a289d](https://github.com/DanySK/template-for-gradle-plugins/commit/52a289d4caa42788372303f0e4d1c8c6af31dbc9))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.19 ([#1445](https://github.com/DanySK/template-for-gradle-plugins/issues/1445)) ([52f48c8](https://github.com/DanySK/template-for-gradle-plugins/commit/52f48c86aa4aa8a74e5d996f7f8779655e7cd055))
+
 ## [2.0.44](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.43...2.0.44) (2026-01-16)
 
 ### Dependency updates
