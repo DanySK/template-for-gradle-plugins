@@ -29,7 +29,7 @@ open class HelloGradle : Plugin<Project> {
 /**
  * Just a template.
  */
-open class HelloTask : DefaultTask() {
+abstract class HelloTask : DefaultTask() {
     /**
      * The author of the greeting, lazily set.
      */
