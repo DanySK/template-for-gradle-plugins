@@ -1,3 +1,25 @@
+## [2.0.46](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.45...2.0.46) (2026-01-29)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.3.1 ([#1458](https://github.com/DanySK/template-for-gradle-plugins/issues/1458)) ([714f8e2](https://github.com/DanySK/template-for-gradle-plugins/commit/714f8e2c1219b1ac7dc114a09a7cc1a0ad898a49))
+* **deps:** update kotest to v6.1.0 ([#1448](https://github.com/DanySK/template-for-gradle-plugins/issues/1448)) ([8368475](https://github.com/DanySK/template-for-gradle-plugins/commit/836847503f732cfd8254909fcfd4020531e093c6))
+* **deps:** update kotest to v6.1.1 ([#1452](https://github.com/DanySK/template-for-gradle-plugins/issues/1452)) ([b6c3efb](https://github.com/DanySK/template-for-gradle-plugins/commit/b6c3efbb88ffb960ad7d0ddc78a522bff7a74a59))
+* **deps:** update kotest to v6.1.2 ([#1454](https://github.com/DanySK/template-for-gradle-plugins/issues/1454)) ([3738352](https://github.com/DanySK/template-for-gradle-plugins/commit/3738352b706ddb680672741cc1deb57f7d673e5d))
+* **deps:** update plugin com.gradle.develocity to v4.3.2 ([#1455](https://github.com/DanySK/template-for-gradle-plugins/issues/1455)) ([cbc99f9](https://github.com/DanySK/template-for-gradle-plugins/commit/cbc99f910f6e6ecdd1b4b92b6c73fffa7b7ec86e))
+* **deps:** update plugin gitsemver to v7.0.10 ([#1453](https://github.com/DanySK/template-for-gradle-plugins/issues/1453)) ([dfc9ecf](https://github.com/DanySK/template-for-gradle-plugins/commit/dfc9ecf5ee8a1151fe82acd7b3dd530e056567fa))
+* **deps:** update plugin kotlin-qa to v0.100.2 ([#1446](https://github.com/DanySK/template-for-gradle-plugins/issues/1446)) ([03c5ced](https://github.com/DanySK/template-for-gradle-plugins/commit/03c5ced5a1e292a834a6a6c5ae1f66d8c81fcf65))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.8 ([#1459](https://github.com/DanySK/template-for-gradle-plugins/issues/1459)) ([e071255](https://github.com/DanySK/template-for-gradle-plugins/commit/e071255a24ec991a252538ba5cb9eb0fc115bb0f))
+* **deps:** update plugin publishoncentral to v9.1.11 ([#1447](https://github.com/DanySK/template-for-gradle-plugins/issues/1447)) ([d6615d2](https://github.com/DanySK/template-for-gradle-plugins/commit/d6615d262861d5da7dd84c6658bcd0c3c24c8fb3))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v6.0.2 ([#1450](https://github.com/DanySK/template-for-gradle-plugins/issues/1450)) ([3fee8a8](https://github.com/DanySK/template-for-gradle-plugins/commit/3fee8a8262ddb2bfb5355e2da9151fa90dc2f9de))
+* **deps:** update danysk/action-checkout action to v0.2.28 ([#1451](https://github.com/DanySK/template-for-gradle-plugins/issues/1451)) ([bf98a7f](https://github.com/DanySK/template-for-gradle-plugins/commit/bf98a7fd3f34e21fa73cd3f2877337959b0167d3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.20 ([#1449](https://github.com/DanySK/template-for-gradle-plugins/issues/1449)) ([32e9c67](https://github.com/DanySK/template-for-gradle-plugins/commit/32e9c6790037e0b2b8e71cb7630673e76d004133))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.21 ([#1456](https://github.com/DanySK/template-for-gradle-plugins/issues/1456)) ([62312e8](https://github.com/DanySK/template-for-gradle-plugins/commit/62312e88e897ef6f0178ba2055bead3d7ddaf7e6))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.22 ([#1457](https://github.com/DanySK/template-for-gradle-plugins/issues/1457)) ([e6128e2](https://github.com/DanySK/template-for-gradle-plugins/commit/e6128e22a57cb7aa4a00aaeeb4e40a0931092eb0))
+
 ## [2.0.45](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.44...2.0.45) (2026-01-17)
 
 ### Dependency updates
