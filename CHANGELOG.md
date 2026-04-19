@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.49...2.1.0) (2026-04-19)
+
+### Dependency updates
+
+* **api-deps:** upgrade gradle to 9.4.1 ([#1511](https://github.com/DanySK/template-for-gradle-plugins/issues/1511)) ([c5bec84](https://github.com/DanySK/template-for-gradle-plugins/commit/c5bec847b2048c4e01edd340f82570c8f7ad3e62))
+
 ## [2.0.49](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.48...2.0.49) (2026-04-19)
 
 ### Dependency updates
