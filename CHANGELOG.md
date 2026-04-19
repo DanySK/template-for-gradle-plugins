@@ -1,3 +1,9 @@
+## [2.1.1](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.0...2.1.1) (2026-04-19)
+
+### Documentation
+
+* add agent instructions ([#1512](https://github.com/DanySK/template-for-gradle-plugins/issues/1512)) ([8ca4cad](https://github.com/DanySK/template-for-gradle-plugins/commit/8ca4cad7df3034bca0e47bcee4eab620e505511a))
+
 ## [2.1.0](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.49...2.1.0) (2026-04-19)
 
 ### Dependency updates
