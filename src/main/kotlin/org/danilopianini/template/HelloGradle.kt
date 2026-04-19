@@ -12,6 +12,7 @@ import org.gradle.api.tasks.TaskAction
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.property
 import org.gradle.kotlin.dsl.register
+import org.gradle.work.DisableCachingByDefault
 
 /**
  * Just a template.
@@ -29,6 +30,7 @@ open class HelloGradle : Plugin<Project> {
 /**
  * Just a template.
  */
+@DisableCachingByDefault(because = "The template task only logs a message")
 open class HelloTask : DefaultTask() {
     /**
      * The author of the greeting, lazily set.
