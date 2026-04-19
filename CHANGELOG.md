@@ -1,3 +1,37 @@
+## [2.0.49](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.48...2.0.49) (2026-04-19)
+
+### Dependency updates
+
+* **deps:** update dependency io.kotest:kotest-assertions-core-jvm to v6.1.10 ([#1505](https://github.com/DanySK/template-for-gradle-plugins/issues/1505)) ([ac13ad0](https://github.com/DanySK/template-for-gradle-plugins/commit/ac13ad00e94e76429405f6b4b4f3d5e25e9f42b1))
+* **deps:** update kotest to v6.1.11 ([#1507](https://github.com/DanySK/template-for-gradle-plugins/issues/1507)) ([210b993](https://github.com/DanySK/template-for-gradle-plugins/commit/210b99385f35b2e75c41b4f6390a9e9dd2d97142))
+* **deps:** update kotest to v6.1.8 ([#1495](https://github.com/DanySK/template-for-gradle-plugins/issues/1495)) ([0722b4e](https://github.com/DanySK/template-for-gradle-plugins/commit/0722b4e03c9288af837db7c98f1d64eea7984363))
+* **deps:** update kotest to v6.1.9 ([#1496](https://github.com/DanySK/template-for-gradle-plugins/issues/1496)) ([bb17381](https://github.com/DanySK/template-for-gradle-plugins/commit/bb1738155bf87ce5ad71ac5b252e48dc5007f6f2))
+* **deps:** update node.js to 24.15 ([#1509](https://github.com/DanySK/template-for-gradle-plugins/issues/1509)) ([5d5cdbe](https://github.com/DanySK/template-for-gradle-plugins/commit/5d5cdbe83ae133b85838693e9bf6bfcbe52f00f4))
+* **deps:** update plugin com.gradle.develocity to v4.4.0 ([#1498](https://github.com/DanySK/template-for-gradle-plugins/issues/1498)) ([fe72a2e](https://github.com/DanySK/template-for-gradle-plugins/commit/fe72a2e357b7e37f45f3545f9507938b2e9f1db6))
+* **deps:** update plugin gitsemver to v7.0.15 ([#1492](https://github.com/DanySK/template-for-gradle-plugins/issues/1492)) ([ed1563d](https://github.com/DanySK/template-for-gradle-plugins/commit/ed1563d0b127b16ba50b5d4abf5f878ba36a9262))
+* **deps:** update plugin gitsemver to v7.0.16 ([#1500](https://github.com/DanySK/template-for-gradle-plugins/issues/1500)) ([e9f3c5a](https://github.com/DanySK/template-for-gradle-plugins/commit/e9f3c5aac6ab379cee2d388a14cd6bc210775b11))
+* **deps:** update plugin gradlepluginpublish to v2.1.1 ([#1491](https://github.com/DanySK/template-for-gradle-plugins/issues/1491)) ([59bd8b7](https://github.com/DanySK/template-for-gradle-plugins/commit/59bd8b73fed08512670068ce11b4b7a4416c4c15))
+* **deps:** update plugin kotlin-qa to v1.3.2 ([#1501](https://github.com/DanySK/template-for-gradle-plugins/issues/1501)) ([6c61b03](https://github.com/DanySK/template-for-gradle-plugins/commit/6c61b0332a79938abaec9aabc884441d54215090))
+* **deps:** update plugin kotlin-qa to v1.4.0 ([#1504](https://github.com/DanySK/template-for-gradle-plugins/issues/1504)) ([52632a6](https://github.com/DanySK/template-for-gradle-plugins/commit/52632a693b4cbcb8343668b81f669dfb13998ad8))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.12 ([#1493](https://github.com/DanySK/template-for-gradle-plugins/issues/1493)) ([05a484e](https://github.com/DanySK/template-for-gradle-plugins/commit/05a484e5d6a53edfa6aa51f5f606416fc76e3ad5))
+* **deps:** update plugin publishoncentral to v9.1.14 ([#1490](https://github.com/DanySK/template-for-gradle-plugins/issues/1490)) ([025fbb8](https://github.com/DanySK/template-for-gradle-plugins/commit/025fbb854af6e65722942912ceba016c221a2cc6))
+* **deps:** update plugin publishoncentral to v9.1.15 ([#1510](https://github.com/DanySK/template-for-gradle-plugins/issues/1510)) ([19902c4](https://github.com/DanySK/template-for-gradle-plugins/commit/19902c4910c17332207f34ddf1ec045da0539428))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2.2.0 ([#1499](https://github.com/DanySK/template-for-gradle-plugins/issues/1499)) ([74b844d](https://github.com/DanySK/template-for-gradle-plugins/commit/74b844dee4c9c8ed70784e52cbc04d2d2619cddb))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.25 ([#1488](https://github.com/DanySK/template-for-gradle-plugins/issues/1488)) ([d07c8cc](https://github.com/DanySK/template-for-gradle-plugins/commit/d07c8ccb74d0962d6ac60ad2a17526fb849f706e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.26 ([#1489](https://github.com/DanySK/template-for-gradle-plugins/issues/1489)) ([b646789](https://github.com/DanySK/template-for-gradle-plugins/commit/b64678985099bd35b91b3407b5e8d1a6e02b0b4b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.27 ([#1494](https://github.com/DanySK/template-for-gradle-plugins/issues/1494)) ([842b700](https://github.com/DanySK/template-for-gradle-plugins/commit/842b7004576cfb46c5a5e5b570df28c48ba14286))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.28 ([#1497](https://github.com/DanySK/template-for-gradle-plugins/issues/1497)) ([08ef72e](https://github.com/DanySK/template-for-gradle-plugins/commit/08ef72e2d1a80241dc99e0eca190fc5b12a0d5b4))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.29 ([#1502](https://github.com/DanySK/template-for-gradle-plugins/issues/1502)) ([78df169](https://github.com/DanySK/template-for-gradle-plugins/commit/78df16952de1b26c815e10eba407551f4c3ec660))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.30 ([#1503](https://github.com/DanySK/template-for-gradle-plugins/issues/1503)) ([0c400aa](https://github.com/DanySK/template-for-gradle-plugins/commit/0c400aa1327e99c30a179682530f1d3fd22f5e92))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.31 ([#1506](https://github.com/DanySK/template-for-gradle-plugins/issues/1506)) ([54dfe41](https://github.com/DanySK/template-for-gradle-plugins/commit/54dfe418d9a51378f498a25e47ac1983da414831))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.32 ([#1508](https://github.com/DanySK/template-for-gradle-plugins/issues/1508)) ([84d792e](https://github.com/DanySK/template-for-gradle-plugins/commit/84d792e826011c2b0c5a6cc6d06b5d06b6d435b4))
+
 ## [2.0.48](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.47...2.0.48) (2026-03-18)
 
 ### Dependency updates
