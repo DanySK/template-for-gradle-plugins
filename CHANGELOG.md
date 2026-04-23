@@ -1,3 +1,18 @@
+## [2.1.2](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.1...2.1.2) (2026-04-23)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.3.21 ([#1520](https://github.com/DanySK/template-for-gradle-plugins/issues/1520)) ([e139e39](https://github.com/DanySK/template-for-gradle-plugins/commit/e139e39773ddaa746de8e288de5a88cd5d7d5346))
+* **deps:** update plugin com.gradle.develocity to v4.4.1 ([#1515](https://github.com/DanySK/template-for-gradle-plugins/issues/1515)) ([fb90561](https://github.com/DanySK/template-for-gradle-plugins/commit/fb9056109680a2a130e9aa8948cb91563a19ab30))
+* **deps:** update plugin kotlin-qa to v1.5.0 ([#1518](https://github.com/DanySK/template-for-gradle-plugins/issues/1518)) ([543fb44](https://github.com/DanySK/template-for-gradle-plugins/commit/543fb44b2a0cc6a892b1e3f2d965e76b66aed89a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.13 ([#1513](https://github.com/DanySK/template-for-gradle-plugins/issues/1513)) ([469e47f](https://github.com/DanySK/template-for-gradle-plugins/commit/469e47f33552a595d6e9de91fcb74e218d9c13e8))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.14 ([#1514](https://github.com/DanySK/template-for-gradle-plugins/issues/1514)) ([965aee4](https://github.com/DanySK/template-for-gradle-plugins/commit/965aee4f11d610d3cb93ff6aed06adb8e283ca58))
+* **deps:** update plugin publishoncentral to v9.2.0 ([#1519](https://github.com/DanySK/template-for-gradle-plugins/issues/1519)) ([b2267df](https://github.com/DanySK/template-for-gradle-plugins/commit/b2267dfc52372527a757fd251f3fbbd376d68dee))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6.4.0 ([#1516](https://github.com/DanySK/template-for-gradle-plugins/issues/1516)) ([ca551a6](https://github.com/DanySK/template-for-gradle-plugins/commit/ca551a6f54b7773a621a99cd74525a9d6f72975d))
+
 ## [2.1.1](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.0...2.1.1) (2026-04-19)
 
 ### Documentation
