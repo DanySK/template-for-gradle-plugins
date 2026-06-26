@@ -1,3 +1,18 @@
+## [2.1.7](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.6...2.1.7) (2026-06-26)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.6.1 ([#1572](https://github.com/DanySK/template-for-gradle-plugins/issues/1572)) ([43de99e](https://github.com/DanySK/template-for-gradle-plugins/commit/43de99e6d43d66276fffe07ca174023545bd8ba1))
+* **deps:** update node.js to 24.17 ([#1568](https://github.com/DanySK/template-for-gradle-plugins/issues/1568)) ([e963058](https://github.com/DanySK/template-for-gradle-plugins/commit/e9630583d7baca02dccaba6600583904c3951ada))
+* **deps:** update node.js to 24.18 ([#1571](https://github.com/DanySK/template-for-gradle-plugins/issues/1571)) ([ab31cb7](https://github.com/DanySK/template-for-gradle-plugins/commit/ab31cb726f0dba79b44b1a0c07ec4b0767823054))
+* **deps:** update plugin multijvmtesting to v4.5.2 ([#1566](https://github.com/DanySK/template-for-gradle-plugins/issues/1566)) ([3bdba7b](https://github.com/DanySK/template-for-gradle-plugins/commit/3bdba7b9de63c07995c0cee5028c20e76570fe18))
+* **deps:** update plugin publishoncentral to v9.2.6 ([#1567](https://github.com/DanySK/template-for-gradle-plugins/issues/1567)) ([a63c14e](https://github.com/DanySK/template-for-gradle-plugins/commit/a63c14e83fb0f167348a056766ad0a47baf23319))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.37 ([#1569](https://github.com/DanySK/template-for-gradle-plugins/issues/1569)) ([b5b1975](https://github.com/DanySK/template-for-gradle-plugins/commit/b5b1975903ec4ba77d47afd0292559bb5452702b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.38 ([#1570](https://github.com/DanySK/template-for-gradle-plugins/issues/1570)) ([d86afe4](https://github.com/DanySK/template-for-gradle-plugins/commit/d86afe4c307587dabbc4a55fdcb8abdc16c5d638))
+
 ## [2.1.6](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.5...2.1.6) (2026-06-19)
 
 ### Dependency updates
