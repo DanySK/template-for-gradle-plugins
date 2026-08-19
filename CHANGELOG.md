@@ -1,3 +1,20 @@
+## [2.1.10](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.9...2.1.10) (2026-08-19)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.7.1 ([#1610](https://github.com/DanySK/template-for-gradle-plugins/issues/1610)) ([4531592](https://github.com/DanySK/template-for-gradle-plugins/commit/4531592844b60701d13275999b58fea97df7a727))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.187 ([#1602](https://github.com/DanySK/template-for-gradle-plugins/issues/1602)) ([29123bb](https://github.com/DanySK/template-for-gradle-plugins/commit/29123bb7133f3a08302e03531db259a1f0cc767e))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.188 ([#1603](https://github.com/DanySK/template-for-gradle-plugins/issues/1603)) ([8b7366d](https://github.com/DanySK/template-for-gradle-plugins/commit/8b7366d9b6044483c272e05303ee4ebc20936be4))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.189 ([#1605](https://github.com/DanySK/template-for-gradle-plugins/issues/1605)) ([7a95b8e](https://github.com/DanySK/template-for-gradle-plugins/commit/7a95b8ee158bfe0ff95814c6c5eb7f79b8ec8a73))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.190 ([#1606](https://github.com/DanySK/template-for-gradle-plugins/issues/1606)) ([af7784b](https://github.com/DanySK/template-for-gradle-plugins/commit/af7784bf8a8f6a053796d5af102ff949c3ba2fe9))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.191 ([#1608](https://github.com/DanySK/template-for-gradle-plugins/issues/1608)) ([d39dd35](https://github.com/DanySK/template-for-gradle-plugins/commit/d39dd35d9ec64a513babe1d2abc33275101267b9))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.192 ([#1609](https://github.com/DanySK/template-for-gradle-plugins/issues/1609)) ([cd47097](https://github.com/DanySK/template-for-gradle-plugins/commit/cd4709701a2dacb0f845b4c2013cc0e1295051a0))
+* **deps:** update kotest to v6.2.4 ([#1607](https://github.com/DanySK/template-for-gradle-plugins/issues/1607)) ([940ec9b](https://github.com/DanySK/template-for-gradle-plugins/commit/940ec9b776241b400ad4da6052809bcc9d88a5ff))
+* **deps:** update plugin multijvmtesting to v4.5.6 ([#1611](https://github.com/DanySK/template-for-gradle-plugins/issues/1611)) ([a082ebc](https://github.com/DanySK/template-for-gradle-plugins/commit/a082ebc4056bcf1dc3980ac225e1848cc20d403a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.22 ([#1600](https://github.com/DanySK/template-for-gradle-plugins/issues/1600)) ([50b3898](https://github.com/DanySK/template-for-gradle-plugins/commit/50b38984a360bfd6eaa4da80a39777f834b3b072))
+* **deps:** update plugin publishoncentral to v9.2.9 ([#1601](https://github.com/DanySK/template-for-gradle-plugins/issues/1601)) ([bda0f5b](https://github.com/DanySK/template-for-gradle-plugins/commit/bda0f5b916e02542b9e3ecddb3059d7c5ca80861))
+* **deps:** update plugin tasktree to v4.0.2 ([#1604](https://github.com/DanySK/template-for-gradle-plugins/issues/1604)) ([af82fb0](https://github.com/DanySK/template-for-gradle-plugins/commit/af82fb05fc5d26110ddc8b60110f87655a44d604))
+
 ## [2.1.9](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.8...2.1.9) (2026-08-07)
 
 ### Dependency updates
