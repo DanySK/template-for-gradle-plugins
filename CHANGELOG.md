@@ -1,3 +1,10 @@
+## [2.1.14](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.13...2.1.14) (2026-10-09)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.8.1 ([#1648](https://github.com/DanySK/template-for-gradle-plugins/issues/1648)) ([c0d7b72](https://github.com/DanySK/template-for-gradle-plugins/commit/c0d7b724dc8f8d16318f6004ccced71015e5b77b))
+* **deps:** update plugin multijvmtesting to v4.5.10 ([#1652](https://github.com/DanySK/template-for-gradle-plugins/issues/1652)) ([433fd8a](https://github.com/DanySK/template-for-gradle-plugins/commit/433fd8aaa4c94a551349194dc57928f18959726d))
+
 ## [2.1.13](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.12...2.1.13) (2026-10-09)
 
 ### Dependency updates
