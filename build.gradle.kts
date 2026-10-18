@@ -50,7 +50,6 @@ dependencies {
     testImplementation(gradleTestKit())
     testImplementation(libs.apache.commons.lang3)
     testImplementation(libs.konf.yaml)
-    testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
 }
 

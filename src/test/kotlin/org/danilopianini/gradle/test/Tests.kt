@@ -2,7 +2,6 @@ package org.danilopianini.gradle.test
 
 import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.source.yaml
-import io.github.classgraph.ClassGraph
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.file.shouldBeAFile
 import io.kotest.matchers.file.shouldExist
@@ -25,11 +24,13 @@ class Tests : StringSpec({
     checkNotNull(testkitProperties) {
         "No file testkit-gradle.properties was generated"
     }
-    val scan = ClassGraph().enableAllInfo().acceptPackages(Tests::class.java.`package`.name).scan()
-    scan.getResourcesWithLeafName("test.yaml").flatMap { resource ->
-        log.debug("Found test list in {}", resource)
-        val yamlFile = File(resource.classpathElementFile.absolutePath + "/" + resource.path)
-        val testConfiguration = Config { addSpec(Root) }.from.yaml.inputStream(resource.open())
+    val testPackage = Tests::class.java.`package`.name.replace('.', '/')
+    val testYamls = javaClass.classLoader.getResources(testPackage).toList()
+        .filter { it.protocol == "file" }
+        .flatMap { root -> File(root.toURI()).walkTopDown().filter { it.isFile && it.name == "test.yaml" }.toList() }
+    testYamls.flatMap { yamlFile ->
+        log.debug("Found test list in {}", yamlFile)
+        val testConfiguration = Config { addSpec(Root) }.from.yaml.file(yamlFile)
         testConfiguration[Root.tests].map { it to yamlFile.parentFile }
     }.forEach { (test, location) ->
         log.debug("Test to be executed: {} from {}", test, location)
