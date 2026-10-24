@@ -1,3 +1,30 @@
+## [2.1.15](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.14...2.1.15) (2026-10-24)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.8.2 ([#1664](https://github.com/DanySK/template-for-gradle-plugins/issues/1664)) ([d0281c3](https://github.com/DanySK/template-for-gradle-plugins/commit/d0281c3ec5d62b1b7fcb9afbcf021bd3a659157d))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.197 ([a2c9d4c](https://github.com/DanySK/template-for-gradle-plugins/commit/a2c9d4c6f42b708ec4ea441aa7baf34620b4c561))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.198 ([#1656](https://github.com/DanySK/template-for-gradle-plugins/issues/1656)) ([1e8b582](https://github.com/DanySK/template-for-gradle-plugins/commit/1e8b58227594e799b48204c4c47e937cf147448e))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.199 ([#1657](https://github.com/DanySK/template-for-gradle-plugins/issues/1657)) ([4ade0ee](https://github.com/DanySK/template-for-gradle-plugins/commit/4ade0ee358498d42e3125d58622c98fbcea114fd))
+* **deps:** update kotest to v6.2.6 ([5d443d3](https://github.com/DanySK/template-for-gradle-plugins/commit/5d443d34031e242fd63e576774e967072d31f4f8))
+* **deps:** update node.js to 24.22 ([#1662](https://github.com/DanySK/template-for-gradle-plugins/issues/1662)) ([1c6df72](https://github.com/DanySK/template-for-gradle-plugins/commit/1c6df72a4a9482bfa15c352c7c40489ec1aa803b))
+* **deps:** update plugin com.gradle.develocity to v4.6.1 ([a5a3f5c](https://github.com/DanySK/template-for-gradle-plugins/commit/a5a3f5cfe0aed5f18855cfee84a4c2066e56f1d4))
+* **deps:** update plugin gitsemver to v7.0.25 ([#1650](https://github.com/DanySK/template-for-gradle-plugins/issues/1650)) ([d1021e3](https://github.com/DanySK/template-for-gradle-plugins/commit/d1021e3d6563d7bfc937fd96c8b28d801b48887b))
+* **deps:** update plugin gitsemver to v7.2.0 ([#1671](https://github.com/DanySK/template-for-gradle-plugins/issues/1671)) ([7f67e2d](https://github.com/DanySK/template-for-gradle-plugins/commit/7f67e2dae9b2b3bd73bc35fe47fc7db351f4f3fb))
+* **deps:** update plugin kotlin-qa to v1.10.1 ([b1f5dc5](https://github.com/DanySK/template-for-gradle-plugins/commit/b1f5dc53514ab270e7165129c8ee890d6b78b64b))
+* **deps:** update plugin kotlin-qa to v1.10.2 ([a06d044](https://github.com/DanySK/template-for-gradle-plugins/commit/a06d04478cb951a908a51e4df977607dbfb0ff15))
+* **deps:** update plugin multijvmtesting to v4.5.11 ([#1669](https://github.com/DanySK/template-for-gradle-plugins/issues/1669)) ([7d281a9](https://github.com/DanySK/template-for-gradle-plugins/commit/7d281a962c6e5980af4b049f216b97fcd2e594f9))
+* **deps:** update plugin publishoncentral to v9.2.14 ([#1654](https://github.com/DanySK/template-for-gradle-plugins/issues/1654)) ([aac9559](https://github.com/DanySK/template-for-gradle-plugins/commit/aac9559684e28627b078fed5fa171112ee0414f3))
+
+### Tests
+
+* drop classgraph in favor of a plain classpath directory walk ([8e036a5](https://github.com/DanySK/template-for-gradle-plugins/commit/8e036a520aa57e97037ed00173dd2d40f3ae4082))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.49 ([#1661](https://github.com/DanySK/template-for-gradle-plugins/issues/1661)) ([230d149](https://github.com/DanySK/template-for-gradle-plugins/commit/230d149405141626a74b2cd9d9c4de0ebb13c18b))
+* **deps:** update dependency ubuntu github actions runner to v26 ([#1668](https://github.com/DanySK/template-for-gradle-plugins/issues/1668)) ([a10a22f](https://github.com/DanySK/template-for-gradle-plugins/commit/a10a22ffd3c05581f55406a34c2e6bd745093b27))
+
 ## [2.1.14](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.13...2.1.14) (2026-10-09)
 
 ### Dependency updates
