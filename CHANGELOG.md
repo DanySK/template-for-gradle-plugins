@@ -1,3 +1,22 @@
+## [2.1.16](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.15...2.1.16) (2026-11-06)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.158 ([#1676](https://github.com/DanySK/template-for-gradle-plugins/issues/1676)) ([caaa885](https://github.com/DanySK/template-for-gradle-plugins/commit/caaa8852755eed0d1976db1d44aeb8f3d0c7e254))
+* **deps:** update node.js to v26 ([#1674](https://github.com/DanySK/template-for-gradle-plugins/issues/1674)) ([76a252f](https://github.com/DanySK/template-for-gradle-plugins/commit/76a252fd0804930643dcc7c2e2e70724eb3d2e2c))
+* **deps:** update plugin gitsemver to v7.3.0 ([3c13e68](https://github.com/DanySK/template-for-gradle-plugins/commit/3c13e687069f9ef5f6cd6a50e2bfb71b3bf1b636))
+* **deps:** update plugin publishoncentral to v9.2.15 ([#1670](https://github.com/DanySK/template-for-gradle-plugins/issues/1670)) ([19603e5](https://github.com/DanySK/template-for-gradle-plugins/commit/19603e50c2536ccd1f5b42628d0910d095a27ba9))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2.3.0 ([#1677](https://github.com/DanySK/template-for-gradle-plugins/issues/1677)) ([cc969df](https://github.com/DanySK/template-for-gradle-plugins/commit/cc969df7f915ec56ae63d76d1b2dc3e263703d50))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.50 ([#1673](https://github.com/DanySK/template-for-gradle-plugins/issues/1673)) ([1b064c9](https://github.com/DanySK/template-for-gradle-plugins/commit/1b064c9c87f192b4e5c7267f8ad02f7770481a16))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.51 ([#1675](https://github.com/DanySK/template-for-gradle-plugins/issues/1675)) ([cfab6ab](https://github.com/DanySK/template-for-gradle-plugins/commit/cfab6abef1d8055c91550e47c069327eebddd228))
+* **deps:** update dependency macos github actions runner to v26 ([#1667](https://github.com/DanySK/template-for-gradle-plugins/issues/1667)) ([fb94051](https://github.com/DanySK/template-for-gradle-plugins/commit/fb94051ab445ec70ddc20c7b55122858f1308aa0))
+
 ## [2.1.15](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.14...2.1.15) (2026-10-24)
 
 ### Dependency updates
