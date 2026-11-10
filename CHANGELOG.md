@@ -1,3 +1,10 @@
+## [2.1.18](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.17...2.1.18) (2026-11-10)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.9.1 ([#1681](https://github.com/DanySK/template-for-gradle-plugins/issues/1681)) ([9863449](https://github.com/DanySK/template-for-gradle-plugins/commit/986344965ca9b82bc2316333d00b1e91a3e06c7d))
+* **deps:** update plugin publishoncentral to v9.3.1 ([2747d55](https://github.com/DanySK/template-for-gradle-plugins/commit/2747d554c6a5f211ec3c05b40c306c761c9e7010))
+
 ## [2.1.17](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.16...2.1.17) (2026-11-06)
 
 ### Dependency updates
