@@ -1,3 +1,18 @@
+## [2.1.19](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.18...2.1.19) (2026-11-20)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.9.2 ([#1687](https://github.com/DanySK/template-for-gradle-plugins/issues/1687)) ([ebda4f6](https://github.com/DanySK/template-for-gradle-plugins/commit/ebda4f6613bf6c7933f5529c1b0c6dcdbb2ea214))
+* **deps:** update dependency org.apache.commons:commons-lang3 to v3.22.0 ([#1683](https://github.com/DanySK/template-for-gradle-plugins/issues/1683)) ([3bd701a](https://github.com/DanySK/template-for-gradle-plugins/commit/3bd701a921f19620ffe68a91578f312d7929bf7d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.159 ([#1686](https://github.com/DanySK/template-for-gradle-plugins/issues/1686)) ([94a79ca](https://github.com/DanySK/template-for-gradle-plugins/commit/94a79ca215e42ab9512164b352c4ad9eeadcf9f0))
+* **deps:** update kotest to v6.2.7 ([#1684](https://github.com/DanySK/template-for-gradle-plugins/issues/1684)) ([89d1218](https://github.com/DanySK/template-for-gradle-plugins/commit/89d1218a1a3b968050a5148a24e9b16731878442))
+* **deps:** update plugin publishoncentral to v9.3.2 ([#1682](https://github.com/DanySK/template-for-gradle-plugins/issues/1682)) ([282b8a3](https://github.com/DanySK/template-for-gradle-plugins/commit/282b8a37cac28b603ca54748997e4242cde44699))
+* **deps:** update plugin publishoncentral to v9.3.3 ([#1688](https://github.com/DanySK/template-for-gradle-plugins/issues/1688)) ([dbe8784](https://github.com/DanySK/template-for-gradle-plugins/commit/dbe878436b60d9c76dc1ee76190bcae8b7af4e5e))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.52 ([#1685](https://github.com/DanySK/template-for-gradle-plugins/issues/1685)) ([9b89b62](https://github.com/DanySK/template-for-gradle-plugins/commit/9b89b62607c7af13d6a45cea8f681639dc5099c3))
+
 ## [2.1.18](https://github.com/DanySK/template-for-gradle-plugins/compare/2.1.17...2.1.18) (2026-11-10)
 
 ### Dependency updates
